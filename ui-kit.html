@@ -87,16 +87,20 @@
             <div class="ui-kit__section-content">
                 <div class="container">
                     <div class="ui-kit__elements-list">
-                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: black;">black
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #534741">#534741
                             <br>$color-basic</div>
-                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #2252d8;">#2252d8
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #E08524">#E08524
                             <br>$color-main</div>
-                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #777;">#777
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #777">#777
                             <br>$color-placeholder</div>
-                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: black;">black
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: black">black
                             <br>$color-input</div>
-                        <div class="ui-kit__color" style="background-color: #ccc;">#ccc
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #2B140E">#2B140E
                             <br>$color-border</div>
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: rgba(253, 240, 230, 0.8)">rgba(253, 240, 230, 0.8)
+                            <br>$color-fill</div>
+                        <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #fdf0e6">#fdf0e6
+                            <br>$color-fill-solid</div>
                     </div>
                 </div>
             </div>
@@ -112,7 +116,7 @@
             <div class="ui-kit__section-content">
                 <div class="container">
                     <div class="ui-kit__elements-list">
-                        <div class="ui-kit__color ui-kit__color_bg_dark ui-kit__color_gradient_main" style="background: undefined;">gradient-main</div>
+                        <div class="ui-kit__color ui-kit__color_bg_dark ui-kit__color_gradient_main" style="background: undefined">gradient-main</div>
                     </div>
                 </div>
             </div>
@@ -121,8 +125,7 @@
             <div class="ui-kit__section-head">
                 <div class="container">
                     <h2>Шрифты и контентная зона</h2>
-                    <p>Основной шрифт: Arial ($font-main), font-weight: 400, 600</p>
-                    <p>Дополнительный шрифт: Times New Roman ($font-second), font-weight: 400, 600</p>
+                    <p>Основной шрифт: Gebrbera ($font-main), font-weight: 300, 400</p>
                     <p>Переменные находятся в файле styles/helpers/_variables.scss</p>
                     <p>Шрифты подключены в styles/helpers/_fonts.scss</p>
                     <p>Контентная зона: blocks/content-zone</p>
@@ -183,7 +186,19 @@
                         </div>
                     </div>
                     <p class="ui-kit__description">Другие стили текстов:</p>
-                    <div class="ui-kit__custom-text ui-kit__custom-text_style-1">Пример кастомного стиля на примере стандартного (%text)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_1">Пример кастомного стиля на примере стандартного (text-1)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_2">Пример кастомного стиля на примере стандартного (text-2)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_3">Пример кастомного стиля на примере стандартного (text-3)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_4">Пример кастомного стиля на примере стандартного (text-4)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_5">Пример кастомного стиля на примере стандартного (text-5)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_6">Пример кастомного стиля на примере стандартного (text-6)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_7">Пример кастомного стиля на примере стандартного (text-7)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_8">Пример кастомного стиля на примере стандартного (text-8)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_9">Пример кастомного стиля на примере стандартного (text-9)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_10">Пример кастомного стиля на примере стандартного (text-10)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_11">Пример кастомного стиля на примере стандартного (text-11)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_12">Пример кастомного стиля на примере стандартного (text-12)</div>
+                    <div class="ui-kit__custom-text ui-kit__custom-text ui-kit__custom-text_13">Пример кастомного стиля на примере стандартного (text-13)</div>
                 </div>
             </div>
         </section>
@@ -504,9 +519,6 @@
                                 <div class="slider__slide">Привет</div>
                             </div>
                         </div>
-                        <div class="slider__dots">
-                            <div class="slider__dot"></div>
-                        </div>
                         <div class="slider__button slider__button_prev"></div>
                         <div class="slider__button slider__button_next"></div>
                     </div>
@@ -567,24 +579,23 @@
             </div>
             <div class="ui-kit__section-content">
                 <div class="container">
-                    <div class="breadcrumbs js-test">
-                        <ul>
-                            <li class="breadcrumbs__item">
-                                <a class="link" href="#">
-                                    <span class="link__text">Главная</span>
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <a class="link" href="#">
-                                    <span class="link__text">Раздел</span>
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <a class="link" href="#">
-                                    <span class="link__text">Страница</span>
-                                </a>
-                            </li>
-                    </div>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="link" href="#">
+                                <span class="link__text">Главная</span>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="link" href="#">
+                                <span class="link__text">Раздел</span>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="link" href="#">
+                                <span class="link__text">Страница</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -625,10 +636,10 @@
                         <div class="rating__box">
                             <svg class="rating__icon"><use xlink:href="assets/images/icon.svg#icon_star"></use></svg>
                         </div>
-                        <div class="rating__box">
+                        <div class="rating__box is-active">
                             <svg class="rating__icon"><use xlink:href="assets/images/icon.svg#icon_star"></use></svg>
                         </div>
-                        <div class="rating__box is-active">
+                        <div class="rating__box">
                             <svg class="rating__icon"><use xlink:href="assets/images/icon.svg#icon_star"></use></svg>
                         </div>
                         <div class="rating__box">
