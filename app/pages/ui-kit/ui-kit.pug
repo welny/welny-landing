@@ -64,11 +64,13 @@ block content
         p Переменные находятся в файле styles/helpers/_variables.scss
       +ui-section-content()
         +ui-elements-list()
-          +ui-color('black', '$color-basic', true)
-          +ui-color('#2252d8', '$color-main', true)
+          +ui-color('#534741', '$color-basic', true)
+          +ui-color('#E08524', '$color-main', true)
           +ui-color('#777', '$color-placeholder', true)
           +ui-color('black', '$color-input', true)
-          +ui-color('#ccc', '$color-border')
+          +ui-color('#2B140E', '$color-border', true)
+          +ui-color('rgba(253, 240, 230, 0.8)', '$color-fill', true)
+          +ui-color('#fdf0e6', '$color-fill-solid', true)
 
     //- Цвета
     +ui-section
@@ -84,8 +86,7 @@ block content
     +ui-section
       +ui-section-head
         h2 Шрифты и контентная зона
-        p Основной шрифт: Arial ($font-main), font-weight: 400, 600
-        p Дополнительный шрифт: Times New Roman ($font-second), font-weight: 400, 600
+        p Основной шрифт: Gebrbera ($font-main), font-weight: 300, 400
         p Переменные находятся в файле styles/helpers/_variables.scss
         p Шрифты подключены в styles/helpers/_fonts.scss
         p Контентная зона: blocks/content-zone
@@ -127,7 +128,8 @@ block content
                   li Элемент списка
               li Элемент списка
         +ui-description Другие стили текстов:
-        +ui-custom-text._style-1 Пример кастомного стиля на примере стандартного (%text)
+        - for (var i=1; i<14; i++)
+          +ui-custom-text(class='ui-kit__custom-text_'+i) Пример кастомного стиля на примере стандартного (text-#{i})
 
     //- Таблицы
     +ui-section
@@ -310,7 +312,7 @@ block content
         p Блок: blocks/slider/slider
       +ui-section-content()
         +ui-description .js-slider
-        +slider(true, true)
+        +slider(false, true)
           +slide Привет
           +slide Привет
           +slide Привет
@@ -362,7 +364,7 @@ block content
         +ui-description Интерактивный
         +rating-interactive
         +ui-description Статичный
-        +rating(3)
+        +rating(2)
 
     //- Аккордион
     +ui-section

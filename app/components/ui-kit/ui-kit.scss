@@ -191,7 +191,20 @@ $ui-kit-color-darkbg: #111;
   }
 
   &__custom-text {
-    &_style-1 { @include text; }
+    // &_style-1 { @include text; }
+    &_1 { @include text-1; }
+    &_2 { @include text-2; }
+    &_3 { @include text-3; }
+    &_4 { @include text-4; }
+    &_5 { @include text-5; }
+    &_6 { @include text-6; }
+    &_7 { @include text-7; }
+    &_8 { @include text-8; }
+    &_9 { @include text-9; }
+    &_10 { @include text-10; }
+    &_11 { @include text-11; }
+    &_12 { @include text-12; }
+    &_13 { @include text-13; }
 
     &:not(:last-child) { margin-bottom: 10px; }
   }

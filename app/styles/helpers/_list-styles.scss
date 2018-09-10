@@ -14,6 +14,10 @@
 
 @mixin ullist {
 
+  ul {
+    list-style-type: none;
+  }
+
   li::before {
     position: absolute;
     left: 0;
