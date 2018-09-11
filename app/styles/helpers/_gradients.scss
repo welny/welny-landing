@@ -1,5 +1,5 @@
 @mixin gradient-main {
-  background: linear-gradient($color-fill-semi 0%, $color-fill-clear 100%);
+  background: linear-gradient($color-fill-clear 0%, $color-fill-semi 100%);
 }
 
 @mixin gradient-brown {

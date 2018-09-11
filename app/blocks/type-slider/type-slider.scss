@@ -1,0 +1,63 @@
+.type-slider {
+  display: block;
+
+  &__title,
+  &__question {
+    @include text-7;
+    padding-bottom: 21px;
+    text-align: center;
+  }
+}
+
+.wrapper-title {
+  @include gradient-main;
+}
+
+.slider-wrapper {
+  padding: 0 68px;
+  background-color: $color-fill-semi;
+}
+
+.slider {
+  border: none;
+
+  &__slide {
+    padding: 0;
+    min-height: 233px;
+  }
+
+  &__button {
+    background-color: transparent;
+
+    &::before {
+      height: 27px;
+      width: 27px;
+    }
+  }
+}
+
+.slide-wrapper {
+  background-color: white;
+  width: 197px;
+  height: 197px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+@include screen ("tablet") {
+  .type-slider {
+    &__title,
+    &__question {
+      @include text-4;
+    }
+  }
+}
+
+@include screen ("desktop-wide") {
+  .type-slider {
+    &__title,
+    &__question {
+    @include heading-5;
+    }
+  }
+}

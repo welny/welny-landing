@@ -1,0 +1,33 @@
+mixin about-us()
+  +b.about-us&attributes(attributes)
+    +ui-section-head
+      +e.H2.__title О нас говорят
+      +b.UL.about-list
+        +e.LI.__item.__item_ntv
+          picture
+            source(media="(min-width: 1440px)", srcset="./assets/images/ntv_desk.png")
+            source(media="(min-width: 768px)", srcset="./assets/images/ntv_tab.png")
+            img(src="./assets/images/ntv_mob.png", alt="НТВ")
+          +e.P.__text “Заказать массаж также просто, как пиццу!”
+        +e.LI.__item.__item_vc
+          picture
+            source(media="(min-width: 1440px)", srcset="./assets/images/vc_desk.png")
+            source(media="(min-width: 768px)", srcset="./assets/images/vc_tab.png")
+            img(src="./assets/images/vc_mob.png", alt="vc.ru")
+          +e.P.__text “Массаж с доставкой на дом уже не выглядит сумасшедшей идеей”
+      .download-wrapper
+        +e.H2.__title.__title_install Загрузите приложение Welny
+        +e.P.__text №1 приложение в России в категории Здоровье и фитнес в AppStore по данным App Annie
+        +b.UL.about-content-links
+          +e.LI.__item.__item_appstore
+            +e.A(href="#")
+              picture
+                source(media="(min-width: 1440px)", srcset="./assets/images/appstore_desk.png")
+                source(media="(min-width: 768px)", srcset="./assets/images/appstore_tab.png")
+                img(src="./assets/images/appstore_mob.png", alt="Загрузите в Appstore")
+          +e.LI.__item.__item_googleplay
+            +e.A(href="#")
+              picture
+                source(media="(min-width: 1440px)", srcset="./assets/images/google_desk.png")
+                source(media="(min-width: 768px)", srcset="./assets/images/google_tab.png")
+                img(src="./assets/images/google_mob.png", alt="Загрузите в Google Play")

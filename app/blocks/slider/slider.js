@@ -7,11 +7,13 @@ const $ = window.$;
 export default function slider() {
   const mySlider = new Swiper('.js-slider', {
     loop: true,
-    speed: 700,
-    autoplay: {
-      delay: 2000,
-    },
-    slidesPerView: 1,
+    speed: 300,
+    // autoplay: {
+    //   delay: 2000,
+    // },
+    slidesPerView: 5,
+    centeredSlides: true,
+    parallax: true,
     navigation: {
       nextEl: '.slider__button_next',
       prevEl: '.slider__button_prev',
@@ -27,6 +29,20 @@ export default function slider() {
     breakpoints: {
       320: {
         slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+        // spaceBetween: 35,
+      },
+      1439: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 5,
+        // spaceBetween: 56,
       },
     },
   });

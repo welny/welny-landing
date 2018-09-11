@@ -1,7 +1,7 @@
 .types {
   display: block;
 
-  &__title {
+  &__question {
     @include text-7;
     margin-bottom: 21px;
     text-align: center;
@@ -81,7 +81,7 @@
 }
 
 @include screen ("tablet") {
-  .wrapper-title {
+  .wrapper-question {
     min-height: 180px;
     padding: 1px 104px 1px 68px;
     display: flex;
@@ -90,7 +90,7 @@
     background: url("../images/heavy_dance.png") right 104px center no-repeat, $color-fill-semi;
   }
 
-  .types__title {
+  .types__question {
     @include text-4;
   }
 
@@ -157,14 +157,14 @@
   }
 }
 
-@include screen ("desktop") {
-  .wrapper-title {
+@include screen ("desktop-wide") {
+  .wrapper-question {
     padding: 1px 526px;
     min-height: 324px;
     background: url("../images/heavy_dance_desk.png") right 271px bottom no-repeat, url("../images/football.png") left 271px bottom no-repeat, $color-fill-semi;
   }
 
-  .types__title {
+  .types__question {
     @include heading-5;
   }
 
