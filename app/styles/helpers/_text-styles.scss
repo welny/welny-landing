@@ -2,97 +2,97 @@
 
 @mixin heading-1 {
   font-size: 64px;
-  line-height: calc(64 / 75);
+  line-height: calc(75 / 64);
   font-weight: 300;
 }
 
 @mixin heading-2 {
   font-size: 48px;
-  line-height: calc(48 / 56);
+  line-height: calc(56 / 48);
   font-weight: 300;
 }
 
 @mixin heading-3 {
   font-size: 48px;
-  line-height: calc(48 / 56);
+  line-height: calc(56 / 48);
   font-weight: 400;
 }
 
 @mixin heading-4 {
   font-size: 36px;
-  line-height: calc(36 / 42);
+  line-height: calc(42 / 36);
   font-weight: 300;
 }
 
 @mixin heading-5 {
   font-size: 34px;
-  line-height: calc(34 / 40);
+  line-height: calc(40 / 34);
   font-weight: 300;
 }
 
 @mixin heading-6 {
   font-size: 32px;
-  line-height: calc(32 / 38);
+  line-height: calc(38 / 32);
   font-weight: 300;
 }
 
 @mixin text-1 {
-  font-size: 14px;
-  line-height: calc(32 / 38);
+  font-size: 32px;
+  line-height: calc(38 / 32);
   font-weight: 300;
 }
 
 @mixin text-2 {
   font-size: 30px;
-  line-height: calc(30 / 35);
+  line-height: calc(35 / 30);
   font-weight: 300;
 }
 
 @mixin text-3 {
   font-size: 28px;
-  line-height: calc(28 / 33);
+  line-height: calc(33 / 28);
   font-weight: 300;
 }
 
 @mixin text-4 {
   font-size: 24px;
-  line-height: calc(24 / 28);
+  line-height: calc(28 / 24);
   font-weight: 300;
 }
 
 @mixin text-5 {
   font-size: 22px;
-  line-height: calc(22 / 26);
+  line-height: calc(26 / 22);
   font-weight: 300;
 }
 
 @mixin text-6 {
   font-size: 19px;
-  line-height: calc(19 / 22);
+  line-height: calc(22 / 19);
   font-weight: 400;
 }
 
 @mixin text-7 {
   font-size: 18px;
-  line-height: calc(18 / 21);
+  line-height: calc(21 / 18);
   font-weight: 300;
 }
 
 @mixin text-8 {
   font-size: 18px;
-  line-height: calc(18 / 21);
+  line-height: calc(21 / 18);
   font-weight: 400;
 }
 
 @mixin text-9 {
   font-size: 14px;
-  line-height: calc(14 / 16);
+  line-height: calc(16 / 14);
   font-weight: 300;
 }
 
 @mixin text-10 {
   font-size: 14px;
-  line-height: calc(14 / 16);
+  line-height: calc(16 / 14);
   font-weight: 400;
 }
 
@@ -104,19 +104,19 @@
 
 @mixin text-12 {
   font-size: 12px;
-  line-height: calc(12 / 14);
+  line-height: calc(14 / 12);
   font-weight: 300;
 }
 
 @mixin text-13 {
   font-size: 10px;
-  line-height: calc(10 / 12);
+  line-height: calc(12 / 10);
   font-weight: 300;
 }
 
 @mixin text {
   font-size: 12px;
-  line-height: calc(12 / 14);
+  line-height: calc(14 / 12);
   font-weight: 400;
 }
 

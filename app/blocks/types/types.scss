@@ -1,0 +1,234 @@
+.types {
+  display: block;
+
+  &__title {
+    @include text-7;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+}
+
+.answers {
+  padding: 22px 25px;
+
+  &__item {
+    @include text-12;
+    padding-left: 116px;
+    min-height: 100px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 100px;
+      height: 104px;
+      left: 0;
+    }
+
+    &_energy {
+      &::before {
+        background: url("../images/answer_img1_mob.png") left center no-repeat;
+      }
+    }
+
+    &_relax {
+      &::before {
+        background: url("../images/answer_img2_mob.png") left center no-repeat;
+      }
+    }
+
+    &_plan {
+      &::before {
+        background: url("../images/answer_img3_mob.png") left center no-repeat;
+      }
+    }
+  }
+}
+
+.order {
+  padding: 38px 47px;
+  min-height: 238px;
+  background: url("../images/order-now_mobile.png") top center no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+  // background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__title {
+    @include text-7;
+    color: white;
+    text-align: right;
+    max-width: 109px;
+  }
+
+  &__button {
+    @include text-12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 90px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 white;
+    text-align: center;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid white;
+    }
+  }
+}
+
+@include screen ("tablet") {
+  .wrapper-title {
+    min-height: 180px;
+    padding: 1px 104px 1px 68px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../images/heavy_dance.png") right 104px center no-repeat, $color-fill-semi;
+  }
+
+  .types__title {
+    @include text-4;
+  }
+
+  .answers {
+    margin: 68px 86px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      @include text-7;
+      text-align: center;
+      max-width: 150px;
+      padding: 0;
+      padding-top: 163px;
+
+    &::before {
+      @include pseudo;
+      width: 150px;
+      height: 157px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+
+      &_energy {
+        &::before {
+          background: url("../images/answer_img1_tab.png") top center no-repeat;
+        }
+      }
+
+      &_relax {
+        &::before {
+          background: url("../images/answer_img2_tab.png") top center no-repeat;
+        }
+      }
+
+      &_plan {
+        &::before {
+          background: url("../images/answer_img3_tab.png") top center no-repeat;
+        }
+      }
+    }
+  }
+
+  .order {
+    padding-right: 112px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url("../images/order-now_tab.png") top left no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+
+    &__title {
+      @include text-4;
+      min-width: 159px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &__button {
+      @include text-7;
+      width: 121px;
+      height: 50px;
+      margin-right: 22px;
+    }
+  }
+}
+
+@include screen ("desktop") {
+  .wrapper-title {
+    padding: 1px 526px;
+    min-height: 324px;
+    background: url("../images/heavy_dance_desk.png") right 271px bottom no-repeat, url("../images/football.png") left 271px bottom no-repeat, $color-fill-semi;
+  }
+
+  .types__title {
+    @include heading-5;
+  }
+
+  .answers {
+    margin: 89px 233px 60px;
+
+    &__item {
+      @include text-2;
+      text-align: center;
+      max-width: 260px;
+      padding: 0;
+      padding-top: 270px;
+
+    &::before {
+      @include pseudo;
+      width: 260px;
+      height: 270px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+
+      &_energy {
+        &::before {
+          background: url("../images/answer_img1_desk.png") top center no-repeat;
+        }
+      }
+
+      &_relax {
+        order:2;
+
+        &::before {
+          background: url("../images/answer_img2_desk.png") top center no-repeat;
+        }
+      }
+
+      &_plan {
+        order:1;
+
+        &::before {
+          background: url("../images/answer_img3_desk.png") top center no-repeat;
+        }
+      }
+    }
+  }
+
+  .order {
+    padding: 133px 195px;
+    min-height: 213px;
+    background: url("../images/order-now_desk.png") top left no-repeat, linear-gradient(transparent 30px, $color-brown 30px);
+    background-size: contain;
+
+    &__title {
+      @include heading-2;
+      min-width: 300px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      @include text-3;
+      width: 166px;
+      height: 67px;
+      margin-right: 66px;
+    }
+  }
+}

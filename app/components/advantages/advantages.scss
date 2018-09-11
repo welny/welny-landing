@@ -1,0 +1,168 @@
+.advantages {
+  display: block;
+}
+
+.advantages-content {
+  padding: 19px 23px 17px;
+
+  &__title {
+    @include text-7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &-list {
+    padding-bottom: 9px;
+
+    &__item {
+      padding-left: 83px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        @include pseudo;
+        width: 63px;
+        height: 56px;
+        left: 0;
+        background-size: contain;
+      }
+
+      &_comfort {
+        &::before {
+          background: url("../images/connection_img.svg") center center no-repeat;
+        }
+      }
+
+      &_pro {
+        &::before {
+          background: url("../images/relax_img.svg") center center no-repeat;
+        }
+      }
+
+      &_cosy {
+        &::before {
+          background: url("../images/order_img.svg") center center no-repeat;
+        }
+      }
+    }
+
+    &__item-title {
+      @include text-9;
+      margin-bottom: 3px;
+    }
+
+    &__item-text {
+      @include text-13;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 17px;
+    border-bottom: 2px solid $color-border;
+
+    &__item {
+      padding: 0 20px;
+    }
+  }
+}
+
+@include screen ("tablet") {
+  .advantages-content {
+    padding: 46px 69px 33px;
+
+    &__title {
+      @include text-4;
+      margin-bottom: 43px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // padding-bottom: 9px;
+
+      &__item {
+        padding-left: 0;
+        padding-top: 85px;
+        margin-bottom: 57px;
+        max-width: 192px;
+        text-align: center;
+
+        &::before {
+          width: 86px;
+          height: 70px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-size: contain;
+        }
+      }
+
+      &__item-title {
+        @include text-7;
+      }
+
+      &__item-text {
+        @include text-9;
+      }
+    }
+
+    &-links {
+      padding-bottom: 33px;
+
+      &__item {
+        padding: 0 33px;
+      }
+    }
+  }
+}
+
+@include screen ("desktop") {
+  .advantages-content {
+    padding: 82px 141px 33px;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 98px;
+    }
+
+    &-list {
+      // padding-bottom: 9px;
+
+      &__item {
+        padding-left: 0;
+        padding-top: 185px;
+        margin-bottom: 65px;
+        max-width: 340px;
+
+        &::before {
+          width: 112px;
+          height: 90px;
+          background-size: contain;
+        }
+      }
+
+      &__item-title {
+        @include heading-4;
+        margin-bottom: 18px;
+      }
+
+      &__item-text {
+        @include text-7;
+        max-width: 289px;
+        margin: 0 auto;
+      }
+    }
+
+    &-links {
+      padding-bottom: 58px;
+
+      &__item {
+        padding: 0 52px;
+      }
+    }
+  }
+}

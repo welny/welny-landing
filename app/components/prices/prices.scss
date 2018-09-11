@@ -1,0 +1,150 @@
+.prices {
+  display: block;
+  padding: 20px 0 14px;
+
+  &__title {
+    @include text-7;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__text {
+    @include text-13;
+    text-align: center;
+    margin: 0 14px;
+
+    &_bottom {
+      margin: 0 19px;
+    }
+  }
+}
+
+.li-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 127px;
+  border: 2px solid $color-main;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.prices-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 12px 25px 6px;
+
+  &__item {
+    margin-bottom: 14px;
+    width: 50%;
+
+    &_discount {
+      text-align: center;
+      color: white;
+
+      .li-wrapper {
+        background: $color-main;
+      }
+    }
+  }
+
+  &__item-time {
+    @include text-3;
+    color: $color-main;
+  }
+
+  &__item-text {
+    @include text-7;
+
+    &_discount {
+      @include text-10;
+    }
+
+    &_big {
+      @include text-3;
+    }
+
+    &_logo {
+      @include text-7;
+    }
+  }
+}
+
+@include screen ("tablet") {
+  .prices {
+    padding: 44px 0 55px;
+
+    &__title {
+      @include text-4;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    &__text {
+      @include text-9;
+      text-align: center;
+      margin: 0 98px;
+
+      &_bottom {
+        margin: 0 100px;
+      }
+    }
+  }
+
+  .prices-list {
+    margin: 17px 98px 20px;
+
+    &__item {
+      width: auto;
+    }
+  }
+}
+
+@include screen ("desktop") {
+  .prices {
+    padding: 86px 0 88px;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 55px;
+    }
+
+    &__text {
+      @include text-4;
+      margin: 0 256px;
+    }
+  }
+
+  .prices-list {
+    margin: 40px 256px;
+
+    &__item-time {
+      @include heading-1;
+    }
+
+    &__item-text {
+      @include text-3;
+
+      &_big {
+        @include heading-1;
+      }
+
+      &_discount {
+        @include text-6;
+      }
+
+      &_logo {
+        @include text-1;
+      }
+    }
+  }
+
+  .li-wrapper {
+    height: 200px;
+    width: 200px;
+  }
+}

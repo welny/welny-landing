@@ -13,8 +13,8 @@
 
 .container {
   width: $container-width;
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
@@ -22,4 +22,14 @@
 
 .js-sr {
   visibility: hidden;
+}
+
+.visually-hidden {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
 }

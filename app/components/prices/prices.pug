@@ -1,0 +1,35 @@
+mixin prices()
+  +b.SECTION.prices&attributes(attributes)
+    +ui-section-head
+      +e.H2.__title Отличные цены
+      +e.P.__text.__text_top Массаж с доставкой на дом - это не только удобнее, но и дешевле, чем в салоне. Стоимость не зависит от выбранного вами типа массажа.
+      +b.UL.prices-list
+            +e.LI.__item.__item_60
+              .li-wrapper
+                +e.P.__item-time 60
+                +e.P.__item-text минут
+                  br
+                  |2 490 ₽
+            +e.LI.__item.__item_90
+              .li-wrapper
+                +e.P.__item-time 90
+                +e.P.__item-text минут
+                  br
+                  |3 490 ₽
+            +e.LI.__item.__item_120
+              .li-wrapper
+                +e.P.__item-time 120
+                +e.P.__item-text минут
+                  br
+                  |4 490 ₽
+            +e.LI.__item.__item_discount
+              .li-wrapper
+                +e.P.__item-text.__item-text_discount До
+                  +e.P.SPAN.__item-text_big 25%
+                  br
+                  |скидки
+                  br
+                  |по подписке
+                  br
+                  +e.SPAN.__item-text_logo Welny+
+      +e.P.__text.__text_bottom Мы уверены в качестве услуг исполнителей и вернём вам стоимость заказа, если вас не устроит результат! Закажите массаж сейчас!

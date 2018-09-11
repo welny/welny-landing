@@ -1,0 +1,76 @@
+.header {
+  display: block;
+
+  &-content {
+    min-height: 290px;
+    padding: 18px 14px 8px;
+    background: url("../images/top-banner.png") -30px 0 no-repeat;
+    background-size: auto 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__text_top {
+      @include text-7;
+      color: white;
+    }
+
+    &__text_bottom {
+      @include text-12;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.rating__icon {
+  height: 10px;
+  width: 10px;
+  fill: $color-main;
+  stroke: $color-main;
+}
+
+@include screen("tablet") {
+  .header {
+    &-content {
+      min-height: 357px;
+      padding: 20px 19px 15px;
+      background: url("../images/top-banner.png") left center no-repeat;
+      background-size: cover;
+
+      &__text_top {
+        @include text-4;
+      }
+
+      &__text_bottom {
+        @include text-8;
+        text-align: right;
+      }
+    }
+  }
+
+  .rating__icon {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+@include screen("desktop-wide") {
+  .header {
+    &-content {
+      min-height: 532px;
+      padding: 23px 57px 18px 29px;
+      background: url("../images/top-banner.png") left center no-repeat;
+      // background-size: auto 316px;
+
+      &__text_top {
+        @include heading-2;
+      }
+
+      &__text_bottom {
+        @include text-4;
+        font-weight: 400;
+      }
+    }
+  }
+}
