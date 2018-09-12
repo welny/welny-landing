@@ -9,6 +9,28 @@ mixin slider(pagination, buttons)
       +e.button._prev
       +e.button._next
 
+mixin slider2(pagination, buttons)
+  +b.slider2&attributes(attributes).swiper-container.js-slider2
+    .swiper-wrapper
+      block
+    if pagination
+      +e.dots
+        +e.dot
+    if buttons
+      +e.button._prev
+      +e.button._next
+
+mixin slider3(pagination, buttons)
+  +b.slider3&attributes(attributes).swiper-container.js-slider3
+    .swiper-wrapper
+      block
+    if pagination
+      +e.dots
+        +e.dot
+    if buttons
+      +e.button._prev
+      +e.button._next
+
 mixin slide()
   .swiper-slide
     +e.slide&attributes(attributes)

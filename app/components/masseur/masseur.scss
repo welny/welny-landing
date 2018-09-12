@@ -1,0 +1,249 @@
+.masseur {
+  display: block;
+  padding: 17px 0 19px 0;
+  background-color: $color-fill-semi;
+
+  &__title {
+    @include text-7;
+    margin: 0 67px 18px;
+    text-align: center;
+  }
+
+  &__text {
+    @include text-13;
+    margin: 0 13px 21px;
+    text-align: center;
+  }
+
+  .slider__button::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.slider2 {
+  &__rating {
+    @include text-9;
+  }
+
+  &__name {
+    @include text-7;
+  }
+
+  &__qualify {
+    @include text-12;
+    text-align: center;
+  }
+
+  &__photo {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__button_next {
+    right: -10px;
+  }
+
+  &__button_prev {
+    left: -10px;
+  }
+}
+
+.slider-wrapper {
+  padding: 0 12px;
+}
+
+.masseur-slide-wrapper {
+  box-sizing: border-box;
+  min-height: 225px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 11px 5px 18px;
+}
+
+.masseur-slide-heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rating-wrapper {
+  img {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@include screen ("tablet") {
+  .masseur {
+    &__title {
+      @include text-4;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      @include text-10;
+    }
+
+    .slider__button::before {
+      width: 27px;
+      height: 27px;
+      border-color: $color-basic;
+    }
+  }
+
+  .slider2 {
+    &__slide {
+      padding: 0 30px;
+    }
+
+    &__rating {
+      @include text-8;
+    }
+
+    &__name {
+      @include text-8;
+      width: 100%;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    &__photo {
+      width: 95px;
+      height: 95px;
+    }
+
+    &__button {
+      height: 27px;
+      width: 27px;
+
+      &_next {
+        right: 0px;
+      }
+
+      &_prev {
+        left: 0px;
+      }
+
+      &::before {
+        width: 25px;
+        height: 25px;
+        border-color: $color-basic;
+      }
+    }
+  }
+
+  .slider-wrapper {
+    padding: 0 38px;
+    background: $color-fill-semi;
+  }
+
+
+  .masseur-slide-wrapper {
+    min-height: 280px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 15px 20px 12px;
+  }
+
+  .masseur-slide-heading {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .rating-wrapper {
+      margin-left: 9px;
+      margin-right: 29px;
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@include screen ("desktop-wide") {
+  .masseur {
+    &__title {
+      @include heading-2;
+      margin-bottom: 42px;
+    }
+
+    &__text {
+      @include text-4;
+      margin-bottom: 53px;
+    }
+
+    .slider__button::before {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .slider2 {
+    &__slide {
+      padding: 0 30px;
+    }
+
+    &__rating {
+      @include text-5;
+    }
+
+    &__name {
+      @include text-5;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    &__qualify {
+      @include text-9;
+    }
+
+    &__photo {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__button {
+      &_next {
+        right: 0px;
+      }
+
+      &_prev {
+        left: 0px;
+      }
+    }
+  }
+
+  .slider-wrapper {
+    padding: 0 38px;
+    background: $color-fill-semi;
+  }
+
+
+  .masseur-slide-wrapper {
+    min-height: 351px;
+    width: 351px;
+    padding: 26px 25px 12px;
+  }
+
+  .masseur-slide-heading {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .rating-wrapper {
+      margin-left: 12px;
+      margin-right: 34px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

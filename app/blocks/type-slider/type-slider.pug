@@ -1,44 +1,24 @@
 mixin type-slider()
   +b.type-slider&attributes(attributes)
     +ui-section-head
-      .wrapper-title
-        +e.H2.__title Типы массажа
+        .wrapper-title
+          +e.H2.__title Типы массажа
         +slider(false, true)
           +slide
-            .slide-wrapper
-              picture
-                source(media="(min-width: 1440px)", srcset="./assets/images/sport.png", width="208" height="215")
-                source(media="(min-width: 768px)", srcset="./assets/images/sport.png", width="180" height="180")
-                img(src="./assets/images/sport.png", alt="Спортивный", width="155" height="155")
-              +e.P.__text Спортивный
+            .type-slide-wrapper
+              +e.P.__text.__text_sport Спортивный
           +slide
-            .slide-wrapper
-              picture
-                source(media="(min-width: 1440px)", srcset="./assets/images/classic.png", width="208" height="215")
-                source(media="(min-width: 768px)", srcset="./assets/images/classic.png", width="180" height="180")
-                img(src="./assets/images/classic.png", alt="Классический", width="155" height="155")
-              +e.P.__text Классический
+            .type-slide-wrapper
+              +e.P.__text.__text_classic Классический
           +slide
-            .slide-wrapper
-              picture
-                source(media="(min-width: 1440px)", srcset="./assets/images/limfo.png", width="208" height="215")
-                source(media="(min-width: 768px)", srcset="./assets/images/limfo.png", width="180" height="180")
-                img(src="./assets/images/limfo.png", alt="Лимфодренажный", width="155" height="155")
-              +e.P.__text Лимфодренажный
+            .type-slide-wrapper
+              +e.P.__text.__text_limfo Лимфодренажный
           +slide
-            .slide-wrapper
-              picture
-                source(media="(min-width: 1440px)", srcset="./assets/images/limfo.png", width="208" height="215")
-                source(media="(min-width: 768px)", srcset="./assets/images/limfo.png", width="180" height="180")
-                img(src="./assets/images/limfo.png", alt="Лимфодренажный", width="155" height="155")
-              +e.P.__text Лимфодренажный
+            .type-slide-wrapper
+              +e.P.__text.__text_limfo1 Лимфодренажный
           +slide
-            .slide-wrapper
-              picture
-                source(media="(min-width: 1440px)", srcset="./assets/images/limfo.png", width="208" height="215")
-                source(media="(min-width: 768px)", srcset="./assets/images/limfo.png", width="180" height="180")
-                img(src="./assets/images/limfo.png", alt="Лимфодренажный", width="155" height="155")
-              +e.P.__text Лимфодренажный
-      .wrapper-question
-        +e.H2.__question Имеете дело с высокими нагрузками?
+            .type-slide-wrapper
+              +e.P.__text.__text_limfo2 Лимфодренажный
+        .wrapper-question
+          +e.H2.__question Имеете дело с высокими нагрузками?
 

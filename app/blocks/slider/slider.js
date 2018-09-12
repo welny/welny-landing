@@ -46,5 +46,76 @@ export default function slider() {
       },
     },
   });
+
+  const mySlider2 = new Swiper('.js-slider2', {
+    loop: true,
+    speed: 300,
+    // autoplay: {
+    //   delay: 2000,
+    // },
+    slidesPerView: 3,
+    // centeredSlides: true,
+    parallax: true,
+    navigation: {
+      nextEl: '.slider2__button_next',
+      prevEl: '.slider2__button_prev',
+    },
+    pagination: {
+      el: '.slider__dots',
+      clickable: true,
+      paginationClickableClass: 'slider__dots_clickable',
+      bulletClass: 'slider__dot',
+      bulletActiveClass: 'active',
+    },
+    roundLengths: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        // spaceBetween: 35,
+      },
+      1439: {
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 3,
+        // spaceBetween: 56,
+      },
+    },
+  });
+
+  const mySlider3 = new Swiper('.js-slider3', {
+    loop: true,
+    speed: 300,
+    // autoplay: {
+    //   delay: 2000,
+    // },
+    slidesPerView: 1,
+    // centeredSlides: true,
+    parallax: true,
+    navigation: {
+      nextEl: '.slider3__button_next',
+      prevEl: '.slider3__button_prev',
+    },
+    pagination: {
+      el: '.slider__dots',
+      clickable: true,
+      paginationClickableClass: 'slider__dots_clickable',
+      bulletClass: 'slider__dot',
+      bulletActiveClass: 'active',
+    },
+    roundLengths: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+    },
+  });
 }
+
 /* eslint-enable no-unused-vars */
