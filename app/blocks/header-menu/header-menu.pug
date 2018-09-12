@@ -1,0 +1,23 @@
+mixin header-menu()
+  +b.header-menu&attributes(attributes)
+    +ui-section-head
+      +b.NAV.header-nav
+        +e.BUTTON.__burger.js-toggle.menu-closed
+          p.visually-hidden Меню сайта
+        +b.UL.header-menu-list.visually-hidden
+          +e.LI.__item
+            +e.A.__link(href="#") О Welny
+          +e.LI.__item
+            +e.A.__link(href="#") Типы массажа
+          +e.LI.__item
+            +e.A.__link(href="#") Цены
+          +e.LI.__item
+            +e.A.__link(href="#") Специалисты
+          +e.LI.__item
+            +e.A.__link(href="#") Отзывы
+          +e.LI.__item
+            +e.A.__link(href="#") FAQ
+        +e.__logo
+        +e.BUTTON.__login(href="#")
+          +e.P.__personal Личный кабинет
+          +e.P.__enter Войти
