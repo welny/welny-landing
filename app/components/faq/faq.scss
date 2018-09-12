@@ -1,0 +1,33 @@
+.faq {
+  display: block;
+  padding: 15px 0 30px;
+  @include gradient-main-reverse;
+
+  &__title {
+    @include text-7;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@include screen ("tablet") {
+  .faq {
+    padding: 28px 0 45px;
+
+    &__title {
+      @include text-4;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include screen ("desktop-wide") {
+  .faq {
+    padding: 38px 0 86px;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 72px;
+    }
+  }
+}

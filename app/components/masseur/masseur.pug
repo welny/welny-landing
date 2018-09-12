@@ -1,33 +1,34 @@
 mixin masseur()
   +b.masseur&attributes(attributes)
-    +e.H2.__title Квалифицированные массажисты
-    +e.P.__text Все специалисты сдают теоретические и практические экзамены, чтобы стать партнером Welny
-    .slider-wrapper
-      +slider2(false, true)
-        +slide
-          .masseur-slide-wrapper
-            .masseur-slide-heading
-              .rating-wrapper
-                img(src="./assets/images/big-star.svg", alt="звезда")
-                +e.P.__rating 4.9
-              +e.IMG.__photo(src="./assets/images/olga_desk.jpg", alt="Ольга")
-              +e.P.__name Ольга
-            +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...
-        +slide
-          .masseur-slide-wrapper
-            .masseur-slide-heading
-              .rating-wrapper
-                img(src="./assets/images/big-star.svg", alt="звезда")
-                +e.P.__rating 4.9
-              +e.IMG.__photo(src="./assets/images/natalya_desk.jpg", alt="Наталия")
-              +e.P.__name Наталия
-            +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...
-        +slide
-          .masseur-slide-wrapper
-            .masseur-slide-heading
-              .rating-wrapper
-                img(src="./assets/images/big-star.svg", alt="звезда")
-                +e.P.__rating 4.9
-              +e.IMG.__photo(src="./assets/images/raisa_desk.jpg", alt="Раиса")
-              +e.P.__name Раиса
-            +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...
+    .container
+      +e.H2.__title Квалифицированные массажисты
+      +e.P.__text Все специалисты сдают теоретические и практические экзамены, чтобы стать партнером Welny
+      .slider-wrapper
+        +slider2(false, true)
+          +slide
+            .masseur-slide-wrapper
+              .masseur-slide-heading
+                .rating-wrapper
+                  img(src="./assets/images/big-star.svg", alt="звезда")
+                  +e.P.__rating 4.9
+                +e.IMG.__photo(src="./assets/images/olga_desk.jpg", alt="Ольга")
+                +e.P.__name Ольга
+              +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...
+          +slide
+            .masseur-slide-wrapper
+              .masseur-slide-heading
+                .rating-wrapper
+                  img(src="./assets/images/big-star.svg", alt="звезда")
+                  +e.P.__rating 4.9
+                +e.IMG.__photo(src="./assets/images/natalya_desk.jpg", alt="Наталия")
+                +e.P.__name Наталия
+              +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...
+          +slide
+            .masseur-slide-wrapper
+              .masseur-slide-heading
+                .rating-wrapper
+                  img(src="./assets/images/big-star.svg", alt="звезда")
+                  +e.P.__rating 4.9
+                +e.IMG.__photo(src="./assets/images/raisa_desk.jpg", alt="Раиса")
+                +e.P.__name Раиса
+              +e.P.__qualify стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...

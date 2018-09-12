@@ -1,24 +1,24 @@
 mixin type-slider()
-  +b.type-slider&attributes(attributes)
+  +b.SECTION.type-slider&attributes(attributes)
     +ui-section-head
         .wrapper-title
           +e.H2.__title Типы массажа
         +slider(false, true)
           +slide
-            .type-slide-wrapper
-              +e.P.__text.__text_sport Спортивный
+            .type-slide-wrapper.type-slide-wrapper_sport
+              +e.P.__text Спортивный
           +slide
-            .type-slide-wrapper
-              +e.P.__text.__text_classic Классический
+            .type-slide-wrapper.type-slide-wrapper_classic
+              +e.P.__text Классический
           +slide
-            .type-slide-wrapper
-              +e.P.__text.__text_limfo Лимфодренажный
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
           +slide
-            .type-slide-wrapper
-              +e.P.__text.__text_limfo1 Лимфодренажный
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
           +slide
-            .type-slide-wrapper
-              +e.P.__text.__text_limfo2 Лимфодренажный
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
         .wrapper-question
           +e.H2.__question Имеете дело с высокими нагрузками?
 

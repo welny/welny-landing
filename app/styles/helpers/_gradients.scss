@@ -2,6 +2,10 @@
   background: linear-gradient($color-fill-clear 0%, $color-fill-semi 100%);
 }
 
+@mixin gradient-main-reverse {
+  background: linear-gradient($color-fill-semi 0%, $color-fill-clear 100%);
+}
+
 @mixin gradient-brown {
   background: linear-gradient($color-brown 90%, transparent 90%);
 }

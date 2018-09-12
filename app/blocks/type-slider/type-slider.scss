@@ -37,43 +37,45 @@
 
   &__text {
     @include text-9;
-    padding-top: 171px;
     max-width: 150px;
-    margin: 0 auto;
+    margin: 0 auto 23px;
 
-    &_sport {
-      background: url("../images/sport.png") top center no-repeat;
-      background-size: contain;
-    }
-
-    &_classic {
-      background: url("../images/classic.png") top center no-repeat;
-      background-size: contain;
-    }
-
-    &_limfo {
-      background: url("../images/limfo.png") top center no-repeat;
-      background-size: contain;
-    }
-
-    &_limfo1 {
-      background: url("../images/limfo.png") top center no-repeat;
-      background-size: contain;
-    }
-
-    &_limfo2 {
-      background: url("../images/limfo.png") top center no-repeat;
-      background-size: contain;
-    }
   }
 }
 
 .type-slide-wrapper {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 197px;
   height: 197px;
   border-radius: 50px;
   margin: 0 auto;
+
+  &_sport {
+    background: url("../images/sport.png") top center no-repeat, white;
+    background-size: 155px;
+  }
+
+  &_classic {
+    background: url("../images/classic.png") top center no-repeat, white;
+    background-size: 155px;
+  }
+
+  &_limfo {
+    background: url("../images/limfo.png") top center no-repeat, white;
+    background-size: 155px;
+  }
+
+  &_limfo1 {
+    background: url("../images/limfo.png") top center no-repeat, white;
+    background-size: 155px;
+  }
+
+  &_limfo2 {
+    background: url("../images/limfo.png") top center no-repeat, white;
+    background-size: 155px;
+  }
 }
 
 @include screen ("tablet") {
@@ -81,6 +83,49 @@
     &__title,
     &__question {
       @include text-4;
+    }
+  }
+
+
+  .type-slide-wrapper {
+    width: 228px;
+    height: 228px;
+
+    &_sport {
+      background-size: 180px;
+    }
+
+    &_classic {
+      background-size: 180px;
+    }
+
+    &_limfo {
+      background-size: 180px;
+    }
+
+    &_limfo1 {
+      background-size: 180px;
+    }
+
+    &_limfo2 {
+      background-size: 180px;
+    }
+  }
+
+
+  .swiper-slide {
+    .type-slide-wrapper {
+      background-color: transparent;
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+
+    &-active {
+      .type-slide-wrapper {
+        opacity: 1;
+        transform: scale(1);
+        background-color: white;
+      }
     }
   }
 }
@@ -92,4 +137,30 @@
     @include heading-5;
     }
   }
+
+  .swiper-slide {
+    .type-slide-wrapper {
+      background-color: transparent;
+      opacity: 0.5;
+      transform: scale(0.43);
+    }
+
+    &-next,
+    &-prev {
+      .type-slide-wrapper {
+        background-color: transparent;
+        opacity: 0.5;
+        transform: scale(0.7);
+      }
+    }
+
+    &-active {
+      .type-slide-wrapper {
+        opacity: 1;
+        transform: scale(1);
+        background-color: white;
+      }
+    }
+  }
+
 }
