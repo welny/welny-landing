@@ -44,7 +44,10 @@
                                         <a class="header-menu-list__link" href="#">FAQ</a>
                                     </li>
                                 </ul>
-                                <div class="header-nav__logo"></div>
+                                <a class="link link_icon header-nav__logo">
+                                    <svg class="link__icon"><use xlink:href="assets/images/icon.svg#icon_logo_head"></use></svg>
+                                    <span class="link__text"></span>
+                                </a>
                                 <button class="header-nav__login" href="#">
                                     <p class="header-nav__personal">Личный кабинет</p>
                                     <p class="header-nav__enter">Войти</p>
@@ -124,6 +127,13 @@
     <section class="type-slider">
         <div class="type-slider__section-head">
             <div class="container">
+                <div class="order-now">
+                    <p class="order-now__text">Только в этом месяце скидка на первый заказ</p>
+                    <p class="order-now__discount">1000 руб.</p>
+                    <a class="button order-now__btn">
+                        <p>Заказать</p>
+                    </a>
+                </div>
                 <div class="wrapper-title">
                     <h2 class="type-slider__title">Типы массажа</h2>
                 </div>
@@ -366,36 +376,29 @@
                         <div class="accordion__header">
                             <div class="accordion__button js-accordion-button">Как это работает?</div>
                         </div>
-                        <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam. Quod sit molestias
-                            sapiente.</div>
+                        <div class="accordion__body">Массажист приедет по указанному адресу и привезет с собой все необходимое для сеанса: массажный стол, масла и простыни. Вам остается только открыть ему дверь и получать удовольствие от массажа.</div>
                     </div>
                     <div class="accordion">
                         <div class="accordion__header">
                             <div class="accordion__button js-accordion-button">Могу ли я перенести или отменить дату сеанса массажа?</div>
                         </div>
-                        <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam. Quod sit molestias
-                            sapiente.</div>
+                        <div class="accordion__body">Конечно, вы можете перенести свой сеанс массажа без потери средств более, чем за 2 часа до начала процедуры. Если сеанс будет отменен позже 2 часов до приезда мастера, с вашей карты будет списано 30% от стоимости заказа, позже
+                            30 минут — полная стоимость. Мы надеемся на ваше понимание, ведь дорога специалистов занимает около 40 минут их личного времени.</div>
                     </div>
                     <div class="accordion">
                         <div class="accordion__header">
                             <div class="accordion__button js-accordion-button">Безопасно ли оплачивать услуги в приложении Welny?</div>
                         </div>
-                        <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam. Quod sit molestias
-                            sapiente.</div>
-                    </div>
-                    <div class="accordion">
+                        <div class="accordion__body">Да, абсолютно. Оплата производится через 128-bit SSL-шифрование, в качестве платежной системы мы используем популярный сервис Payture. Наш сервис подключен к интернет-эквайрингу, и вы можете оплатить услугу банковской картой Visa
+                            или Mastercard. При оплате услуги откроется защищенное окно с платежной страницей процессингового центра Payture, где вам необходимо ввести данные вашей банковской карты.</div>
                         <div class="accordion__header">
                             <div class="accordion__button js-accordion-button">Нужен ли мне собственный массажный стол?</div>
                         </div>
-                        <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam. Quod sit molestias
-                            sapiente.</div>
-                    </div>
-                    <div class="accordion">
+                        <div class="accordion__body">Нет, специалист возьмет с собой свой стол.</div>
                         <div class="accordion__header">
                             <div class="accordion__button js-accordion-button">Могу ли я использовать свои масло и простыни?</div>
                         </div>
-                        <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam. Quod sit molestias
-                            sapiente.</div>
+                        <div class="accordion__body">Конечно! Просто сообщите об этом мастеру.</div>
                     </div>
                 </div>
             </div>
@@ -450,6 +453,80 @@
             </div>
         </div>
     </div>
+    <section class="footer">
+        <div class="footer__section-head">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer__logo">
+                        <img src="./assets/images/logo_foot.svg" />
+                    </div>
+                    <nav class="footer-nav">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <ul class="footer-submenu">
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">О Welny</a>
+                                    </li>
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">Пресса о нас</a>
+                                    </li>
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">Блог</a>
+                                    </li>
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer-menu__item">
+                                <ul class="footer-submenu">
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">Работа с Welny</a>
+                                    </li>
+                                    <li class="footer-submenu__item">
+                                        <a class="footer-submenu__link" href="#">FAQ</a>
+                                    </li>
+                                    <li class="footer-submenu__item footer-submenu__item footer-submenu__item_btn">
+                                        <a class="button btn__office">Welny для офиса</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="phone">+7 (495) 445-07-39</p>
+                        <ul class="footer-social">
+                            <li class="footer-social__item">
+                                <a class="footer-social__link" href="#">
+                                    <img src="./assets/images/footer_vk.svg" />
+                                    <p class="visually-hidden">VKontakte</p>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__link" href="#">
+                                    <img src="./assets/images/footer_facebook.svg" />
+                                    <p class="visually-hidden">Facebook</p>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__link" href="#">
+                                    <img src="./assets/images/footer_insta.svg" />
+                                    <p class="visually-hidden">Instagramm</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="legal">
+                        <div class="legal__top">
+                            <a class="legal__link" href="">Условия использования</a>
+                            <a class="legal__link" href="">Карта сайта</a>
+                        </div>
+                        <div class="legal__bottom">
+                            <p class="legal__copyright">Все права защищены © 2016-2018 ООО «Велни»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>

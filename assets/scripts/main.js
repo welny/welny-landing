@@ -17,11 +17,13 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
-if (window.screen.width >= 1440) {
-  headerList.classList.remove('visually-hidden');
-} else {
-  if (!headerList.classList.contains('visually-hidden')) {
-    headerList.classList.add('visually-hidden');
+window.onresize = function () {
+  if (window.screen.width >= 1440) {
+    headerList.classList.remove('visually-hidden');
+  } else {
+    if (!headerList.classList.contains('visually-hidden')) {
+      headerList.classList.add('visually-hidden');
+    }
   }
 }
 
