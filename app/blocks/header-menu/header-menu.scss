@@ -18,10 +18,11 @@
 
   &__logo {
     margin: 0 auto;
-    width: 68px;
-    height: 29px;
-    background: url("../images/logo+name_head.svg") center center no-repeat;
-    background-size: contain;
+
+    svg {
+      width: 68px;
+      height: 29px;
+    }
   }
 
   &__burger {
@@ -87,8 +88,10 @@
     }
 
     &__logo {
-      width: 78px;
-      height: 33px;
+      svg {
+        width: 78px;
+        height: 33px;
+      }
     }
 
     &__personal {
@@ -134,8 +137,11 @@
 
     &__logo {
       order: 1;
-      width: 145px;
-      height: 69px;
+
+      svg {
+        width: 145px;
+        height: 69px;
+      }
     }
 
     &__login {

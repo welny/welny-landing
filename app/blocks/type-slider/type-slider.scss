@@ -13,9 +13,56 @@
   @include gradient-main;
 }
 
-// .swapper-slide {
-//   padding: 0 68px;
-// }
+.order-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+
+  &__text {
+    font-size: 12.8px;
+    line-height: calc(15 / 12.8);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 9px;
+  }
+
+  &__discount {
+    @include text-small;
+    position: relative;
+    display: inline-block;
+    // border: 2px solid $color-main;
+    border-left: none;
+    background: url("../images/border.svg") center center no-repeat;
+    background-size: contain;
+    padding: 4px 3px 4px 10px;
+    margin-bottom: 10px;
+
+    // &::before {
+    //   @include pseudo;
+    //   height: 12px;
+    //   width: 12px;
+    //   left: -10px;
+    //   top: 0;
+    //   border-top: 2px solid $color-main;
+    //   border-right: 2px solid $color-main;
+    //   transform: rotate(-135deg);
+    // }
+  }
+
+  &__btn {
+    @include text-9;
+    min-height: 35px;
+    min-width: 90px;
+    background-color: $color-main;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
 
 .slider {
   border: none;

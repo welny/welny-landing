@@ -1,0 +1,46 @@
+mixin footer()
+  +b.SECTION.footer&attributes(attributes)
+    +ui-section-head
+      .footer-wrapper
+        +e.__logo
+          img(src="./assets/images/logo_foot.svg")
+        +b.NAV.footer-nav
+          +b.UL.footer-menu
+            +e.LI.__item
+              +b.UL.footer-submenu
+                +e.LI.__item
+                  +e.A.__link(href="#") О Welny
+                +e.LI.__item
+                  +e.A.__link(href="#") Пресса о нас
+                +e.LI.__item
+                  +e.A.__link(href="#") Блог
+                +e.LI.__item
+                  +e.A.__link(href="#") Контакты
+            +e.LI.__item
+              +b.UL.footer-submenu
+                +e.LI.__item
+                  +e.A.__link(href="#") Работа с Welny
+                +e.LI.__item
+                  +e.A.__link(href="#") FAQ
+                +e.LI.__item.__item_btn
+                  +button.btn__office Welny для офиса
+          +b.P.phone +7 (495) 445-07-39
+          +b.UL.footer-social
+            +e.LI.__item
+              +e.A.__link(href="#")
+                img(src="./assets/images/footer_vk.svg")
+                p.visually-hidden VKontakte
+            +e.LI.__item
+              +e.A.__link(href="#")
+                img(src="./assets/images/footer_facebook.svg")
+                p.visually-hidden Facebook
+            +e.LI.__item
+              +e.A.__link(href="#")
+                img(src="./assets/images/footer_insta.svg")
+                p.visually-hidden Instagramm
+        +b.legal
+          +e.__top
+            +e.A.__link(href="") Условия использования
+            +e.A.__link(href="") Карта сайта
+          +e.__bottom
+            +e.P.__copyright Все права защищены © 2016-2018 ООО «Велни»
