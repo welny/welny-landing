@@ -1,10 +1,10 @@
 .prices {
   display: block;
-  padding: 20px 0 14px;
+  padding: 17px 0 29px;
 
   &__title {
     @include text-7;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   width: 127px;
-  height: 127px;
+  height: 126px;
   border: 2px solid $color-main;
   border-radius: 50%;
   margin: 0 auto;
@@ -36,13 +36,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 12px 25px 6px;
+  padding: 19px 19px 8px;
 
   &__item {
-    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     width: 50%;
 
     &_discount {
+      margin-top: 3px;
       text-align: center;
       color: white;
 
@@ -50,15 +55,23 @@
         background: $color-main;
       }
     }
+
+    &_120 {
+      margin-bottom: 5px;
+    }
   }
 
   &__item-time {
     @include text-3;
     color: $color-main;
+    margin-bottom: 3px;
   }
 
   &__item-text {
     @include text-7;
+    line-height: calc(27 / 18);
+    margin-left: 3px;
+    vertical-align: middle;
 
     &_discount {
       @include text-10;

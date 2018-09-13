@@ -3,8 +3,8 @@
 
   &-content {
     min-height: 290px;
-    padding: 18px 14px 8px;
-    background: url("../images/top-banner.png") -30px 0 no-repeat;
+    padding: 15px 14px 8px;
+    background: url("../images/top-banner.png") -39px 0 no-repeat;
     background-size: auto 316px;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,12 @@
       @include text-12;
       font-weight: 400;
       text-align: center;
+
+      .rating {
+        .rating__box {
+          margin-left: 2px;
+        }
+      }
     }
   }
 }

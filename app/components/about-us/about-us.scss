@@ -1,32 +1,42 @@
 .about-us {
   display: block;
+  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear 15%);
 
   &__title {
     @include text-7;
-    margin-bottom: 9px;
     text-align: center;
+
+    &_top {
+      padding-top: 11px;
+      padding-right: 5px;
+      margin: 0 31px 9px;
+      border-top: 2px solid $color-border;
+    }
 
     &_install {
       @include text-9;
       text-align: end;
+      margin-bottom: 7px;
     }
   }
 
   &__text {
     @include text-13;
-    margin-left: 4px;
+    margin-right: 4px;
     text-align: end;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 }
 
 .about-list {
-  margin: 0 31px;
+  margin: 19px 31px 0;
   border-bottom: 2px solid $color-basic;
+  padding-bottom: 7px;
 
   &__item {
     @include text-12;
-    margin-bottom: 15px;
+    line-height: calc(16 / 12);
+    margin-bottom: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,13 +48,13 @@
   }
 
   &__text {
-    padding: 15px;
+    padding: 0 18px 12px;
   }
 }
 
 .download-wrapper {
-  padding: 48px 20px 164px;
-  background: url("../images/iphone_mob.png") left 38px bottom 24px no-repeat, url("../images/samsung_mob.png") left 10px bottom 53px no-repeat;
+  padding: 44px 20px 50px 132px;
+  background: url("../images/iphone_mob.png") left 38px bottom 25px no-repeat, url("../images/samsung_mob.png") left 10px bottom 54px no-repeat;
 }
 
 .about-content-links {

@@ -4,8 +4,12 @@
   &__title,
   &__question {
     @include text-7;
-    padding-bottom: 21px;
+    padding-bottom: 25px;
     text-align: center;
+  }
+
+  &__question {
+    padding-bottom: 0;
   }
 }
 
@@ -18,14 +22,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 44px;
 
   &__text {
     font-size: 12.8px;
     line-height: calc(15 / 12.8);
     font-weight: 300;
     text-align: center;
-    margin-bottom: 9px;
+    margin-bottom: 6px;
   }
 
   &__discount {
@@ -36,8 +40,8 @@
     border-left: none;
     background: url("../images/border.svg") center center no-repeat;
     background-size: contain;
-    padding: 4px 3px 4px 10px;
-    margin-bottom: 10px;
+    padding: 5px 6px 4px 11px;
+    margin-bottom: 9px;
 
     // &::before {
     //   @include pseudo;
@@ -55,6 +59,7 @@
     @include text-9;
     min-height: 35px;
     min-width: 90px;
+    padding: 8px 10px;
     background-color: $color-main;
     border: none;
     color: white;
@@ -66,26 +71,36 @@
 
 .slider {
   border: none;
+  margin-bottom: 20px;
 
   &__slide {
     background-color: $color-fill-semi;
     padding: 0;
-    min-height: 233px;
+    min-height: 217px;
   }
 
   &__button {
     background-color: transparent;
+    top: -32px;
+
+    &_prev {
+      left: 17px;
+    }
+
+    &_next {
+      right: 17px;
+    }
 
     &::before {
-      height: 27px;
-      width: 27px;
+      height: 22px;
+      width: 22px;
     }
   }
 
   &__text {
     @include text-9;
     max-width: 150px;
-    margin: 0 auto 23px;
+    margin: 0 auto 13px;
 
   }
 }
@@ -100,27 +115,27 @@
   margin: 0 auto;
 
   &_sport {
-    background: url("../images/sport.png") top center no-repeat, white;
+    background: url("../images/sport.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 
   &_classic {
-    background: url("../images/classic.png") top center no-repeat, white;
+    background: url("../images/classic.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 
   &_limfo {
-    background: url("../images/limfo.png") top center no-repeat, white;
+    background: url("../images/limfo.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 
   &_limfo1 {
-    background: url("../images/limfo.png") top center no-repeat, white;
+    background: url("../images/limfo.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 
   &_limfo2 {
-    background: url("../images/limfo.png") top center no-repeat, white;
+    background: url("../images/limfo.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 }

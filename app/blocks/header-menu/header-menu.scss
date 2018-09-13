@@ -7,8 +7,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 18px 0 14px;
-  min-height: 42px;
+  margin: 2px 18px 0 42px;
+  min-height: 43px;
 
   &__login {
     width: 23px;
@@ -27,8 +27,8 @@
 
   &__burger {
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left: 13px;
+    top: 11px;
     z-index: 10;
     width: 32px;
     height: 23px;

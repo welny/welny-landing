@@ -1,13 +1,92 @@
 .faq {
   display: block;
-  padding: 15px 0 30px;
-  @include gradient-main-reverse;
+  padding: 11px 0 15px;
+  background: linear-gradient($color-fill-semi 60%, rgba(253, 240, 230, 0.3) 60%, rgba(253, 240, 230, 0.3));
 
   &__title {
     @include text-7;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
   }
+
+  .accordion {
+    $b: &;
+    margin-bottom: 10px;
+
+    .accordions & { margin-top: -1px; }
+
+    &__header {
+      @include text-12;
+      position: relative;
+      padding-left: 22px;
+      padding-right: 22px;
+      height: auto;
+      width: 100%;
+      box-sizing: border-box;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        width: 8px;
+        height: 8px;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        border-color: $color-main;
+        transform-origin: center;
+        transform: translateY(-50%) rotate(45deg);
+        transition: transform $ease-main;
+
+        #{$b}.is-active & {
+          transform: translateY(-50%) rotate(135deg);
+          margin-top: 2px;
+        }
+      }
+
+    }
+
+    &__button {
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    &__body {
+      @include text-13;
+      border-top: 0;
+      width: 100%;
+      box-sizing: border-box;
+      display: none;
+      padding: 5px 33px;
+
+      #{$b}.is-active & { display: block; }
+    }
+
+  }
+}
+
+.accordion-info {
+  &__location,
+  &__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px;
+
+    img {
+      height: 27px;
+      width: auto;
+    }
+
+    &-text {
+      padding-left: 10px;
+    }
+  }
+}
+
+.video-wrapper {
+  width: 245px;
+  height: 140px;
 }
 
 @include screen ("tablet") {
@@ -19,6 +98,38 @@
       margin-bottom: 30px;
     }
   }
+
+  .accordion {
+    &__header {
+      @include text-7;
+      padding-left: 124px;
+
+      &::after {
+        left: 100px;
+        width: 14px;
+        height: 14px;
+        border-width: 2px 2px 0 0;
+      }
+    }
+
+    &__body {
+      @include text-9;
+      padding: 5px 120px;
+    }
+  }
+
+  .accordion-info {
+    display: flex;
+    flex-direction: row;
+
+    &__location,
+    &__time {
+      img {
+        height: 34px;
+        width: auto;
+      }
+    }
+  }
 }
 
 @include screen ("desktop-wide") {
@@ -28,6 +139,24 @@
     &__title {
       @include heading-2;
       margin-bottom: 72px;
+    }
+  }
+
+  .accordion {
+    &__header {
+      @include heading-4;
+      padding-left: 234px;
+
+      &::after {
+        left: 200px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &__body {
+      @include text-4;
+      padding: 15px 230px;
     }
   }
 }

@@ -9,13 +9,18 @@
 }
 
 .answers {
-  padding: 22px 25px;
+  padding: 22px 25px 0;
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include text-12;
+    line-height: calc(17 / 12);
     padding-left: 116px;
-    min-height: 100px;
+    min-height: 101px;
     position: relative;
+    margin-bottom: 10px;
 
     &::before {
       @include pseudo;
@@ -37,8 +42,16 @@
     }
 
     &_plan {
+      padding-left: 107px;
+      margin-bottom: 7px;
+
       &::before {
         background: url("../images/answer_img3_mob.png") left center no-repeat;
+      }
+
+      .answers__text {
+        margin-top: 10px;
+        margin-bottom: auto;
       }
     }
   }
@@ -46,8 +59,8 @@
 
 .order {
   padding: 38px 47px;
-  min-height: 238px;
-  background: url("../images/order-now_mobile.png") top center no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+  min-height: 258px;
+  background: url("../images/order-now_mobile.png") top 1px center no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
   // background-size: cover;
   display: flex;
   flex-direction: row;
