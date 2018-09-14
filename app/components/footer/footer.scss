@@ -220,8 +220,8 @@
   .footer-wrapper {
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 51px 56px 0px 68px;
-    // justify-content: flex-start;
+    padding: 51px 56px 0px 104px;
+    align-items: flex-start;
   }
 
   .footer-nav {
@@ -230,16 +230,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-height: 150px;
-    margin-top: -150px;
+    margin-top: -202px;
     margin-bottom: 50px;
+    margin-left: 202px;
   }
 
   .footer-menu {
     flex-grow: 0;
     margin-left: 70px;
+    margin-right: 162px;
 
     &__item {
-      width: 50%;
+      width: auto;
+
+      &_first {
+        margin-right: 160px;
+      }
     }
   }
 
@@ -248,7 +254,11 @@
     margin-bottom: 14px;
 
     &__item {
-      margin-bottom: 14px;
+      margin-bottom: 11px;
+
+      &_btn {
+        margin-top: 15px;
+      }
     }
 
     &__link {
@@ -259,7 +269,7 @@
 
   .btn__office {
     @include text-4;
-    padding: 5px 10px;
+    padding: 14px 10px;
     background-color: $color-main;
     border-radius: 5px;
     color: white;
@@ -270,16 +280,16 @@
     order: 2;
     @include text-4;
     text-align: center;
-    width: 100%;
+    width: auto;
   }
 
   .footer-social {
     order: 3;
     flex-direction: row;
-    width: 682px;
+    justify-content: center;
 
     &__item {
-      margin: 10px 0;
+      margin: 3px 13px;
     }
 
     &__link {
@@ -291,13 +301,26 @@
   }
 
   .legal {
-    margin: 0 auto;
-    width: 577px;
+    margin: 0 0 0 276px;
+    width: 680px;
 
     &__link,
     &__copyright {
       @include text-7;
-      margin: 7px 0;
+      margin: 0 28px;
+    }
+
+    &__copyright {
+      margin: 0 0 0 15px;
+    }
+
+    &__top {
+      padding-bottom: 10px;
+    }
+
+    &__bottom {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 }

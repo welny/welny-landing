@@ -71,11 +71,12 @@
 }
 
 .slider {
+  background-color: $color-fill-semi;
   border: none;
   margin-bottom: 20px;
 
   &__slide {
-    background-color: $color-fill-semi;
+    background-color: transparent;
     padding: 0;
     min-height: 217px;
   }
@@ -247,7 +248,6 @@
     }
   }
 
-
   .swiper-slide {
     .type-slide-wrapper {
       background-color: transparent;
@@ -282,15 +282,96 @@
       @include text-7;
       margin-bottom: 19px;
       margin-left: 58px;
+      max-width: none;
     }
   }
 }
 
 @include screen ("desktop-wide") {
   .type-slider {
-    &__title,
+    &__title {
+      @include heading-2;
+    }
+
     &__question {
-    @include heading-5;
+      @include heading-5;
+      line-height: calc(48 / 34);
+    }
+  }
+
+  .wrapper-title {
+    padding-bottom: 29px;
+  }
+
+  .wrapper-question {
+    padding: 87px 526px 0;
+    min-height: 314px;
+    background: url("../images/heavy_dance_desk.png") right 248px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat, $color-fill-semi;
+  }
+
+  .order-now {
+    margin-top: 34px;
+    margin-bottom: 105px;
+
+    &__text {
+      @include text-4;
+    }
+
+    &__discount {
+      @include text-9;
+      line-height: calc(12 / 14);
+      margin-top: 8px;
+      padding: 11px 18px 15px 17px;
+    }
+
+    &__btn {
+      @include text-3;
+      padding: 18px 25px;
+    }
+  }
+
+  .type-slide-wrapper {
+    height: 275px;
+    width: 275px;
+    background-size: 210px;
+    background-position: top 14px left 33px;
+  }
+
+  .slider{
+    &__text {
+      @include text-4;
+      text-align: center;
+      margin: 0 0 14px 0;
+      // margin-left: 65px;
+      // margin-bottom: 14px;
+    }
+  }
+
+  .swiper-slide-next {
+    z-index: 2;
+
+    .type-slide-wrapper {
+      transform: scale(0.7) translateX(70px) translateY(-5px) !important;
+
+      .slider__text {
+        transform: scale(1.1) translateX(2px) translateY(-5px) !important;
+      }
+    }
+  }
+
+  .slider-slide {
+    z-index: 1;
+  }
+
+  .swiper-slide-prev {
+    z-index: 2;
+
+    .type-slide-wrapper {
+      transform: scale(0.7) translateX(-70px) translateY(-5px) !important;
+
+      .slider__text {
+        transform: scale(1.1) translateX(1px) translateY(-5px) !important;
+      }
     }
   }
 
@@ -298,25 +379,43 @@
     .type-slide-wrapper {
       background-color: transparent;
       opacity: 0.5;
-      transform: scale(0.43);
+      transform: scale(0.43) translateY(-45px);
     }
-
-    &-next,
-    &-prev {
-      .type-slide-wrapper {
-        background-color: transparent;
-        opacity: 0.5;
-        transform: scale(0.7);
-      }
-    }
-
     &-active {
       .type-slide-wrapper {
-        opacity: 1;
-        transform: scale(1);
-        background-color: white;
+        opacity: 1 !important;
+        transform: scale(1) !important;
+        background-color: white !important;
       }
     }
   }
+
+  // .swiper-wrapper {
+  //   width: 800px;
+  // }
+
+  // .swiper-slide {
+  //   .type-slide-wrapper {
+  //     background-color: transparent;
+  //     opacity: 0.5;
+  //     transform: scale(0.43);
+  //   }
+
+  //   &-next,
+  //   &-prev {
+  //     .type-slide-wrapper {
+  //       background-color: transparent;
+  //       opacity: 0.5;
+  //     }
+  //   }
+
+  //   &-next {
+  //     .type-slide-wrapper {
+  //       transform: scale(0.7), translateX(-64px);
+  //     }
+  //   }
+
+  //   }
+  // }
 
 }

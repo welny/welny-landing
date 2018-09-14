@@ -144,29 +144,39 @@
 
 @include screen ("desktop-wide") {
   .faq {
-    padding: 38px 0 86px;
-
     &__title {
       @include heading-2;
-      margin-bottom: 72px;
+      margin-bottom: 59px;
     }
-  }
 
-  .accordion {
-    &__header {
-      @include heading-4;
-      padding-left: 234px;
+    .accordion {
+      margin-bottom: 19px;
 
-      &::after {
-        left: 200px;
-        width: 25px;
-        height: 25px;
+      &__header {
+        @include heading-4;
+        padding-left: 234px;
+
+        &::after {
+          left: 187px;
+          width: 15px;
+          height: 15px;
+          top: 22px;
+        }
+      }
+
+      &__button {
+        padding: 0;
+      }
+
+      &__body {
+        @include text-4;
+        padding: 15px 230px;
       }
     }
-
-    &__body {
-      @include text-4;
-      padding: 15px 230px;
-    }
   }
+
+  .faq-wrapper {
+    padding: 27px 0 46px;
+  }
+
 }

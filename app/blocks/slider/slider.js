@@ -35,14 +35,13 @@ export default function slider() {
       },
       768: {
         slidesPerView: 3,
-        // spaceBetween: 35,
       },
       1439: {
         slidesPerView: 3,
       },
       1440: {
         slidesPerView: 5,
-        // spaceBetween: 56,
+        spaceBetween: -350,
       },
     },
   });

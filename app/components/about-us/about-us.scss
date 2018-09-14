@@ -1,6 +1,5 @@
 .about-us {
   display: block;
-  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear 15%);
 
   &__title {
     @include text-7;
@@ -26,6 +25,10 @@
     text-align: end;
     margin-bottom: 37px;
   }
+}
+
+.about-wrapper {
+  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear 15%);
 }
 
 .about-list {
@@ -147,35 +150,47 @@
   .about-us {
     &__title {
       @include heading-2;
-      margin-bottom: 80px;
+      margin-bottom: 75px;
+      margin-left: 15px;
 
       &_install {
-        margin: 0 0 79px 0;
+        margin: 0 0 27px 0;
       }
     }
 
     &__text {
       @include text-4;
-      margin: 0 0 72px 0;
+      margin: 0 0 147px 53px;
     }
   }
 
   .about-list {
-    margin: 0 171px 0 153px;
-    padding-bottom: 83px;
+    margin: 0 145px 0 137px;
+    padding: 0 22px 77px;
 
 
     &__item {
-      @include text-4;
+      padding-right: 35px;
+
+      &_vc {
+        padding-left: 53px;
+        padding-bottom: 3px;
+
+        .about-list__text {
+          line-height: calc(33 / 24);
+          padding-bottom: 3px;
+        }
+      }
     }
 
     &__text {
-      padding: 0 11px 0 16px;
+      @include text-4;
+      padding: 9px 11px 0 21px;
     }
   }
 
   .download-wrapper {
-    padding: 131px 131px 144px 682px;
-    background: url("../images/iphone_desk.png") left 234px bottom 20px no-repeat, url("../images/samsung_desk.png") left 103px bottom 108px no-repeat;
+    padding: 120px 131px 140px 682px;
+    background: url("../images/iphone_desk.png") left 234px bottom 20px no-repeat, url("../images/samsung_desk.png") left 108px bottom 102px no-repeat;
   }
 }

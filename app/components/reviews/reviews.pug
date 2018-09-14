@@ -1,35 +1,38 @@
 mixin reviews()
   +b.SECTION.reviews&attributes(attributes)
     +ui-section-head
-      .reviews-title-wrapper
-        +e.H2.__title Отзывы пользователей
-      .slider3-wrapper
-        +slider3(false, true)
-          +slide
-            +e.__item
-              .author-wrapper
-                +e.P.__name Ева
-                +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
-                +e.P.__date июнь 2018
-              +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
-                |продолжаешь кушать вкусняшки и заваливаешься спать.
-              .link-wrapper
-                +e.A.__link(href="#") Отзыв в Instagram
-          +slide
-            +e.__item
-              .author
-                +e.P.__name Ева
-                +e.P.__date июнь 2018
-              +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
-                |продолжаешь кушать вкусняшки и заваливаешься спать.
-              .link-wrapper
-                +e.A.__link(href="#") Отзыв в Instagram
-          +slide
-            +e.__item
-              .author
-                +e.P.__name Ева
-                +e.P.__date июнь 2018
-              +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
-                |продолжаешь кушать вкусняшки и заваливаешься спать.
-              .link-wrapper
-                +e.A.__link(href="#") Отзыв в Instagram
+      .reviews-wrapper
+        .reviews-title-wrapper
+          +e.H2.__title Отзывы пользователей
+        .slider3-wrapper
+          +slider3(false, true)
+            +slide
+              +e.__item
+                .author-wrapper
+                  +e.P.__name Ева
+                  +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
+                  +e.P.__date июнь 2018
+                +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
+                  |продолжаешь кушать вкусняшки и заваливаешься спать.
+                .link-wrapper
+                  +e.A.__link(href="#") Отзыв в Instagram
+            +slide
+              +e.__item
+                .author
+                  +e.P.__name Ева
+                  +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
+                  +e.P.__date июнь 2018
+                +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
+                  |продолжаешь кушать вкусняшки и заваливаешься спать.
+                .link-wrapper
+                  +e.A.__link(href="#") Отзыв в Instagram
+            +slide
+              +e.__item
+                .author
+                  +e.P.__name Ева
+                  +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
+                  +e.P.__date июнь 2018
+                +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,
+                  |продолжаешь кушать вкусняшки и заваливаешься спать.
+                .link-wrapper
+                  +e.A.__link(href="#") Отзыв в Instagram

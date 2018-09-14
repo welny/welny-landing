@@ -6,7 +6,7 @@ mixin footer()
           img(src="./assets/images/logo_foot.svg")
         +b.NAV.footer-nav
           +b.UL.footer-menu
-            +e.LI.__item
+            +e.LI.__item.__item_first
               +b.UL.footer-submenu
                 +e.LI.__item
                   +e.A.__link(href="#") О Welny
@@ -16,7 +16,7 @@ mixin footer()
                   +e.A.__link(href="#") Блог
                 +e.LI.__item
                   +e.A.__link(href="#") Контакты
-            +e.LI.__item
+            +e.LI.__item.__item_second
               +b.UL.footer-submenu
                 +e.LI.__item
                   +e.A.__link(href="#") Работа с Welny

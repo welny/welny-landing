@@ -147,10 +147,23 @@
 
       &_next {
         right: -3px;
+
+        &::before {
+          right: 8px;
+          width: 19px;
+          height: 19px;
+          border-color: $color-basic;
+        }
       }
 
       &_prev {
-        left: -3px;
+        left: 4px;
+
+        &::before {
+          width: 19px;
+          height: 19px;
+          border-color: $color-basic;
+        }
       }
 
       &::before {
@@ -202,18 +215,23 @@
   .masseur {
     &__title {
       @include heading-2;
-      margin-bottom: 42px;
+      margin-bottom: 30px;
+      margin-left: 59px;
     }
 
     &__text {
       @include text-4;
-      margin-bottom: 53px;
+      margin-bottom: 49px;
     }
 
     .slider2__button::before {
       width: 30px;
       height: 30px;
     }
+  }
+
+  .masseur-wrapper {
+    padding: 40px 0 10px;
   }
 
   .slider2 {
@@ -253,7 +271,6 @@
 
   .slider2-wrapper {
     padding: 0 38px;
-    background: $color-fill-semi;
   }
 
 

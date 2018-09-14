@@ -1,6 +1,5 @@
 .prices {
   display: block;
-  padding: 17px 0 29px;
 
   &__title {
     @include text-7;
@@ -17,6 +16,10 @@
       margin: 0 19px;
     }
   }
+}
+
+.prices-wrapper {
+  padding: 17px 0 29px;
 }
 
 .li-wrapper {
@@ -91,8 +94,6 @@
 
 @include screen ("tablet") {
   .prices {
-    padding: 39px 0 55px;
-
     &__title {
       @include text-4;
       margin-bottom: 26px;
@@ -108,6 +109,10 @@
         margin: 0 100px;
       }
     }
+  }
+
+  .prices-wrapper {
+    padding: 39px 0 55px;
   }
 
   .prices-list {
@@ -138,31 +143,50 @@
 
 @include screen ("desktop-wide") {
   .prices {
-    padding: 86px 0 88px;
-
     &__title {
       @include heading-2;
-      margin-bottom: 55px;
+      margin-bottom: 42px;
+      margin-left: 8px;
     }
 
     &__text {
       @include text-4;
+      line-height: calc(31 / 24);
       margin: 0 256px;
     }
   }
 
-  .prices-list {
-    margin: 40px 256px;
+  .prices-wrapper {
+    padding: 76px 0 119px;
+  }
 
-    &__item-time {
-      @include heading-1;
+  .prices-list {
+    margin: 45px 256px 24px;
+
+    .li-wrapper {
+      .prices-list__item-time {
+        @include heading-1;
+        margin-top: 14px;
+        margin-bottom: 0;
+      }
+    }
+
+    &_60,
+    &_90,
+    &_120 {
+      .prices-list__item-text {
+        line-height: calc(48 / 28);
+      }
     }
 
     &__item-text {
       @include text-3;
+      margin-top: -13px;
+      vertical-align: bottom;
 
       &_big {
         @include heading-1;
+        top: 7px;
       }
 
       &_discount {
