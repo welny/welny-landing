@@ -5,17 +5,18 @@ mixin header-menu()
         +e.BUTTON.__burger.js-toggle.menu-closed
           p.visually-hidden Меню сайта
         +b.UL.header-menu-list.visually-hidden
-          +e.LI.__item
+          +e.LI.__item.__item_about
             +e.A.__link(href="#") О Welny
-          +e.LI.__item
-            +e.A.__link(href="#") Типы массажа
-          +e.LI.__item
+          +e.LI.__item.__item_types
+            +e.A.__link(href="#") Типы
+            +e.P.__text массажа
+          +e.LI.__item.__item_prices
             +e.A.__link(href="#") Цены
-          +e.LI.__item
+          +e.LI.__item.__item_specs
             +e.A.__link(href="#") Специалисты
-          +e.LI.__item
+          +e.LI.__item.__item_reviews
             +e.A.__link(href="#") Отзывы
-          +e.LI.__item
+          +e.LI.__item.__item_faq
             +e.A.__link(href="#") FAQ
         +link-icon("logo_head").header-nav__logo
         +e.BUTTON.__login(href="#")

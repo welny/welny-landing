@@ -1,7 +1,8 @@
 mixin reviews()
   +b.SECTION.reviews&attributes(attributes)
     +ui-section-head
-      +e.H2.__title Отзывы пользователей
+      .reviews-title-wrapper
+        +e.H2.__title Отзывы пользователей
       .slider3-wrapper
         +slider3(false, true)
           +slide

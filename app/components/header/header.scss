@@ -20,12 +20,13 @@
       font-weight: 400;
       text-align: center;
 
-      .rating {
-        .rating__box {
-          margin-left: 2px;
-        }
-      }
     }
+  }
+}
+
+.rating {
+  .rating__box {
+    margin-left: 2px;
   }
 }
 
@@ -39,9 +40,9 @@
 @include screen("tablet") {
   .header {
     &-content {
-      min-height: 357px;
-      padding: 20px 19px 15px;
-      background: url("../images/top-banner.png") left center no-repeat;
+      min-height: 366px;
+      padding: 15px 19px;
+      background: url("../images/top-banner.png") left top -40px no-repeat;
       background-size: cover;
 
       &__text_top {
@@ -55,6 +56,12 @@
     }
   }
 
+  .rating {
+    .rating__box {
+      margin-left: 3px;
+    }
+  }
+
   .rating__icon {
     height: 14px;
     width: 14px;
@@ -64,19 +71,32 @@
 @include screen("desktop-wide") {
   .header {
     &-content {
-      min-height: 532px;
-      padding: 23px 57px 18px 29px;
+      min-height: 550px;
+      padding: 10px 57px 14px 27px;
       background: url("../images/top-banner.png") left center no-repeat;
       // background-size: auto 316px;
 
       &__text_top {
         @include heading-2;
+        letter-spacing: 0.2px;
+        line-height: calc(62 / 48);
       }
 
       &__text_bottom {
         @include text-4;
         font-weight: 400;
       }
+    }
+
+    .rating {
+      .rating__box {
+        margin-left: 4px;
+      }
+    }
+
+    .rating__icon {
+      height: 20px;
+      width: 20px;
     }
   }
 }

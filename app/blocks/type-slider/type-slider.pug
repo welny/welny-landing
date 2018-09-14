@@ -2,8 +2,9 @@ mixin type-slider()
   +b.SECTION.type-slider&attributes(attributes)
     +ui-section-head
       +b.order-now
-        +e.P.__text Только в этом месяце скидка на первый заказ
-        +e.P.__discount 1000 руб.
+        .price-wrapper
+          +e.P.__text Только в этом месяце скидка на первый заказ
+          +e.P.__discount 1000 руб.
         +button.order-now__btn
           p Заказать
       .wrapper-title
@@ -13,17 +14,17 @@ mixin type-slider()
           .type-slide-wrapper.type-slide-wrapper_sport
             +e.P.__text Спортивный
         +slide
+          .type-slide-wrapper.type-slide-wrapper_limfo
+            +e.P.__text Лимфодренажный
+        +slide
+          .type-slide-wrapper.type-slide-wrapper_limfo
+            +e.P.__text Лимфодренажный
+        +slide
+          .type-slide-wrapper.type-slide-wrapper_limfo
+            +e.P.__text Лимфодренажный
+        +slide
           .type-slide-wrapper.type-slide-wrapper_classic
             +e.P.__text Классический
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
       .wrapper-question
         +e.H2.__question Имеете дело с высокими нагрузками?
 

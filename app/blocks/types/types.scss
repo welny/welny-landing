@@ -9,7 +9,7 @@
 }
 
 .answers {
-  padding: 22px 25px 0;
+  margin: 22px 25px 0;
 
   &__item {
     display: flex;
@@ -94,30 +94,23 @@
 }
 
 @include screen ("tablet") {
-  .wrapper-question {
-    min-height: 180px;
-    padding: 1px 104px 1px 68px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: url("../images/heavy_dance.png") right 104px center no-repeat, $color-fill-semi;
-  }
-
   .types__question {
     @include text-4;
   }
 
   .answers {
-    margin: 68px 86px 10px;
+    margin: 68px 86px 21px;
     display: flex;
     justify-content: space-between;
 
     &__item {
       @include text-7;
+      line-height: calc(24 / 18);
+      justify-content: flex-start;
       text-align: center;
       max-width: 150px;
       padding: 0;
-      padding-top: 163px;
+      padding-top: 166px;
 
     &::before {
       @include pseudo;
@@ -141,6 +134,10 @@
       }
 
       &_plan {
+        .answers__text {
+          margin-top: 0;
+        }
+
         &::before {
           background: url("../images/answer_img3_tab.png") top center no-repeat;
         }
@@ -149,16 +146,16 @@
   }
 
   .order {
-    padding-right: 112px;
+    padding: 10px 112px;
     flex-direction: column;
-    justify-content: flex-end;
-    background: url("../images/order-now_tab.png") top left no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+    justify-content: center;
+    background: url("../images/order-now_tab.png") top -3px left no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
 
     &__title {
       @include text-4;
       min-width: 159px;
       text-align: center;
-      margin-bottom: 15px;
+      margin: 32px 0 21px;
     }
 
     &__button {

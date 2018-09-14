@@ -1,13 +1,12 @@
 .faq {
   display: block;
-  padding: 11px 0 15px;
-  background: linear-gradient($color-fill-semi 60%, rgba(253, 240, 230, 0.3) 60%, rgba(253, 240, 230, 0.3));
 
   &__title {
     @include text-7;
     margin-bottom: 10px;
     text-align: center;
   }
+
 
   .accordion {
     $b: &;
@@ -65,6 +64,11 @@
   }
 }
 
+.faq-wrapper {
+  padding: 11px 0 15px;
+  background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0.3));
+}
+
 .accordion-info {
   &__location,
   &__time {
@@ -91,44 +95,50 @@
 
 @include screen ("tablet") {
   .faq {
-    padding: 28px 0 45px;
 
     &__title {
       @include text-4;
-      margin-bottom: 30px;
+      margin-bottom: 26px;
     }
-  }
+    .accordion {
+      margin-bottom: 12px;
 
-  .accordion {
-    &__header {
-      @include text-7;
-      padding-left: 124px;
+      &__header {
+        @include text-7;
+        padding-left: 115px;
 
-      &::after {
-        left: 100px;
-        width: 14px;
-        height: 14px;
-        border-width: 2px 2px 0 0;
+        &::after {
+          top: 11px;
+          left: 98px;
+          width: 9px;
+          height: 9px;
+          border-width: 2px 2px 0 0;
+        }
+      }
+
+      &__body {
+        @include text-9;
+        padding: 5px 120px;
       }
     }
 
-    &__body {
-      @include text-9;
-      padding: 5px 120px;
+    .accordion-info {
+      display: flex;
+      flex-direction: row;
+
+      &__location,
+      &__time {
+        img {
+          height: 34px;
+          width: auto;
+        }
+      }
     }
   }
 
-  .accordion-info {
-    display: flex;
-    flex-direction: row;
-
-    &__location,
-    &__time {
-      img {
-        height: 34px;
-        width: auto;
-      }
-    }
+  .faq-wrapper {
+    margin-top: 28px;
+    padding-top: 23px;;
   }
 }
 

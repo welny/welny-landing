@@ -1,7 +1,5 @@
 .reviews {
   display: block;
-  padding: 0 0 27px;
-  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear 15%);
 
   &__title {
     @include text-7;
@@ -10,6 +8,11 @@
     margin: 0 31px 18px;
     border-top: 2px solid $color-border;
   }
+}
+
+.reviews-title-wrapper {
+  padding: 3px 0 0;
+  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear);
 }
 
 .link-wrapper {
@@ -82,12 +85,16 @@
 @include screen ("tablet") {
   .reviews {
     display: block;
-    padding: 27px 0 82px;
 
     &__title {
       @include text-4;
       margin-bottom: 39px;
+      border: none;
     }
+  }
+
+  .reviews-title-wrapper {
+    padding: 34px 0 12px;
   }
 
   .link-wrapper {
@@ -95,9 +102,13 @@
     height: 20px;
   }
 
+  .slider3-wrapper {
+    padding-bottom: 30px;
+  }
+
   .slider3 {
     &__item {
-      padding: 0 30px;
+      padding: 0 70px;
       min-height: 151px;
       width: 424px;
       margin-left: auto;
@@ -110,8 +121,8 @@
 
     &__photo {
       position: absolute;
-      left: 50px;
-      top: 0;
+      left: 53px;
+      top: -10px;
       height: 151px;
       width: 151px;
     }
@@ -122,6 +133,7 @@
 
     &__text {
       @include text-9;
+      line-height: calc(19 / 14);
       text-align: start;
     }
 
@@ -135,18 +147,20 @@
     &__button {
       height: 27px;
       width: 27px;
+      top: -21px;
 
       &_next {
-        right: 0px;
+        right: 22px;
+        top: -8px;
       }
 
       &_prev {
-        left: 0px;
+        left: 22px;
       }
 
       &::before {
-        width: 25px;
-        height: 25px;
+        width: 19px;
+        height: 19px;
         border-color: $color-basic;
       }
     }
@@ -155,7 +169,8 @@
 
   .author-wrapper {
     justify-content: flex-start;
-    margin-bottom: 23px;
+    margin-bottom: 13px;
+    padding-left: 0;
   }
 }
 

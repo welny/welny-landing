@@ -66,6 +66,7 @@
     border-radius: 8px;
     text-align: center;
     vertical-align: middle;
+    margin: 0 auto;
   }
 }
 
@@ -140,14 +141,61 @@
   }
 }
 
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @include screen ("tablet") {
   .type-slider {
     &__title,
     &__question {
       @include text-4;
     }
+
+    &__question {
+      margin: 8px 0 0 5px;
+    }
   }
 
+  .wrapper-question {
+    min-height: 170px;
+    padding: 60px 104px 0 68px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../images/heavy_dance.png") right 104px bottom no-repeat, $color-fill-semi;
+  }
+
+  .wrapper-title {
+    padding-bottom: 15px;
+  }
+
+  .order-now {
+    margin: 0 63px 54px;
+
+    &__text {
+      @include text-9;
+      margin-right: 10px;
+    }
+
+    &__discount {
+      @include text-12;
+      margin-top: 5px;
+    }
+
+    &__btn {
+      @include text-7;
+      padding: 15px 24px;
+    }
+  }
+
+  .price-wrapper {
+    flex-direction: row;
+    margin-bottom: 9px;
+  }
 
   .type-slide-wrapper {
     width: 228px;
@@ -155,22 +203,47 @@
 
     &_sport {
       background-size: 180px;
+      background-position: top 5px left 21px;
     }
 
     &_classic {
       background-size: 180px;
+      background-position: top 5px left 21px;
     }
 
     &_limfo {
       background-size: 180px;
+      background-position: top 5px left 21px;
     }
 
     &_limfo1 {
       background-size: 180px;
+      background-position: top 5px left 21px;
     }
 
     &_limfo2 {
       background-size: 180px;
+      background-position: top 5px left 21px;
+    }
+  }
+
+  .swiper-slide-next {
+    .type-slide-wrapper {
+      transform: scale(0.7) translateX(-64px);
+
+      .slider__text {
+        transform: scale(1.1) translateX(-25px);
+      }
+    }
+  }
+
+  .swiper-slide-prev {
+    .type-slide-wrapper {
+      transform: scale(0.7) translateX(64px);
+
+      .slider__text {
+        transform: scale(1.1) translateX(-12px);
+      }
     }
   }
 
@@ -179,7 +252,6 @@
     .type-slide-wrapper {
       background-color: transparent;
       opacity: 0.5;
-      transform: scale(0.7);
     }
 
     &-active {
@@ -188,6 +260,28 @@
         transform: scale(1);
         background-color: white;
       }
+    }
+  }
+
+  .slider {
+    margin: 0;
+
+    &__button {
+      top: 2px;
+
+      &_next {
+        right: 41px;
+      }
+
+      &_prev {
+        left: 37px;
+      }
+    }
+
+    &__text {
+      @include text-7;
+      margin-bottom: 19px;
+      margin-left: 58px;
     }
   }
 }

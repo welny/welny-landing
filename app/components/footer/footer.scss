@@ -111,6 +111,8 @@
     &__logo {
       width: 83px;
       height: 121px;
+      margin-top: 26px;
+      align-self: flex-start;
     }
   }
 
@@ -118,7 +120,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 51px 56px 0px 68px;
+    padding: 33px 56px 0px 68px;
   }
 
   .footer-nav {
@@ -130,10 +132,11 @@
 
   .footer-menu {
     flex-grow: 1;
-    margin-left: 70px;
+    margin-left: 76px;
+    justify-content: flex-start;
 
     &__item {
-      width: 50%;
+      width: 47%;
     }
   }
 
@@ -153,7 +156,7 @@
 
   .btn__office {
     @include text-7;
-    padding: 5px 10px;
+    padding: 14px 17px;
     background-color: $color-main;
     border-radius: 5px;
     color: white;
@@ -164,15 +167,16 @@
     order: 3;
     @include text-7;
     text-align: center;
-    width: 100%;
+    width: 83%;
   }
 
   .footer-social {
     order: 2;
     flex-direction: column;
+    justify-content: flex-start;
 
     &__item {
-      margin: 10px 0;
+      margin: 3px 0;
     }
 
     &__link {
@@ -185,12 +189,21 @@
 
   .legal {
     margin: 0 auto;
-    width: 577px;
+    width: 587px;
 
     &__link,
     &__copyright {
       @include text-9;
-      margin: 7px 0;
+      margin: 8px 23px;
+    }
+
+    &__top {
+      padding-right: 21px;
+      justify-content: center;
+    }
+
+    &__bottom {
+      padding-right: 14px;
     }
   }
 }

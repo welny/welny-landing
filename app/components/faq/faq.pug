@@ -1,42 +1,43 @@
 mixin faq()
   +b.SECTION.faq&attributes(attributes)
     +ui-section-head
-      +e.H2.__title FAQ
-      +accordions(true)
-        +accordion.is-active
-          +accordion-header
-            +accordion-button Как это работает?
-          +accordion-body
-              | Массажист приедет по указанному адресу и привезет с собой все необходимое для сеанса: массажный стол, масла и простыни. Вам остается только открыть ему дверь и получать удовольствие от массажа.
-              +b.accordion-info
-                +e.__location
-                  img(src="./assets/images/location.svg")
-                  +e.P.__location-text Сервис предоставляется в Москве
-                +e.__time
-                  img(src="./assets/images/location.svg")
-                  +e.P.__time-text c 8:00 до 23:00 без выходных
-              .video-wrapper
-                iframe(src="https://www.youtube.com/watch?time_continue=2&v=p4Q1GBjU54w" frameborder="0" allowfullscreen)
-        +accordion
-          +accordion-header
-            +accordion-button Могу ли я перенести или отменить дату сеанса массажа?
-          +accordion-body
-              | Конечно, вы можете перенести свой сеанс массажа без потери средств более, чем за 2 часа до начала процедуры. Если сеанс будет отменен позже 2 часов до приезда мастера, с вашей карты будет списано
-              | 30% от стоимости заказа, позже 30 минут — полная стоимость. Мы надеемся на ваше понимание, ведь дорога специалистов занимает около 40 минут их личного времени.
-        +accordion
-          +accordion-header
-            +accordion-button Безопасно ли оплачивать услуги в приложении Welny?
-          +accordion-body
-              | Да, абсолютно. Оплата производится через 128-bit SSL-шифрование, в качестве платежной системы мы используем популярный сервис Payture. Наш сервис подключен к интернет-эквайрингу, и вы можете
-              | оплатить услугу банковской картой Visa или Mastercard. При оплате услуги откроется защищенное окно с платежной страницей процессингового центра Payture, где вам необходимо ввести данные вашей
-              | банковской карты.
-        +accordion
-          +accordion-header
-            +accordion-button Нужен ли мне собственный массажный стол?
-          +accordion-body
-              | Нет, специалист возьмет с собой свой стол.
-        +accordion
-          +accordion-header
-            +accordion-button Могу ли я использовать свои масло и простыни?
-          +accordion-body
-              | Конечно! Просто сообщите об этом мастеру.
+      .faq-wrapper
+        +e.H2.__title FAQ
+        +accordions(true)
+          +accordion.is-active
+            +accordion-header
+              +accordion-button Как это работает?
+            +accordion-body
+                | Массажист приедет по указанному адресу и привезет с собой все необходимое для сеанса: массажный стол, масла и простыни. Вам остается только открыть ему дверь и получать удовольствие от массажа.
+                +b.accordion-info
+                  +e.__location
+                    img(src="./assets/images/location.svg")
+                    +e.P.__location-text Сервис предоставляется в Москве
+                  +e.__time
+                    img(src="./assets/images/hourglass.svg")
+                    +e.P.__time-text c 8:00 до 23:00 без выходных
+                .video-wrapper
+                  iframe(src="https://www.youtube.com/watch?time_continue=2&v=p4Q1GBjU54w" frameborder="0" allowfullscreen)
+          +accordion
+            +accordion-header
+              +accordion-button Могу ли я перенести или отменить дату сеанса массажа?
+            +accordion-body
+                | Конечно, вы можете перенести свой сеанс массажа без потери средств более, чем за 2 часа до начала процедуры. Если сеанс будет отменен позже 2 часов до приезда мастера, с вашей карты будет списано
+                | 30% от стоимости заказа, позже 30 минут — полная стоимость. Мы надеемся на ваше понимание, ведь дорога специалистов занимает около 40 минут их личного времени.
+          +accordion
+            +accordion-header
+              +accordion-button Безопасно ли оплачивать услуги в приложении Welny?
+            +accordion-body
+                | Да, абсолютно. Оплата производится через 128-bit SSL-шифрование, в качестве платежной системы мы используем популярный сервис Payture. Наш сервис подключен к интернет-эквайрингу, и вы можете
+                | оплатить услугу банковской картой Visa или Mastercard. При оплате услуги откроется защищенное окно с платежной страницей процессингового центра Payture, где вам необходимо ввести данные вашей
+                | банковской карты.
+          +accordion
+            +accordion-header
+              +accordion-button Нужен ли мне собственный массажный стол?
+            +accordion-body
+                | Нет, специалист возьмет с собой свой стол.
+          +accordion
+            +accordion-header
+              +accordion-button Могу ли я использовать свои масло и простыни?
+            +accordion-body
+                | Конечно! Просто сообщите об этом мастеру.
