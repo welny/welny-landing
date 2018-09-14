@@ -25,22 +25,23 @@
                                     <p class="visually-hidden">Меню сайта</p>
                                 </button>
                                 <ul class="header-menu-list visually-hidden">
-                                    <li class="header-menu-list__item">
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_about">
                                         <a class="header-menu-list__link" href="#">О Welny</a>
                                     </li>
-                                    <li class="header-menu-list__item">
-                                        <a class="header-menu-list__link" href="#">Типы массажа</a>
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_types">
+                                        <a class="header-menu-list__link" href="#">Типы</a>
+                                        <p class="header-menu-list__text">массажа</p>
                                     </li>
-                                    <li class="header-menu-list__item">
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_prices">
                                         <a class="header-menu-list__link" href="#">Цены</a>
                                     </li>
-                                    <li class="header-menu-list__item">
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_specs">
                                         <a class="header-menu-list__link" href="#">Специалисты</a>
                                     </li>
-                                    <li class="header-menu-list__item">
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_reviews">
                                         <a class="header-menu-list__link" href="#">Отзывы</a>
                                     </li>
-                                    <li class="header-menu-list__item">
+                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_faq">
                                         <a class="header-menu-list__link" href="#">FAQ</a>
                                     </li>
                                 </ul>
@@ -76,7 +77,7 @@
                             <span class="rating__box">
                                 <svg class="rating__icon"><use xlink:href="assets/images/icon.svg#icon_star"></use></svg>
                             </span>
-                        </span>&nbsp;рейтинг в AppStore</p>
+                        </span>рейтинг в AppStore</p>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
                     <ul class="advantages-content-list">
                         <li class="advantages-content-list__item advantages-content-list__item advantages-content-list__item_comfort">
                             <h2 class="advantages-content-list__item-title">Удобно</h2>
-                            <p class="advantages-content-list__item-text">Закажите первоклассный массаж за считанные секунды в мобильном приложении или на сайте</p>
+                            <p class="advantages-content-list__item-text">Закажите первоклассный массаж за считанные секунды в&nbsp;мобильном приложении или на сайте</p>
                         </li>
                         <li class="advantages-content-list__item advantages-content-list__item advantages-content-list__item_pro">
                             <h2 class="advantages-content-list__item-title">Профессионально</h2>
@@ -97,14 +98,14 @@
                         </li>
                         <li class="advantages-content-list__item advantages-content-list__item advantages-content-list__item_cosy">
                             <h2 class="advantages-content-list__item-title">Приятно</h2>
-                            <p class="advantages-content-list__item-text">Получайте удовольствие от массажа, где вам удобно, 7 дней в неделю с 08.00 до 22.00, 365 дней в году</p>
+                            <p class="advantages-content-list__item-text">Получайте удовольствие от&nbsp;массажа, где вам удобно,&nbsp;7 дней в неделю с 08.00 до 22.00, 365 дней в году</p>
                         </li>
                     </ul>
                     <ul class="advantages-content-links">
                         <li class="advantages-content-links__item advantages-content-links__item advantages-content-links__item_appstore">
                             <a href="#">
                                 <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" />
+                                    <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" width="203px" height="60px" />
                                     <source media="(min-width: 768px)" srcset="./assets/images/appstore_tab.png" />
                                     <img src="./assets/images/appstore_mob.png" alt="Загрузите в Appstore" />
                                 </picture>
@@ -113,7 +114,7 @@
                         <li class="advantages-content-links__item advantages-content-links__item advantages-content-links__item_googleplay">
                             <a href="#">
                                 <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" />
+                                    <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" width="203px" height="60px" />
                                     <source media="(min-width: 768px)" srcset="./assets/images/google_tab.png" />
                                     <img src="./assets/images/google_mob.png" alt="Загрузите в Google Play" />
                                 </picture>
@@ -128,8 +129,10 @@
         <div class="type-slider__section-head">
             <div class="container">
                 <div class="order-now">
-                    <p class="order-now__text">Только в этом месяце скидка на первый заказ</p>
-                    <p class="order-now__discount">1000 руб.</p>
+                    <div class="price-wrapper">
+                        <p class="order-now__text">Только в этом месяце скидка на первый заказ</p>
+                        <p class="order-now__discount">1000 руб.</p>
+                    </div>
                     <a class="button order-now__btn">
                         <p>Заказать</p>
                     </a>
@@ -148,29 +151,29 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="slider__slide">
+                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                    <p class="slider__text">Лимфодренажный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__slide">
+                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                    <p class="slider__text">Лимфодренажный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__slide">
+                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                    <p class="slider__text">Лимфодренажный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__slide">
                                 <div class="type-slide-wrapper type-slide-wrapper_classic">
                                     <p class="slider__text">Классический</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
                                 </div>
                             </div>
                         </div>
@@ -252,59 +255,61 @@
     </section>
     <section class="masseur">
         <div class="container">
-            <h2 class="masseur__title">Квалифицированные массажисты</h2>
-            <p class="masseur__text">Все специалисты сдают теоретические и практические экзамены, чтобы стать партнером Welny</p>
-            <div class="slider-wrapper">
-                <div class="slider2 swiper-container js-slider2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slider2__slide">
-                                <div class="masseur-slide-wrapper">
-                                    <div class="masseur-slide-heading">
-                                        <div class="rating-wrapper">
-                                            <img src="./assets/images/big-star.svg" alt="звезда" />
-                                            <p class="slider2__rating">4.9</p>
+            <div class="masseur-wrapper">
+                <h2 class="masseur__title">Квалифицированные массажисты</h2>
+                <p class="masseur__text">Все специалисты сдают теоретические и практические экзамены, чтобы стать партнером Welny</p>
+                <div class="slider2-wrapper">
+                    <div class="slider2 swiper-container js-slider2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider2__slide">
+                                    <div class="masseur-slide-wrapper">
+                                        <div class="masseur-slide-heading">
+                                            <div class="rating-wrapper">
+                                                <img src="./assets/images/big-star.svg" alt="звезда" />
+                                                <p class="slider2__rating">4.9</p>
+                                            </div>
+                                            <img class="slider2__photo" src="./assets/images/olga_desk.jpg" alt="Ольга" title="" />
+                                            <p class="slider2__name">Ольга</p>
                                         </div>
-                                        <img class="slider2__photo" src="./assets/images/olga_desk.jpg" alt="Ольга" title="" />
-                                        <p class="slider2__name">Ольга</p>
+                                        <p class="slider2__qualify">стаж работы более 10 лет. Регулярно&nbsp;повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
                                     </div>
-                                    <p class="slider2__qualify">стаж работы более 10 лет. Регулярно&nbsp;повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider2__slide">
+                                    <div class="masseur-slide-wrapper">
+                                        <div class="masseur-slide-heading">
+                                            <div class="rating-wrapper">
+                                                <img src="./assets/images/big-star.svg" alt="звезда" />
+                                                <p class="slider2__rating">4.9</p>
+                                            </div>
+                                            <img class="slider2__photo" src="./assets/images/raisa_desk.jpg" alt="Раиса" title="" />
+                                            <p class="slider2__name">Раиса</p>
+                                        </div>
+                                        <p class="slider2__qualify">стаж работы более 10 лет. Регулярно&nbsp;повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider2__slide">
+                                    <div class="masseur-slide-wrapper">
+                                        <div class="masseur-slide-heading">
+                                            <div class="rating-wrapper">
+                                                <img src="./assets/images/big-star.svg" alt="звезда" />
+                                                <p class="slider2__rating">4.9</p>
+                                            </div>
+                                            <img class="slider2__photo" src="./assets/images/natalya_desk.jpg" alt="Наталия" title="" />
+                                            <p class="slider2__name">Наталия</p>
+                                        </div>
+                                        <p class="slider2__qualify">стаж работы более 10 лет. Регулярно&nbsp;повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slider2__slide">
-                                <div class="masseur-slide-wrapper">
-                                    <div class="masseur-slide-heading">
-                                        <div class="rating-wrapper">
-                                            <img src="./assets/images/big-star.svg" alt="звезда" />
-                                            <p class="slider2__rating">4.9</p>
-                                        </div>
-                                        <img class="slider2__photo" src="./assets/images/natalya_desk.jpg" alt="Наталия" title="" />
-                                        <p class="slider2__name">Наталия</p>
-                                    </div>
-                                    <p class="slider2__qualify">стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider2__slide">
-                                <div class="masseur-slide-wrapper">
-                                    <div class="masseur-slide-heading">
-                                        <div class="rating-wrapper">
-                                            <img src="./assets/images/big-star.svg" alt="звезда" />
-                                            <p class="slider2__rating">4.9</p>
-                                        </div>
-                                        <img class="slider2__photo" src="./assets/images/raisa_desk.jpg" alt="Раиса" title="" />
-                                        <p class="slider2__name">Раиса</p>
-                                    </div>
-                                    <p class="slider2__qualify">стаж работы более 10 лет. Регулярно повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="slider2__button slider2__button_prev"></div>
+                        <div class="slider2__button slider2__button_next"></div>
                     </div>
-                    <div class="slider2__button slider2__button_prev"></div>
-                    <div class="slider2__button slider2__button_next"></div>
                 </div>
             </div>
         </div>
@@ -312,7 +317,9 @@
     <section class="reviews">
         <div class="reviews__section-head">
             <div class="container">
-                <h2 class="reviews__title">Отзывы пользователей</h2>
+                <div class="reviews-title-wrapper">
+                    <h2 class="reviews__title">Отзывы пользователей</h2>
+                </div>
                 <div class="slider3-wrapper">
                     <div class="slider3 swiper-container js-slider3">
                         <div class="swiper-wrapper">
@@ -370,53 +377,55 @@
     <section class="faq">
         <div class="faq__section-head">
             <div class="container">
-                <h2 class="faq__title">FAQ</h2>
-                <div class="accordions" data-accordion-multiple="true">
-                    <div class="accordion is-active">
-                        <div class="accordion__header">
-                            <div class="accordion__button js-accordion-button">Как это работает?</div>
-                        </div>
-                        <div class="accordion__body">Массажист приедет по указанному адресу и привезет с собой все необходимое для сеанса: массажный стол, масла и простыни. Вам остается только открыть ему дверь и получать удовольствие от массажа.
-                            <div class="accordion-info">
-                                <div class="accordion-info__location">
-                                    <img src="./assets/images/location.svg" />
-                                    <p class="accordion-info__location-text">Сервис предоставляется в Москве</p>
+                <div class="faq-wrapper">
+                    <h2 class="faq__title">FAQ</h2>
+                    <div class="accordions" data-accordion-multiple="true">
+                        <div class="accordion is-active">
+                            <div class="accordion__header">
+                                <div class="accordion__button js-accordion-button">Как это работает?</div>
+                            </div>
+                            <div class="accordion__body">Массажист приедет по указанному адресу и привезет с собой все необходимое для сеанса: массажный стол, масла и простыни. Вам остается только открыть ему дверь и получать удовольствие от массажа.
+                                <div class="accordion-info">
+                                    <div class="accordion-info__location">
+                                        <img src="./assets/images/location.svg" />
+                                        <p class="accordion-info__location-text">Сервис предоставляется в Москве</p>
+                                    </div>
+                                    <div class="accordion-info__time">
+                                        <img src="./assets/images/hourglass.svg" />
+                                        <p class="accordion-info__time-text">c 8:00 до 23:00 без выходных</p>
+                                    </div>
                                 </div>
-                                <div class="accordion-info__time">
-                                    <img src="./assets/images/location.svg" />
-                                    <p class="accordion-info__time-text">c 8:00 до 23:00 без выходных</p>
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/watch?time_continue=2&amp;v=p4Q1GBjU54w" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                                 </div>
                             </div>
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/watch?time_continue=2&amp;v=p4Q1GBjU54w" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__header">
+                                <div class="accordion__button js-accordion-button">Могу ли я перенести или отменить дату сеанса массажа?</div>
                             </div>
+                            <div class="accordion__body">Конечно, вы можете перенести свой сеанс массажа без потери средств более, чем за 2 часа до начала процедуры. Если сеанс будет отменен позже 2 часов до приезда мастера, с вашей карты будет списано 30% от стоимости заказа, позже
+                                30 минут — полная стоимость. Мы надеемся на ваше понимание, ведь дорога специалистов занимает около 40 минут их личного времени.</div>
                         </div>
-                    </div>
-                    <div class="accordion">
-                        <div class="accordion__header">
-                            <div class="accordion__button js-accordion-button">Могу ли я перенести или отменить дату сеанса массажа?</div>
+                        <div class="accordion">
+                            <div class="accordion__header">
+                                <div class="accordion__button js-accordion-button">Безопасно ли оплачивать услуги в приложении Welny?</div>
+                            </div>
+                            <div class="accordion__body">Да, абсолютно. Оплата производится через 128-bit SSL-шифрование, в качестве платежной системы мы используем популярный сервис Payture. Наш сервис подключен к интернет-эквайрингу, и вы можете оплатить услугу банковской картой
+                                Visa или Mastercard. При оплате услуги откроется защищенное окно с платежной страницей процессингового центра Payture, где вам необходимо ввести данные вашей банковской карты.</div>
                         </div>
-                        <div class="accordion__body">Конечно, вы можете перенести свой сеанс массажа без потери средств более, чем за 2 часа до начала процедуры. Если сеанс будет отменен позже 2 часов до приезда мастера, с вашей карты будет списано 30% от стоимости заказа, позже
-                            30 минут — полная стоимость. Мы надеемся на ваше понимание, ведь дорога специалистов занимает около 40 минут их личного времени.</div>
-                    </div>
-                    <div class="accordion">
-                        <div class="accordion__header">
-                            <div class="accordion__button js-accordion-button">Безопасно ли оплачивать услуги в приложении Welny?</div>
+                        <div class="accordion">
+                            <div class="accordion__header">
+                                <div class="accordion__button js-accordion-button">Нужен ли мне собственный массажный стол?</div>
+                            </div>
+                            <div class="accordion__body">Нет, специалист возьмет с собой свой стол.</div>
                         </div>
-                        <div class="accordion__body">Да, абсолютно. Оплата производится через 128-bit SSL-шифрование, в качестве платежной системы мы используем популярный сервис Payture. Наш сервис подключен к интернет-эквайрингу, и вы можете оплатить услугу банковской картой Visa
-                            или Mastercard. При оплате услуги откроется защищенное окно с платежной страницей процессингового центра Payture, где вам необходимо ввести данные вашей банковской карты.</div>
-                    </div>
-                    <div class="accordion">
-                        <div class="accordion__header">
-                            <div class="accordion__button js-accordion-button">Нужен ли мне собственный массажный стол?</div>
+                        <div class="accordion">
+                            <div class="accordion__header">
+                                <div class="accordion__button js-accordion-button">Могу ли я использовать свои масло и простыни?</div>
+                            </div>
+                            <div class="accordion__body">Конечно! Просто сообщите об этом мастеру.</div>
                         </div>
-                        <div class="accordion__body">Нет, специалист возьмет с собой свой стол.</div>
-                    </div>
-                    <div class="accordion">
-                        <div class="accordion__header">
-                            <div class="accordion__button js-accordion-button">Могу ли я использовать свои масло и простыни?</div>
-                        </div>
-                        <div class="accordion__body">Конечно! Просто сообщите об этом мастеру.</div>
                     </div>
                 </div>
             </div>
@@ -425,48 +434,50 @@
     <section class="about-us">
         <div class="about-us__section-head">
             <div class="container">
-                <h2 class="about-us__title about-us__title about-us__title_top">О нас говорят</h2>
-                <ul class="about-list">
-                    <li class="about-list__item about-list__item about-list__item_ntv">
-                        <picture>
-                            <source media="(min-width: 1440px)" srcset="./assets/images/ntv_desk.png" />
-                            <source media="(min-width: 768px)" srcset="./assets/images/ntv_tab.png" />
-                            <img src="./assets/images/ntv_mob.png" alt="НТВ" />
-                        </picture>
-                        <p class="about-list__text">“Заказать массаж также просто, как пиццу!”</p>
-                    </li>
-                    <li class="about-list__item about-list__item about-list__item_vc">
-                        <picture>
-                            <source media="(min-width: 1440px)" srcset="./assets/images/vc_desk.png" />
-                            <source media="(min-width: 768px)" srcset="./assets/images/vc_tab.png" />
-                            <img src="./assets/images/vc_mob.png" alt="vc.ru" />
-                        </picture>
-                        <p class="about-list__text">“Массаж с доставкой на дом уже не выглядит сумасшедшей идеей”</p>
-                    </li>
-                </ul>
-                <div class="download-wrapper">
-                    <h2 class="about-us__title about-us__title about-us__title_install">Загрузите приложение Welny</h2>
-                    <p class="about-us__text">№1 приложение в России в категории Здоровье и фитнес в AppStore по данным App Annie</p>
-                    <ul class="about-content-links">
-                        <li class="about-content-links__item about-content-links__item about-content-links__item_appstore">
-                            <a href="#">
-                                <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" />
-                                    <source media="(min-width: 768px)" srcset="./assets/images/appstore_tab.png" />
-                                    <img src="./assets/images/appstore_mob.png" alt="Загрузите в Appstore" />
-                                </picture>
-                            </a>
+                <div class="about-wrapper">
+                    <h2 class="about-us__title about-us__title about-us__title_top">О нас говорят</h2>
+                    <ul class="about-list">
+                        <li class="about-list__item about-list__item about-list__item_ntv">
+                            <picture>
+                                <source media="(min-width: 1440px)" srcset="./assets/images/ntv_desk.png" />
+                                <source media="(min-width: 768px)" srcset="./assets/images/ntv_tab.png" />
+                                <img src="./assets/images/ntv_mob.png" alt="НТВ" />
+                            </picture>
+                            <p class="about-list__text">“Заказать массаж также просто, как пиццу!”</p>
                         </li>
-                        <li class="about-content-links__item about-content-links__item about-content-links__item_googleplay">
-                            <a href="#">
-                                <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" />
-                                    <source media="(min-width: 768px)" srcset="./assets/images/google_tab.png" />
-                                    <img src="./assets/images/google_mob.png" alt="Загрузите в Google Play" />
-                                </picture>
-                            </a>
+                        <li class="about-list__item about-list__item about-list__item_vc">
+                            <picture>
+                                <source media="(min-width: 1440px)" srcset="./assets/images/vc_desk.png" />
+                                <source media="(min-width: 768px)" srcset="./assets/images/vc_tab.png" />
+                                <img src="./assets/images/vc_mob.png" alt="vc.ru" />
+                            </picture>
+                            <p class="about-list__text">“Массаж с доставкой на дом уже не выглядит сумасшедшей идеей”</p>
                         </li>
                     </ul>
+                    <div class="download-wrapper">
+                        <h2 class="about-us__title about-us__title about-us__title_install">Загрузите приложение Welny</h2>
+                        <p class="about-us__text">№1 приложение в России в категории Здоровье и фитнес в AppStore по данным App Annie</p>
+                        <ul class="about-content-links">
+                            <li class="about-content-links__item about-content-links__item about-content-links__item_appstore">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" />
+                                        <source media="(min-width: 768px)" srcset="./assets/images/appstore_tab.png" />
+                                        <img src="./assets/images/appstore_mob.png" alt="Загрузите в Appstore" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="about-content-links__item about-content-links__item about-content-links__item_googleplay">
+                                <a href="#">
+                                    <picture>
+                                        <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" />
+                                        <source media="(min-width: 768px)" srcset="./assets/images/google_tab.png" />
+                                        <img src="./assets/images/google_mob.png" alt="Загрузите в Google Play" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -514,6 +525,12 @@
                         <ul class="footer-social">
                             <li class="footer-social__item">
                                 <a class="footer-social__link" href="#">
+                                    <img src="./assets/images/footer_insta.svg" />
+                                    <p class="visually-hidden">Instagramm</p>
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__link" href="#">
                                     <img src="./assets/images/footer_vk.svg" />
                                     <p class="visually-hidden">VKontakte</p>
                                 </a>
@@ -522,12 +539,6 @@
                                 <a class="footer-social__link" href="#">
                                     <img src="./assets/images/footer_facebook.svg" />
                                     <p class="visually-hidden">Facebook</p>
-                                </a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#">
-                                    <img src="./assets/images/footer_insta.svg" />
-                                    <p class="visually-hidden">Instagramm</p>
                                 </a>
                             </li>
                         </ul>
