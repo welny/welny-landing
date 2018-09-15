@@ -19,6 +19,7 @@
       @include text-12;
       font-weight: 400;
       text-align: center;
+      margin-top: 230px;
     }
   }
 }
@@ -51,6 +52,7 @@
       &__text_bottom {
         @include text-8;
         text-align: right;
+        margin-top: 270px;
       }
     }
   }
@@ -84,6 +86,7 @@
       &__text_bottom {
         @include text-4;
         font-weight: 400;
+        margin-top: 395px;
       }
     }
 

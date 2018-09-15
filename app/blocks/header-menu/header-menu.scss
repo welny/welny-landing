@@ -70,6 +70,10 @@
   &__link {
     @include text-4;
     color: white;
+
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__text {

@@ -54,10 +54,16 @@
 
 .btn__office {
   @include text-12;
-  padding: 7px 4px;
+  padding: 5px 2px;
   background-color: $color-main;
   border-radius: 5px;
   color: white;
+  border: 2px solid $color-main;
+
+  &:hover {
+    background-color: transparent;
+    opacity: 1;
+  }
 }
 
 
@@ -156,7 +162,7 @@
 
   .btn__office {
     @include text-7;
-    padding: 14px 17px;
+    padding: 12px 15px;
     background-color: $color-main;
     border-radius: 5px;
     color: white;
@@ -250,7 +256,7 @@
   }
 
   .footer-submenu {
-    width: 100%;
+    width: auto;
     margin-bottom: 14px;
 
     &__item {
@@ -269,7 +275,7 @@
 
   .btn__office {
     @include text-4;
-    padding: 14px 10px;
+    padding: 12px 8px;
     background-color: $color-main;
     border-radius: 5px;
     color: white;
