@@ -92,7 +92,6 @@ export default function slider() {
       1440: {
         centeredSlides: true,
         slidesPerView: 3,
-        // spaceBetween: -50,
       },
     },
   });

@@ -447,11 +447,9 @@
   }
 
   .swiper-slide {
-    .type-slide-wrapper {
-      background-color: transparent;
-      opacity: 0.5;
-      transform: scale(0.43) translateY(-45px);
-    }
+    background-color: transparent;
+    transform: scale(0.43) translateY(-45px) translateX(255px);
+
     &-active {
       .type-slide-wrapper {
         opacity: 1 !important;
@@ -460,6 +458,13 @@
       }
     }
   }
+
+  .swiper-slide-next ~ .swiper-slide {
+    background-color: transparent;
+    transform: scale(0.43) translateY(-45px) translateX(-255px);
+  }
+
+
 
   // .swiper-wrapper {
   //   width: 800px;
