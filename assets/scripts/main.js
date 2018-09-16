@@ -18,13 +18,15 @@ menuBtn.addEventListener('click', function () {
     headerList.classList.remove('visually-hidden');
     menuBtn.classList.remove('menu-closed');
     menuBtn.classList.add('menu-opened');
+    menuBtn.classList.add('js-freeze');
+    menuBtn.classList.remove('js-unfreeze');
   } else {
     headerList.classList.add('visually-hidden');
     menuBtn.classList.add('menu-closed');
     menuBtn.classList.remove('menu-opened');
+    menuBtn.classList.add('js-unfreeze');
+    menuBtn.classList.remove('js-freeze');
   }
 });
-
-
 
 /* eslint-enable */

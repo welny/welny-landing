@@ -14,49 +14,50 @@
 </head>
 
 <body>
+    <div class="header-menu">
+        <div class="header-menu__section-head">
+            <div class="container">
+                <nav class="header-nav">
+                    <button class="header-nav__burger js-toggle js-unfreeze menu-closed">
+                        <p class="visually-hidden">Меню сайта</p>
+                    </button>
+                    <ul class="header-menu-list visually-hidden">
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_about">
+                            <a class="header-menu-list__link" href="#">О Welny</a>
+                        </li>
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_types">
+                            <a class="header-menu-list__link" href="#">Типы
+                                <span class="header-menu-list__span header-menu-list__text">массажа</span>
+                            </a>
+                        </li>
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_prices">
+                            <a class="header-menu-list__link" href="#">Цены</a>
+                        </li>
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_specs">
+                            <a class="header-menu-list__link" href="#">Специалисты</a>
+                        </li>
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_reviews">
+                            <a class="header-menu-list__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="header-menu-list__item header-menu-list__item header-menu-list__item_faq">
+                            <a class="header-menu-list__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <a class="link link_icon header-nav__logo">
+                        <svg class="link__icon"><use xlink:href="assets/images/icon.svg#icon_logo_head"></use></svg>
+                        <span class="link__text"></span>
+                    </a>
+                    <button class="header-nav__login" href="#">
+                        <p class="header-nav__personal">Личный кабинет</p>
+                        <p class="header-nav__enter">Войти</p>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__section-head">
             <div class="container">
-                <div class="header-menu">
-                    <div class="header-menu__section-head">
-                        <div class="container">
-                            <nav class="header-nav">
-                                <button class="header-nav__burger js-toggle menu-closed">
-                                    <p class="visually-hidden">Меню сайта</p>
-                                </button>
-                                <ul class="header-menu-list">
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_about">
-                                        <a class="header-menu-list__link" href="#">О Welny</a>
-                                    </li>
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_types">
-                                        <a class="header-menu-list__link" href="#">Типы</a>
-                                        <p class="header-menu-list__text">массажа</p>
-                                    </li>
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_prices">
-                                        <a class="header-menu-list__link" href="#">Цены</a>
-                                    </li>
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_specs">
-                                        <a class="header-menu-list__link" href="#">Специалисты</a>
-                                    </li>
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_reviews">
-                                        <a class="header-menu-list__link" href="#">Отзывы</a>
-                                    </li>
-                                    <li class="header-menu-list__item header-menu-list__item header-menu-list__item_faq">
-                                        <a class="header-menu-list__link" href="#">FAQ</a>
-                                    </li>
-                                </ul>
-                                <a class="link link_icon header-nav__logo">
-                                    <svg class="link__icon"><use xlink:href="assets/images/icon.svg#icon_logo_head"></use></svg>
-                                    <span class="link__text"></span>
-                                </a>
-                                <button class="header-nav__login" href="#">
-                                    <p class="header-nav__personal">Личный кабинет</p>
-                                    <p class="header-nav__enter">Войти</p>
-                                </button>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
                 <div class="header-content">
                     <p class="header-content__text header-content__text_top">Сервис онлайн-заказ массажа
                         <br/>на дом в Москве</p>
@@ -105,7 +106,7 @@
                         <li class="advantages-content-links__item advantages-content-links__item advantages-content-links__item_appstore">
                             <a href="#">
                                 <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" width="203px" height="60px" />
+                                    <source media="(min-width: 1440px)" srcset="./assets/images/appstore_desk.png" />
                                     <source media="(min-width: 768px)" srcset="./assets/images/appstore_tab.png" />
                                     <img src="./assets/images/appstore_mob.png" alt="Загрузите в Appstore" />
                                 </picture>
@@ -114,7 +115,7 @@
                         <li class="advantages-content-links__item advantages-content-links__item advantages-content-links__item_googleplay">
                             <a href="#">
                                 <picture>
-                                    <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" width="203px" height="60px" />
+                                    <source media="(min-width: 1440px)" srcset="./assets/images/google_desk.png" />
                                     <source media="(min-width: 768px)" srcset="./assets/images/google_tab.png" />
                                     <img src="./assets/images/google_mob.png" alt="Загрузите в Google Play" />
                                 </picture>
@@ -137,53 +138,55 @@
                         <p>Заказать</p>
                     </a>
                 </div>
-                <div class="wrapper-title">
-                    <h2 class="type-slider__title">Типы массажа</h2>
-                </div>
-                <div class="slider swiper-container js-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_sport">
-                                    <p class="slider__text">Спортивный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_classic">
-                                    <p class="slider__text">Классический</p>
-                                </div>
+            </div>
+        </div>
+        <div class="slider-wrapper">
+            <div class="wrapper-title">
+                <h2 class="type-slider__title">Типы массажа</h2>
+            </div>
+            <div class="slider swiper-container js-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider__slide">
+                            <div class="type-slide-wrapper type-slide-wrapper_sport">
+                                <p class="slider__text">Спортивный</p>
                             </div>
                         </div>
                     </div>
-                    <div class="slider__button slider__button_prev"></div>
-                    <div class="slider__button slider__button_next"></div>
+                    <div class="swiper-slide">
+                        <div class="slider__slide">
+                            <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                <p class="slider__text">Лимфодренажный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__slide">
+                            <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                <p class="slider__text">Лимфодренажный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__slide">
+                            <div class="type-slide-wrapper type-slide-wrapper_limfo">
+                                <p class="slider__text">Лимфодренажный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__slide">
+                            <div class="type-slide-wrapper type-slide-wrapper_classic">
+                                <p class="slider__text">Классический</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="wrapper-question">
-                    <h2 class="type-slider__question">Имеете дело с высокими нагрузками?</h2>
-                </div>
+                <div class="slider__button slider__button_prev"></div>
+                <div class="slider__button slider__button_next"></div>
+            </div>
+            <div class="wrapper-question">
+                <h2 class="type-slider__question">Имеете дело с высокими нагрузками?</h2>
             </div>
         </div>
     </section>
@@ -201,6 +204,10 @@
                         <p class="answers__text">Удобно планировать и совмещать с тренировками</p>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="order-wrapper">
+            <div class="container">
                 <div class="order">
                     <h2 class="order__title">Спортивный SPA Welny</h2>
                     <a class="order__button">
@@ -208,6 +215,9 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/images/order-now_desk.png" />
         </div>
     </section>
     <section class="prices">
@@ -308,6 +318,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="slider2__slide">
+                                    <div class="masseur-slide-wrapper">
+                                        <div class="masseur-slide-heading">
+                                            <div class="rating-wrapper">
+                                                <img src="./assets/images/big-star.svg" alt="звезда" />
+                                                <p class="slider2__rating">4.9</p>
+                                            </div>
+                                            <img class="slider2__photo" src="./assets/images/olga_desk.jpg" alt="Ольга" title="" />
+                                            <p class="slider2__name">Ольга</p>
+                                        </div>
+                                        <p class="slider2__qualify">стаж работы более 10 лет. Регулярно&nbsp;повышает квалификацию и совершенствует методики массажа. Имеет опыт работы в ведущих медицинских центрах (больница №1 им. Пирогова, центр диетологии НИИ питания...</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="slider2__button slider2__button_prev"></div>
                         <div class="slider2__button slider2__button_next"></div>
@@ -335,39 +360,36 @@
                                                 <p class="slider3__date">июнь 2018</p>
                                             </div>
                                             <p class="slider3__text">Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,продолжаешь кушать вкусняшки и заваливаешься спать.</p>
-                                            <div class="link-wrapper">
-                                                <a class="slider3__link" href="#">Отзыв в Instagram</a>
-                                            </div>
+                                            <a class="slider3__link"
+                                                href="#">Отзыв в Instagram</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="slider3__slide">
                                         <div class="slider3__item">
-                                            <div class="author">
+                                            <div class="author-wrapper">
                                                 <p class="slider3__name">Ева</p>
                                                 <img class="slider3__photo" src="./assets/images/eva_desk.jpg" alt="Ева фото" title="" />
                                                 <p class="slider3__date">июнь 2018</p>
                                             </div>
                                             <p class="slider3__text">Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,продолжаешь кушать вкусняшки и заваливаешься спать.</p>
-                                            <div class="link-wrapper">
-                                                <a class="slider3__link" href="#">Отзыв в Instagram</a>
-                                            </div>
+                                            <a class="slider3__link"
+                                                href="#">Отзыв в Instagram</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="slider3__slide">
                                         <div class="slider3__item">
-                                            <div class="author">
+                                            <div class="author-wrapper">
                                                 <p class="slider3__name">Ева</p>
                                                 <img class="slider3__photo" src="./assets/images/eva_desk.jpg" alt="Ева фото" title="" />
                                                 <p class="slider3__date">июнь 2018</p>
                                             </div>
                                             <p class="slider3__text">Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде,продолжаешь кушать вкусняшки и заваливаешься спать.</p>
-                                            <div class="link-wrapper">
-                                                <a class="slider3__link" href="#">Отзыв в Instagram</a>
-                                            </div>
+                                            <a class="slider3__link"
+                                                href="#">Отзыв в Instagram</a>
                                         </div>
                                     </div>
                                 </div>
@@ -402,7 +424,7 @@
                                     </div>
                                 </div>
                                 <div class="video-wrapper">
-                                    <iframe src="https://www.youtube.com/watch?time_continue=2&amp;v=p4Q1GBjU54w" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                    <iframe src="https://www.youtube.com/watch?time_continue=2&amp;v=p4Q1GBjU54w" frameborder="0" allowfullscreen="allowfullscreen" alt="видео"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +463,9 @@
         <div class="about-us__section-head">
             <div class="container">
                 <div class="about-wrapper">
-                    <h2 class="about-us__title about-us__title about-us__title_top">О нас говорят</h2>
+                    <div class="about-title-wrapper">
+                        <h2 class="about-us__title about-us__title about-us__title_top">О нас говорят</h2>
+                    </div>
                     <ul class="about-list">
                         <li class="about-list__item about-list__item about-list__item_ntv">
                             <picture>
