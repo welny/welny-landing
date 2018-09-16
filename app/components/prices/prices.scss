@@ -39,7 +39,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 19px 19px 8px;
+  margin: 19px auto 8px;
+  width: 282px;
 
   &__item {
     display: flex;
@@ -66,25 +67,29 @@
 
   &__item-time {
     @include text-3;
-    color: $color-main;
+    color: $color-orange;
     margin-bottom: 3px;
   }
 
   &__item-text {
+    opacity: 0.8;
     @include text-7;
     line-height: calc(27 / 18);
     margin-left: 3px;
     vertical-align: middle;
 
     &_discount {
+      opacity: 1;
       @include text-10;
     }
 
     &_big {
+      opacity: 1;
       @include text-3;
     }
 
     &_logo {
+      opacity: 1;
       @include text-7;
       position: relative;
       top: 4px;
@@ -94,6 +99,8 @@
 
 @include screen ("tablet") {
   .prices {
+    color: black;
+
     &__title {
       @include text-4;
       margin-bottom: 26px;
@@ -116,7 +123,8 @@
   }
 
   .prices-list {
-    margin: 22px 100px 9px;
+    margin: 22px auto 9px;
+    width: 568px;
 
     &__item {
       width: auto;
@@ -126,6 +134,7 @@
       &_120 {
         .prices-list__item-text {
           line-height: calc(34 / 18);
+          color: $color-basic;
         }
 
         .prices-list__item-time {
@@ -161,7 +170,8 @@
   }
 
   .prices-list {
-    margin: 45px 256px 24px;
+    width: 927px;
+    margin: 45px auto 24px;
 
     .li-wrapper {
       .prices-list__item-time {

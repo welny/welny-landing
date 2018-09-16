@@ -11,7 +11,7 @@ $grid-gap: 20px; // Расстояние между колонками
 $grid-gap-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
 $breakpoints: (
-  'xl': 1440px,
+  'xl': 1439px,
   'md': 767px,
 );
 
@@ -22,8 +22,11 @@ $color-basic: #534741; // Основной цвет текста (применя
 $color-placeholder: #777; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
 $color-main: #E08524; // Основной фирменный цвет
+$color-orange: #E08629; // цвет для цен
+$color-some-text: #241009; // еще один цвет для текста.
 $color-border: #2B140E; // Основной цвет границ таблиц, секций
 $color-brown: #773323; // Заливка отдельных блоков
+$color-arrows: #AA4E37; // цвет стрелок слайдера типов массажа
 $color-fill-clear: rgba(253, 240, 230, 0); // Цвет фоновых заливок, прозрачный
 $color-fill-semi: rgba(253, 240, 230, 0.8); // Цвет фоновых заливок, полупрозарчный
 $color-fill-solid: #fdf0e6; // $color-fill без прозрачости

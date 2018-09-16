@@ -1,11 +1,11 @@
 .header {
   display: block;
+  background: url("../images/top-banner.png") -39px 0 no-repeat;
+  background-size: auto 316px;
 
   &-content {
     min-height: 290px;
     padding: 15px 14px 8px;
-    background: url("../images/top-banner.png") -39px 0 no-repeat;
-    background-size: auto 316px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,6 +17,7 @@
 
     &__text_bottom {
       @include text-12;
+      color: $color-border;
       font-weight: 400;
       text-align: center;
       margin-top: 230px;
@@ -39,11 +40,12 @@
 
 @include screen("tablet") {
   .header {
+    background: url("../images/top-banner.png") left top -40px no-repeat;
+    background-size: cover;
+
     &-content {
       min-height: 366px;
       padding: 15px 19px;
-      background: url("../images/top-banner.png") left top -40px no-repeat;
-      background-size: cover;
 
       &__text_top {
         @include text-4;
@@ -71,10 +73,13 @@
 
 @include screen("desktop-wide") {
   .header {
+    background: url("../images/top-banner.png") left center no-repeat;
+    background-size: cover;
+
     &-content {
       min-height: 550px;
       padding: 10px 57px 14px 27px;
-      background: url("../images/top-banner.png") left center no-repeat;
+      background: transparent;
       // background-size: auto 316px;
 
       &__text_top {

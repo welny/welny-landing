@@ -10,7 +10,11 @@ mixin types()
           +e.P.__text Снимет напряжение и расслабит тело
         +e.LI.__item.__item_plan
           +e.P.__text Удобно планировать и совмещать с тренировками
-      +b.order
-        +e.H2.__title Спортивный SPA Welny
-        +e.A.__button
-          p Заказать
+    .order-wrapper
+      .container
+        +b.order
+          +e.H2.__title Спортивный SPA Welny
+          +e.A.__button
+            p Заказать
+    .img-wrapper
+      img(src="./assets/images/order-now_desk.png")

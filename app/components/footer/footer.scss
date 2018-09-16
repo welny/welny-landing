@@ -1,5 +1,6 @@
 .footer {
   display: block;
+  background-color: $color-border;
 
   &__logo {
     width: 46px;
@@ -8,7 +9,6 @@
 }
 
 .footer-wrapper {
-  background-color: $color-border;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
   background-color: $color-main;
   border-radius: 5px;
   color: white;
-  border: 2px solid $color-main;
+  border: 3px solid $color-main;
 
   &:hover {
     background-color: transparent;
@@ -100,7 +100,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-bottom: 2px solid rgba(255, 255, 255,0.5);
+    border-bottom: 1px solid rgba(255, 255, 255,0.5);
   }
 
   &__link,
@@ -130,7 +130,7 @@
   }
 
   .footer-nav {
-    width: auto;
+    width: 87%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -194,8 +194,8 @@
   }
 
   .legal {
-    margin: 0 auto;
-    width: 587px;
+    margin: 0 95px;
+    width: 100%;
 
     &__link,
     &__copyright {

@@ -1,5 +1,6 @@
 .types {
   display: block;
+  position: relative;
 
   &__question {
     @include text-7;
@@ -57,14 +58,18 @@
   }
 }
 
+.order-wrapper {
+  background: linear-gradient(transparent 20px, $color-brown 20px);
+}
+
 .order {
   padding: 38px 47px;
   min-height: 258px;
-  background: url("../images/order-now_mobile.png") top 1px center no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+
   // background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
 
   &__title {
@@ -72,6 +77,7 @@
     color: white;
     text-align: right;
     max-width: 109px;
+    margin-right: 27px;
   }
 
   &__button {
@@ -95,6 +101,17 @@
   }
 }
 
+.img-wrapper {
+  position: absolute;
+  bottom: 89px;
+  left: 0;
+
+  img {
+    width: 355px;
+    height: 241px;
+  }
+}
+
 @include screen ("tablet") {
   .types__question {
     @include text-4;
@@ -110,9 +127,10 @@
       line-height: calc(24 / 18);
       justify-content: flex-start;
       text-align: center;
-      width: 150px;
+      width: 26%;
       padding: 0;
       padding-top: 166px;
+      color: black;
 
     &::before {
       @include pseudo;
@@ -147,11 +165,17 @@
     }
   }
 
+  .order-wrapper {
+    background: linear-gradient(transparent 20px, $color-brown 20px);
+  }
+
   .order {
-    padding: 10px 112px;
+    padding: 0;
+    margin-left: auto;
     flex-direction: column;
     justify-content: center;
-    background: url("../images/order-now_tab.png") top -3px left no-repeat, linear-gradient(transparent 20px, $color-brown 20px);
+    align-items: center;
+    width: 48%;
 
     &__title {
       @include text-4;
@@ -164,7 +188,17 @@
       @include text-7;
       width: 119px;
       height: 48px;
-      margin-right: 22px;
+      // margin-right: 22px;
+    }
+  }
+
+  .img-wrapper {
+    bottom: -26px;
+    left: 0;
+
+    img {
+      width: 448px;
+      height: 303px;
     }
   }
 }
@@ -184,6 +218,7 @@
       width: 260px;
       padding: 0;
       padding-top: 266px;
+      color: $color-basic;
 
     &::before {
       @include pseudo;
@@ -204,7 +239,7 @@
         order:2;
 
         &::before {
-          background: url("../images/answer_img3_desk.png") top center no-repeat;
+          background: url("../images/answer_img2_desk.png") top center no-repeat;
         }
       }
 
@@ -212,17 +247,21 @@
         order:1;
 
         &::before {
-          background: url("../images/answer_img2_desk.png") top center no-repeat;
+          background: url("../images/answer_img3_desk.png") top center no-repeat;
         }
       }
     }
   }
 
+  .order-wrapper {
+    background: linear-gradient(transparent 46px, $color-brown 46px);
+    background-size: cover;
+  }
+
   .order {
     padding: 143px 198px 133px;
     min-height: 213px;
-    background: url("../images/order-now_desk.png") top left -6px no-repeat, linear-gradient(transparent 46px, $color-brown 46px);
-    background-size: 59%;
+    background: transparent;
 
     &__title {
       @include heading-2;
@@ -238,6 +277,16 @@
       height: 65px;
       margin-right: 61px;
       border-radius: 10px;
+    }
+  }
+
+  .img-wrapper {
+    bottom: -40px;
+    left: 0;
+
+    img {
+      width: 838px;
+      height: 565px;
     }
   }
 }

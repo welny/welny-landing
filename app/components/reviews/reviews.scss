@@ -1,26 +1,28 @@
 .reviews {
   display: block;
+  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear);
 
   &__title {
     @include text-7;
     text-align: center;
-    padding-top: 13px 31px 18px;
-    border-top: 2px solid $color-border;
+    padding: 13px 0 18px;
+    margin: 0 31px;
+    border-top: 3px solid $color-border;
   }
 }
 
 .reviews-title-wrapper {
   padding: 3px 0 0;
-  background-image: linear-gradient(rgba(253, 240, 230, 0.3), $color-fill-clear);
 }
 
-.link-wrapper {
-  position: relative;
-  height: 1px;
-}
+// .link-wrapper {
+//   position: relative;
+//   height: 1px;
+// }
 
 .slider3 {
   &__item {
+    transition: $ease-main;
     padding: 0 16px;
   }
 
@@ -45,24 +47,40 @@
     @include text-13;
     line-height: calc(14 / 10);
     text-align: justify;
+    display: inline;
   }
 
   &__link {
     @include text-13;
-    position: absolute;
-    right: 2px;
-    top: -14px;
+    color: #30abd2;
+    display: inline;
+    margin-right: 0;
+    // position: relative;
+    // right: 2px;
+    // top: -14px;
   }
 
   &__button {
-    top: 45px;
-
-    &_next {
-      right: -14px;
-    }
+    background-color: transparent;
+    top: 6px;
+    width: 18px;
+    height: 18px;
 
     &_prev {
-      left: -14px;
+      background: url("../images/vector_light.svg") center center no-repeat;
+      background-size: contain;
+      left: -3px;
+    }
+
+    &_next {
+      background: url("../images/vector_light.svg") center center no-repeat;
+      background-size: contain;
+      transform: rotate(180deg);
+      right: -3px;
+    }
+
+    &::before {
+      display: none;
     }
   }
 }
@@ -79,14 +97,17 @@
 
 .slider3-wrapper {
   padding: 0 14px;
+  margin-bottom: 31px;
 }
 
 @include screen ("tablet") {
   .reviews {
     display: block;
+    background: transparent;
 
     &__title {
       @include text-4;
+      color: $color-border;
       margin-bottom: 39px;
       border: none;
     }
@@ -101,16 +122,14 @@
     height: 20px;
   }
 
-  .slider3-wrapper {
-    padding-bottom: 30px;
-  }
-
   .slider3 {
     &__item {
-      padding: 0 70px;
+      padding: 0 70px 0 0;
       min-height: 151px;
-      width: 424px;
+      box-sizing: border-box;
+      width: calc(100% - 260px);
       margin-left: auto;
+      position: relative;
     }
 
     &__name {
@@ -120,7 +139,7 @@
 
     &__photo {
       position: absolute;
-      left: 53px;
+      left: -200px;
       top: -10px;
       height: 151px;
       width: 151px;
@@ -144,26 +163,29 @@
     }
 
     &__button {
-      height: 27px;
-      width: 27px;
-      top: -21px;
-
-      &_next {
-        right: 22px;
-        top: -8px;
-      }
+      background-color: transparent;
+      top: 10px;
+      height: 31px;
+      width: 31px;
 
       &_prev {
-        left: 22px;
+        background: url("../images/vector.svg") center center no-repeat;
+        background-size: contain;
+        left: 15px;
+      }
+
+      &_next {
+        background: url("../images/vector.svg") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        top: 25px;
+        right: 17px;
       }
 
       &::before {
-        width: 19px;
-        height: 19px;
-        border-color: $color-basic;
+        display: none;
       }
     }
-
   }
 
   .author-wrapper {
@@ -176,6 +198,7 @@
 @include screen ("desktop-wide") {
   .reviews {
     display: block;
+    background: transparent;
 
     &__title {
       @include heading-2;
@@ -184,7 +207,7 @@
   }
 
   .reviews-title-wrapper {
-    padding: 118px 0 52px;
+    padding: 0 0 52px;
   }
 
   .link-wrapper {
@@ -228,34 +251,27 @@
     }
 
     &__button {
+      background-color: transparent;
+      top: -67px;
       height: 62px;
       width: 62px;
 
-      &_next {
-        right: 0px;
-        &::before {
-          width: 40px;
-          height: 40px;
-          left: 3px;
-          top: -43px;
-          border-top-width: 5px;
-          border-right-width: 5px;
-        }
-
-      }
-
       &_prev {
-        left: 0px;
-        &::before {
-          width: 40px;
-          height: 40px;
-          left: 3px;
-          top: -36px;
-          border-bottom-width: 5px;
-          border-left-width: 5px;
-        }
+        background: url("../images/vector.svg") center center no-repeat;
+        background-size: contain;
+        left: -14px;
       }
 
+      &_next {
+        background: url("../images/vector.svg") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        right: -14px;
+      }
+
+      &::before {
+        display: none;
+      }
     }
   }
 

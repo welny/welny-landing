@@ -1,4 +1,5 @@
 import svg4everybody from 'svg4everybody';
+import picturefill from 'picturefill';
 import objectFitImages from 'object-fit-images';
 import './globalOptions';
 import anchor from '../blocks/js-functions/anchor';
@@ -35,4 +36,5 @@ $(() => {
   numberinput();
   maps();
   scrollanimation();
+  picturefill();
 });

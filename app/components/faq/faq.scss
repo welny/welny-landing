@@ -1,5 +1,6 @@
 .faq {
   display: block;
+  background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0.2));
 
   &__title {
     @include text-7;
@@ -66,7 +67,6 @@
 
 .faq-wrapper {
   padding: 11px 0 15px;
-  background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0.3));
 }
 
 .accordion-info {
@@ -95,21 +95,26 @@
 
 @include screen ("tablet") {
   .faq {
+    background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));
 
     &__title {
       @include text-4;
       margin-bottom: 26px;
+      color: $color-border;
     }
+
     .accordion {
       margin-bottom: 12px;
+      padding: 0 120px 0 125px;
 
       &__header {
         @include text-7;
-        padding-left: 115px;
+        padding: 0;
+        // padding-left: 115px;
 
         &::after {
           top: 11px;
-          left: 98px;
+          left: -30px;
           width: 9px;
           height: 9px;
           border-width: 2px 2px 0 0;
@@ -118,19 +123,26 @@
 
       &__body {
         @include text-9;
-        padding: 5px 120px;
+        padding: 5px 0;
+        // padding: 5px 120px;
+      }
+
+      &__button {
+        padding: 0;
       }
     }
 
     .accordion-info {
+      margin-top: 15px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
 
       &__location,
       &__time {
         img {
           height: 34px;
           width: auto;
+          margin-bottom: 15px;
         }
       }
     }
@@ -138,12 +150,15 @@
 
   .faq-wrapper {
     margin-top: 28px;
-    padding-top: 23px;;
+    padding-top: 23px;
+    padding-bottom: 34px;
   }
 }
 
 @include screen ("desktop-wide") {
   .faq {
+    background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));
+
     &__title {
       @include heading-2;
       margin-bottom: 59px;
@@ -178,5 +193,4 @@
   .faq-wrapper {
     padding: 27px 0 46px;
   }
-
 }

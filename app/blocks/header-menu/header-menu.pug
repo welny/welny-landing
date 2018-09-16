@@ -2,14 +2,14 @@ mixin header-menu()
   +b.header-menu&attributes(attributes)
     +ui-section-head
       +b.NAV.header-nav
-        +e.BUTTON.__burger.js-toggle.menu-closed
+        +e.BUTTON.__burger.js-toggle.js-unfreeze.menu-closed
           p.visually-hidden Меню сайта
-        +b.UL.header-menu-list
+        +b.UL.header-menu-list.visually-hidden
           +e.LI.__item.__item_about
             +e.A.__link(href="#") О Welny
           +e.LI.__item.__item_types
             +e.A.__link(href="#") Типы
-            +e.P.__text массажа
+              +e.span.__text массажа
           +e.LI.__item.__item_prices
             +e.A.__link(href="#") Цены
           +e.LI.__item.__item_specs

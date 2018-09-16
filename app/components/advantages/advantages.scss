@@ -18,6 +18,7 @@
       padding-left: 83px;
       margin-bottom: 18px;
       position: relative;
+      min-height: 61px;
 
       &::before {
         @include pseudo;
@@ -35,12 +36,14 @@
 
       &_pro {
         &::before {
+          height: 63px;
           background: url("../images/connection_img.svg") top 10px center no-repeat;
         }
       }
 
       &_cosy {
         &::before {
+          height: 63px;
           background: url("../images/order_img.svg") top 3px center no-repeat;
         }
       }
@@ -60,13 +63,18 @@
   &-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 14px;
     margin: 0 5px;
-    border-bottom: 2px solid $color-border;
+    border-bottom: 3px solid $color-border;
+    min-width: 258px;
 
     &__item {
       padding: 0;
+      width: 77px;
+      height: 23px;
+      margin: 0 20px;
+      // margin: 0 20px 0 31px;
 
       // &_appstore {
       //   margin-left: 35px;
@@ -87,6 +95,7 @@
       @include text-4;
       margin-bottom: 41px;
       margin-left: 11px;
+      color: $color-border;
     }
 
     &-list {
@@ -99,8 +108,9 @@
         padding-left: 0;
         padding-top: 85px;
         margin-bottom: 23px;
-        max-width: 192px;
+        // max-width: 192px;
         text-align: center;
+        width: 31%;
 
         &::before {
           top: 0;
@@ -122,7 +132,7 @@
           &::before {
             top: -7px;
             width: 86px;
-            height: 77px;
+            height: 81px;
           }
         }
 
@@ -152,6 +162,8 @@
 
       &__item {
         margin: 0 31px;
+        width: 126px;
+        height: 37px;
       }
     }
   }
@@ -222,6 +234,8 @@
 
       &__item {
         margin: 0;
+        width: 204px;
+        height: 60px;
 
         &_googleplay {
           margin-left: 105px;

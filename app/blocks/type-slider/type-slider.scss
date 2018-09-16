@@ -70,7 +70,7 @@
 
     &:hover {
       background-color: transparent;
-      color: $color-basic;
+      color: $color-arrows;
       opacity: 1;
     }
   }
@@ -89,31 +89,37 @@
 
   &__button {
     background-color: transparent;
-    top: -32px;
+    top: -17px;
+    width: 30px;
+    height: 30px;
 
     &_prev {
-      left: 17px;
+      background: url("../images/vector_dark.svg") center center no-repeat;
+      background-size: contain;
+      left: 15px;
     }
 
     &_next {
-      right: 17px;
+      background: url("../images/vector_dark.svg") center center no-repeat;
+      background-size: contain;
+      transform: rotate(180deg);
+      right: 15px;
     }
 
     &::before {
-      height: 22px;
-      width: 22px;
+      display: none;
     }
   }
 
   &__text {
     @include text-9;
     max-width: 150px;
-    margin: 0 auto 13px;
-
+    margin: 0 auto;
   }
 }
 
 .type-slide-wrapper {
+  transition: $ease-main;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,6 +160,21 @@
   justify-content: center;
   align-items: center;
 }
+
+@include screen ("phablet") {
+  .swiper-slide-next {
+    .type-slide-wrapper {
+      background-color: transparent;
+      opacity: 0.5;
+      transform: scale(0.7) translateX(-64px);
+
+      .slider__text {
+        transform: scale(1.1) translateX(0px);
+      }
+    }
+  }
+}
+
 
 @include screen ("tablet") {
   .type-slider {
@@ -273,22 +294,37 @@
     margin: 0;
 
     &__button {
-      top: 2px;
-
-      &_next {
-        right: 41px;
-      }
+      background-color: transparent;
+      top: 7px;
+      width: 35px;
+      height: 35px;
 
       &_prev {
-        left: 37px;
+        background: url("../images/vector_dark.svg") center center no-repeat;
+        background-size: contain;
+        left: 35px;
+      }
+
+      &_next {
+        background: url("../images/vector_dark.svg") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        right: 39px;
+      }
+
+      &::before {
+        display: none;
       }
     }
 
     &__text {
       @include text-7;
-      margin-bottom: 19px;
-      margin-left: 58px;
+      margin: 0 auto 19px;
       max-width: none;
+
+      &_sport {
+        margin-left: 58px;
+      }
     }
   }
 }
@@ -350,6 +386,30 @@
       margin: 0 0 14px 0;
       // margin-left: 65px;
       // margin-bottom: 14px;
+    }
+
+    &__button {
+      background-color: transparent;
+      top: 2px;
+      width: 30px;
+      height: 30px;
+
+      &_prev {
+        background: url("../images/vector_dark.svg") center center no-repeat;
+        background-size: contain;
+        left: 170px;
+      }
+
+      &_next {
+        background: url("../images/vector_dark.svg") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        right: 163px;
+      }
+
+      &::before {
+        display: none;
+      }
     }
   }
 

@@ -30,8 +30,16 @@ export default function slider() {
       320: {
         slidesPerView: 1,
       },
-      767: {
+      559: {
         slidesPerView: 1,
+      },
+      560: {
+        centeredSlides: false,
+        slidesPerView: 2,
+      },
+      767: {
+        centeredSlides: false,
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 3,
@@ -48,13 +56,11 @@ export default function slider() {
 
   const mySlider2 = new Swiper('.js-slider2', {
     loop: true,
-    speed: 300,
+    speed: 600,
     // autoplay: {
     //   delay: 2000,
     // },
     slidesPerView: 3,
-    // centeredSlides: true,
-    parallax: true,
     navigation: {
       nextEl: '.slider2__button_next',
       prevEl: '.slider2__button_prev',
@@ -71,26 +77,26 @@ export default function slider() {
       320: {
         slidesPerView: 1,
       },
-      767: {
-        slidesPerView: 1,
+      560: {
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 2,
-        // spaceBetween: 35,
       },
       1439: {
         slidesPerView: 2,
       },
       1440: {
+        centeredSlides: true,
         slidesPerView: 3,
-        // spaceBetween: 56,
+        // spaceBetween: -50,
       },
     },
   });
 
   const mySlider3 = new Swiper('.js-slider3', {
     loop: true,
-    speed: 300,
+    speed: 600,
     // autoplay: {
     //   delay: 2000,
     // },
