@@ -8,24 +8,25 @@ mixin type-slider()
         +button.order-now__btn
           p Заказать
     .slider-wrapper
-      .wrapper-title
-        +e.H2.__title Типы массажа
-      +slider(false, true)
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_sport
-            +e.P.__text Спортивный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_limfo
-            +e.P.__text Лимфодренажный
-        +slide
-          .type-slide-wrapper.type-slide-wrapper_classic
-            +e.P.__text Классический
-      .wrapper-question
-        +e.H2.__question Имеете дело с высокими нагрузками?
+      .container
+        .wrapper-title
+          +e.H2.__title Типы массажа
+        +slider(false, true)
+          +slide
+            .type-slide-wrapper.type-slide-wrapper_sport
+              +e.P.__text Спортивный
+          +slide
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
+          +slide
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
+          +slide
+            .type-slide-wrapper.type-slide-wrapper_limfo
+              +e.P.__text Лимфодренажный
+          +slide
+            .type-slide-wrapper.type-slide-wrapper_classic
+              +e.P.__text Классический
+        .wrapper-question
+          +e.H2.__question Имеете дело с высокими нагрузками?
 

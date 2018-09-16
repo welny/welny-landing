@@ -12,14 +12,14 @@
   .accordion {
     $b: &;
     margin-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
 
     .accordions & { margin-top: -1px; }
 
     &__header {
       @include text-12;
       position: relative;
-      padding-left: 22px;
-      padding-right: 22px;
       height: auto;
       width: 100%;
       box-sizing: border-box;
@@ -166,13 +166,13 @@
 
     .accordion {
       margin-bottom: 19px;
+      padding-left: 234px;
 
       &__header {
         @include heading-4;
-        padding-left: 234px;
 
         &::after {
-          left: 187px;
+          left: -60px;
           width: 15px;
           height: 15px;
           top: 22px;

@@ -77,6 +77,9 @@ export default function slider() {
       320: {
         slidesPerView: 1,
       },
+      559: {
+        slidesPerView: 1,
+      },
       560: {
         slidesPerView: 2,
       },

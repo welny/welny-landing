@@ -13,8 +13,12 @@
   }
 }
 
-.wrapper-title {
-  @include gradient-main;
+.slider-wrapper {
+  background: linear-gradient($color-fill-clear, $color-fill-semi 26%, $color-fill-semi);
+}
+
+.wrapper-question {
+  margin: 0 48px;
 }
 
 .order-now {
@@ -77,7 +81,7 @@
 }
 
 .slider {
-  background-color: $color-fill-semi;
+  // background-color: $color-fill-semi;
   border: none;
   margin-bottom: 20px;
 
@@ -114,7 +118,7 @@
   &__text {
     @include text-9;
     max-width: 150px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 }
 
@@ -191,6 +195,7 @@
   .wrapper-question {
     min-height: 170px;
     padding: 60px 104px 0 68px;
+    margin: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -348,7 +353,7 @@
   .wrapper-question {
     padding: 87px 526px 0;
     min-height: 314px;
-    background: url("../images/heavy_dance_desk.png") right 248px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat, $color-fill-semi;
+    background: url("../images/heavy_dance_desk.png") right 248px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat;
   }
 
   .order-now {
