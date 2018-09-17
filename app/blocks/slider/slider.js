@@ -49,7 +49,6 @@ export default function slider() {
       },
       1440: {
         slidesPerView: 5,
-        spaceBetween: -350,
       },
     },
   });

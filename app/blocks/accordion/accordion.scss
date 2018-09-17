@@ -27,7 +27,7 @@
       transition: transform $ease-main;
 
       #{$b}.is-active & {
-        transform: translateY(-50%) rotate(135deg);
+        transform: translateY(-50%) rotate(270deg);
         margin-top: 2px;
       }
     }

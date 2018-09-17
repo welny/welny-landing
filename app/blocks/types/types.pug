@@ -13,8 +13,9 @@ mixin types()
     .order-wrapper
       .container
         +b.order
-          +e.H2.__title Спортивный SPA Welny
-          +e.A.__button
-            p Заказать
-    .img-wrapper
-      img(src="./assets/images/order-now_desk.png")
+          .img-wrapper
+            img(src="./assets/images/order-now_desk.png")
+          .text-wrapper
+            +e.H2.__title Спортивный SPA Welny
+            +e.A.__button
+              p Заказать

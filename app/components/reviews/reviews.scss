@@ -47,14 +47,12 @@
     @include text-13;
     line-height: calc(14 / 10);
     text-align: justify;
-    display: inline;
   }
 
   &__link {
     @include text-13;
     color: #30abd2;
-    display: inline;
-    margin-right: 0;
+    float: right;
     // position: relative;
     // right: 2px;
     // top: -14px;
@@ -62,21 +60,21 @@
 
   &__button {
     background-color: transparent;
-    top: 6px;
+    top: 45px;
     width: 18px;
     height: 18px;
 
     &_prev {
       background: url("../images/vector_light.svg") center center no-repeat;
       background-size: contain;
-      left: -3px;
+      left: -4px;
     }
 
     &_next {
       background: url("../images/vector_light.svg") center center no-repeat;
       background-size: contain;
       transform: rotate(180deg);
-      right: -3px;
+      right: -5px;
     }
 
     &::before {
@@ -97,7 +95,7 @@
 
 .slider3-wrapper {
   padding: 0 14px;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 }
 
 @include screen ("tablet") {
@@ -108,13 +106,18 @@
     &__title {
       @include text-4;
       color: $color-border;
-      margin-bottom: 39px;
+      margin: 0;
+      padding: 0;
       border: none;
     }
   }
 
+  .reviews-wrapper {
+    padding-bottom: 30px;
+  }
+
   .reviews-title-wrapper {
-    padding: 34px 0 12px;
+    padding: 45px 0 30px;
   }
 
   .link-wrapper {
@@ -122,14 +125,21 @@
     height: 20px;
   }
 
+  .slider3-wrapper {
+    margin: 0;
+  }
+
   .slider3 {
+    &__slide {
+      padding-top: 21px;
+    }
+
     &__item {
       padding: 0 70px 0 0;
       min-height: 151px;
       box-sizing: border-box;
-      width: calc(100% - 260px);
+      width: calc(100% - 246px);
       margin-left: auto;
-      position: relative;
     }
 
     &__name {
@@ -139,8 +149,8 @@
 
     &__photo {
       position: absolute;
-      left: -200px;
-      top: -10px;
+      left: 53px;
+      top: 12px;
       height: 151px;
       width: 151px;
     }
@@ -156,15 +166,17 @@
     }
 
     &__link {
-      @include text-9;
+      display: block;
       position: relative;
+      @include text-9;
+      line-height: calc(22 / 14);
       color: $color-basic;
-      top: 0;
+      float: none;
+      clear: both;
     }
 
     &__button {
       background-color: transparent;
-      top: 10px;
       height: 31px;
       width: 31px;
 
@@ -172,13 +184,14 @@
         background: url("../images/vector.svg") center center no-repeat;
         background-size: contain;
         left: 15px;
+        top: 1px;
       }
 
       &_next {
         background: url("../images/vector.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        top: 25px;
+        top: 14px;
         right: 17px;
       }
 
@@ -190,7 +203,7 @@
 
   .author-wrapper {
     justify-content: flex-start;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     padding-left: 0;
   }
 }

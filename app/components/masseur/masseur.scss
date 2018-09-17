@@ -34,12 +34,13 @@
     @include text-12;
     line-height: calc(16 / 12);
     text-align: center;
+    width: 100%;
   }
 
   &__photo {
     width: 75px;
     height: 74px;
-    margin: 3px 18px 0 0;
+    margin: 3px 16px 0 0;
   }
 
   &__button {
@@ -83,11 +84,11 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 9px 5px 18px;
+  padding: 7px 5px 18px;
 }
 
 .masseur-slide-heading {
-  width: 81%;
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -128,7 +129,7 @@
     &__title {
       color: $color-border;
       @include text-4;
-      margin-bottom: 11px;
+      margin-bottom: 8px;
     }
 
     &__text {
@@ -151,7 +152,7 @@
   .slider2 {
     &__slide {
       padding: 0 30px;
-      margin-left: 14px;
+      margin-left: 0;
     }
 
     &__rating {
@@ -174,9 +175,13 @@
       margin-top: 6px;
     }
 
+    &__qualify {
+      line-height: calc(16.5 / 12);
+    }
+
     &__button {
       background-color: transparent;
-      top: 6px;
+      top: 2px;
       height: 27px;
       width: 27px;
 
@@ -199,41 +204,50 @@
     }
   }
 
-  .swiper-slide-active {
-    .slider2__name {
-      color: $color-basic;
-    }
-  }
-
-  .swiper-slide-next {
-    .slider2__slide {
-      padding: 0 20px;
-      margin-left: 0;
-      margin-right: 24px;
-    }
-  }
-
-  .slider2-wrapper {
-    padding: 0 40px;
-  }
-
-
   .masseur-slide-wrapper {
-    min-height: 280px;
+    min-height: 284px;
     width: 100%;
     align-items: center;
     border-radius: 10px;
     padding: 15px 20px 12px;
   }
 
+  .swiper-slide-active {
+    .slider2__name {
+      color: $color-basic;
+    }
+
+    .masseur-slide-wrapper {
+      transform: translateX(12px);
+    }
+  }
+
+  .swiper-slide-next {
+    .masseur-slide-wrapper {
+      transform: translateX(-12px);
+    }
+  }
+
+  // .swiper-slide-next {
+  //   .slider2__slide {
+  //     padding: 0 20px;
+  //     margin-left: 0;
+  //     margin-right: 24px;
+  //   }
+  // }
+
+  .slider2-wrapper {
+    padding: 0 40px;
+  }
+
   .masseur-slide-heading {
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 244px;
+    margin: 2px 0 0;
 
     .rating-wrapper {
-      margin-left: 9px;
-      margin-right: 27px;
-      margin-top: 9px;
+      margin: 9px 29px 0 9px;
 
       img {
         width: 36px;

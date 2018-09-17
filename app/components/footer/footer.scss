@@ -81,6 +81,18 @@
 
   &__item {
     margin: 0 9px;
+
+    &_ig {
+      order: 3;
+    }
+
+    &_vk {
+      order: 1;
+    }
+
+    &_fb {
+      order: 2;
+    }
   }
 
   &__link {
@@ -117,7 +129,7 @@
     &__logo {
       width: 83px;
       height: 121px;
-      margin-top: 26px;
+      margin-top: 25px;
       align-self: flex-start;
     }
   }
@@ -140,6 +152,7 @@
     flex-grow: 1;
     margin-left: 76px;
     justify-content: flex-start;
+    margin-bottom: 21px;
 
     &__item {
       width: 47%;
@@ -151,7 +164,11 @@
     margin-bottom: 14px;
 
     &__item {
-      margin-bottom: 14px;
+      margin-bottom: 13px;
+
+      &_btn {
+        margin-top: 15px;
+      }
     }
 
     &__link {
@@ -183,6 +200,19 @@
 
     &__item {
       margin: 3px 0;
+
+      &_ig {
+        order: 1;
+      }
+
+      &_vk {
+        order: 2;
+      }
+
+      &_fb {
+        order: 3;
+      }
+
     }
 
     &__link {
@@ -194,7 +224,7 @@
   }
 
   .legal {
-    margin: 0 95px;
+    margin: 0 28px;
     width: 100%;
 
     &__link,
@@ -205,6 +235,7 @@
 
     &__top {
       padding-right: 21px;
+      padding-bottom: 2px;
       justify-content: center;
     }
 
@@ -235,7 +266,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 150px;
+    height: 150px;
     margin-top: -202px;
     margin-bottom: 50px;
     margin-left: 202px;
