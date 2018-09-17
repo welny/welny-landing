@@ -171,7 +171,7 @@
   }
 
   .order-wrapper {
-    background: linear-gradient(transparent 20px, $color-brown 20px);
+    background: linear-gradient(transparent 20px, $color-brown 20px, $color-brown (calc(100% - 29px)), transparent (calc(100% - 29px)));
   }
 
   .text-wrapper {
@@ -187,14 +187,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 278px;
+    min-height: 278px;
 
     &__title {
       @include text-4;
       line-height: calc(31 / 24);
       min-width: 159px;
       text-align: center;
-      margin: 33px 0 9px;
+      margin: 0 0 9px;
     }
 
     &__button {
@@ -208,6 +208,7 @@
     // bottom: -26px;
     // left: 0;
     width: 48%;
+    padding: 0;
 
     img {
       width: 448px;
