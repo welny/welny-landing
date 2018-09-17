@@ -19,6 +19,9 @@
 
 .wrapper-question {
   background: transparent;
+}
+
+.wrapper-question-title {
   margin: 0 48px;
 }
 
@@ -194,13 +197,16 @@
   }
 
   .wrapper-question {
+    background: url("../images/heavy_dance.png") right 104px bottom no-repeat, $color-fill-semi;
+  }
+
+  .wrapper-question-title {
     min-height: 170px;
     padding: 60px 104px 0 68px;
     margin: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: url("../images/heavy_dance.png") right 104px bottom no-repeat, $color-fill-semi;
   }
 
   .wrapper-title {
@@ -343,11 +349,13 @@
   .type-slider {
     &__title {
       @include heading-2;
+      margin-left: 15px;
     }
 
     &__question {
       @include heading-5;
       line-height: calc(48 / 34);
+      margin-left: 24px;
     }
   }
 
@@ -356,24 +364,31 @@
   }
 
   .wrapper-question {
-    padding: 87px 526px 0;
+    background: url("../images/heavy_dance_desk.png") right 231px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat, $color-fill-semi;
+  }
+
+  .wrapper-question-title {
     min-height: 314px;
-    background: url("../images/heavy_dance_desk.png") right 248px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat;
+    padding: 87px 502px 0;
+  }
+
+  .price-wrapper {
+    margin-bottom: 11px;
   }
 
   .order-now {
-    margin-top: 34px;
-    margin-bottom: 105px;
+    margin: 34px 39px 105px 55px;
 
     &__text {
       @include text-4;
+      margin: 0 5px 3px 0;
     }
 
     &__discount {
       @include text-9;
       line-height: calc(12 / 14);
-      margin-top: 8px;
-      padding: 11px 18px 15px 17px;
+      margin-top: 12px;
+      padding: 11px 13px 12px 23px;
     }
 
     &__btn {
@@ -414,7 +429,7 @@
         background: url("../images/vector_dark.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        right: 163px;
+        right: 147px;
       }
 
       &::before {
@@ -425,15 +440,24 @@
     .swiper-slide-active {
       .type-slide-wrapper {
         opacity: 1 !important;
-        transform: scale(1) !important;
+        transform: scale(1) translateX(8px) !important;
         background-color: white !important;
+      }
+
+      .slider__text {
+        margin-left: 0;
+        transform: scale(1) !important;
       }
     }
 
     .swiper-slide {
       .type-slide-wrapper {
         background-color: transparent;
-        transform: scale(0.43) translateY(-45px) translateX(285px);
+        transform: scale(0.43) translateY(-21px) translateX(330px);
+      }
+
+      .slider__text {
+        transform: scale(1.2);
       }
     }
 
@@ -441,72 +465,40 @@
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(-30px) translateY(-5px) !important;
+        transform: scale(0.7) translateX(-13px) translateY(-5px) !important;
 
         .slider__text {
-          transform: scale(1.1) translateX(2px) translateY(-5px) !important;
+          transform: scale(1.05) translateX(-4px) translateY(-5px) !important;
         }
       }
     }
+
     .swiper-slide-prev {
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(30px) translateY(-5px) !important;
+        transform: scale(0.7) translateX(36px) translateY(-5px) !important;
 
         .slider__text {
           transform: scale(1.1) translateX(1px) translateY(-5px) !important;
         }
       }
     }
+
     .swiper-slide-next ~ .swiper-slide {
-      background-color: transparent;
-      transform: translateY(5px) translateX(-255px);
+      .type-slide-wrapper {
+        background-color: transparent;
+        transform: scale(0.43) translateY(-44px) translateX(-255px);
+
+        .slider__text {
+          transform: scale(1.15);
+        }
+      }
     }
-    // .swiper-slide ~ .swiper-slide-prev {
-    //   background-color: red;
-    //   transform: translateY(5px) translateX(-255px);
-    // }
   }
 
 
   .slider-slide {
     z-index: 1;
   }
-
-
-
-
-
-
-
-
-  // .swiper-wrapper {
-  //   width: 800px;
-  // }
-
-  // .swiper-slide {
-  //   .type-slide-wrapper {
-  //     background-color: transparent;
-  //     opacity: 0.5;
-  //     transform: scale(0.43);
-  //   }
-
-  //   &-next,
-  //   &-prev {
-  //     .type-slide-wrapper {
-  //       background-color: transparent;
-  //       opacity: 0.5;
-  //     }
-  //   }
-
-  //   &-next {
-  //     .type-slide-wrapper {
-  //       transform: scale(0.7), translateX(-64px);
-  //     }
-  //   }
-
-  //   }
-  // }
-
 }

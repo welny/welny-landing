@@ -216,6 +216,7 @@
     &__title {
       @include heading-2;
       margin-bottom: 0;
+      margin-left: 15px;
     }
   }
 
@@ -230,7 +231,7 @@
 
   .slider3 {
     &__item {
-      padding: 50px 81px 0;
+      padding: 44px 45px 0 118px;
       min-height: 287px;
       width: 875px;
       margin-left: auto;
@@ -243,7 +244,7 @@
 
     &__photo {
       position: absolute;
-      left: -229px;
+      left: 84px;
       top: -1px;
       height: 287px;
       width: 287px;
@@ -265,21 +266,21 @@
 
     &__button {
       background-color: transparent;
-      top: -67px;
+      top: -25px;
       height: 62px;
       width: 62px;
 
       &_prev {
         background: url("../images/vector.svg") center center no-repeat;
         background-size: contain;
-        left: -14px;
+        left: 6px;
       }
 
       &_next {
         background: url("../images/vector.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        right: -14px;
+        right: -10px;
       }
 
       &::before {
@@ -289,13 +290,13 @@
   }
 
   .slider3-wrapper {
-    padding: 0 121px 0;
+    padding: 0 100px 0;
   }
 
   .author-wrapper {
     justify-content: flex-start;
     margin-bottom: 27px;
-    margin-top: 15px;
+    margin-top: 0;
   }
 }
 

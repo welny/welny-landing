@@ -178,26 +178,27 @@
 
 @include screen ("desktop-wide") {
   .advantages-content {
-    padding: 71px 141px 33px;
+    padding: 71px 125px 33px 141px;
 
     &__title {
       @include heading-2;
       margin-bottom: 85px;
-      margin-left: 19px;
+      margin-left: 0;
     }
 
     &-list {
-      padding: 0 70px;
+      padding: 0 43px 0 62px;
 
       &__item {
         padding-left: 0;
         padding-top: 120px;
         margin-bottom: 68px;
         max-width: 340px;
+        flex-grow: 1;
 
 
         &_comfort {
-          margin-left: 17px;
+          margin-left: 0;
 
           &::before {
             width: 110px;
@@ -207,6 +208,9 @@
         }
 
         &_pro {
+          margin-left: 0;
+          // margin-right: 16px;
+
           &::before {
             width: 120px;
             height: 100px;
@@ -245,13 +249,17 @@
         height: 60px;
 
         &_googleplay {
-          margin-left: 105px;
+          margin-left: 104px;
         }
 
         &_appstore {
-          margin-left: 7px;
+          margin-left: 10px;
         }
       }
     }
+  }
+
+  .not-desktop {
+    display: none;
   }
 }

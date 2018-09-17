@@ -82,7 +82,7 @@
 
     &-content {
       min-height: 550px;
-      padding: 10px 57px 14px 27px;
+      padding: 10px 38px 14px 27px;
       background: transparent;
       // background-size: auto 316px;
 
@@ -100,6 +100,8 @@
     }
 
     .rating {
+      margin-left: -10px;
+
       .rating__box {
         margin-left: 4px;
       }

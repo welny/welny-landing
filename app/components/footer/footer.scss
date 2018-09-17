@@ -251,6 +251,7 @@
       align-self: stretch;
       width: 117px;
       height: 170px;
+      margin-top: 29px;
     }
   }
 
@@ -267,7 +268,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     height: 150px;
-    margin-top: -202px;
+    margin-top: -205px;
     margin-bottom: 50px;
     margin-left: 202px;
   }
@@ -324,6 +325,7 @@
     order: 3;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 47px;
 
     &__item {
       margin: 3px 13px;

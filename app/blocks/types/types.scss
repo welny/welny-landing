@@ -210,10 +210,10 @@
     width: 48%;
     padding: 0;
 
-    img {
-      width: 448px;
-      height: 303px;
-    }
+    // img {
+    //   width: 448px;
+    //   height: 303px;
+    // }
   }
 }
 
@@ -223,7 +223,7 @@
   }
 
   .answers {
-    margin: 86px 233px 60px;
+    margin: 86px 216px 60px 232px;
 
     &__item {
       @include text-2;
@@ -231,7 +231,7 @@
       text-align: center;
       width: 260px;
       padding: 0;
-      padding-top: 266px;
+      padding-top: 264px;
       color: $color-basic;
 
     &::before {
@@ -268,12 +268,16 @@
   }
 
   .order-wrapper {
-    background: linear-gradient(transparent 46px, $color-brown 46px);
+    background: linear-gradient(transparent 48px, $color-brown 48px, $color-brown (calc(100% - 32px)), transparent (calc(100% - 32px)));
     background-size: cover;
   }
 
+  .text-wrapper {
+    width: 42%;
+  }
+
   .order {
-    padding: 143px 0 133px 198px;
+    padding: 0;
     min-height: 213px;
     background: transparent;
 
@@ -282,25 +286,22 @@
       line-height: calc(63 / 48);
       min-width: 300px;
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 21px;
+      margin-right: 70px;
+      margin-top: 12px;
     }
 
     &__button {
       @include text-3;
       width: 164px;
       height: 65px;
-      margin-right: 61px;
+      margin-top: 0;
+      margin-right: 54px;
       border-radius: 10px;
     }
   }
 
   .img-wrapper {
-    bottom: -40px;
-    left: 0;
-
-    img {
-      width: 838px;
-      height: 565px;
-    }
+    width: 58%;
   }
 }

@@ -163,8 +163,9 @@
   .about-us {
     &__title {
       @include heading-2;
-      margin-bottom: 75px;
-      margin-left: 15px;
+      margin-bottom: 72px;
+      margin-right: 0;
+      margin-left: 0;
 
       &_install {
         margin: 0 0 27px 0;
@@ -178,27 +179,32 @@
   }
 
   .about-list {
-    margin: 0 145px 0 137px;
-    padding: 0 22px 77px;
+    margin: 0 128px 0 137px;
+    padding: 0 22px 80px;
 
 
     &__item {
-      padding-right: 35px;
+      padding-right: 33px;
 
       &_vc {
-        padding-left: 53px;
+        padding-left: 49px;
         padding-bottom: 3px;
 
         .about-list__text {
+          @include text-4;
           line-height: calc(33 / 24);
-          padding-bottom: 3px;
+          margin-top: 5px;
+          padding: 0 0 0 21px;
         }
       }
-    }
 
-    &__text {
-      @include text-4;
-      padding: 9px 11px 0 21px;
+      &_ntv {
+        .about-list__text {
+          @include text-4;
+          line-height: calc(31 / 24);
+          padding: 0 14px 0 0;
+        }
+      }
     }
   }
 
@@ -208,7 +214,7 @@
   }
 
   .download-wrapper {
-    padding: 120px 131px 140px 682px;
+    padding: 120px 114px 140px 682px;
     background: url("../images/iphone_desk.png") left 234px bottom 20px no-repeat, url("../images/samsung_desk.png") left 108px bottom 102px no-repeat;
   }
 }

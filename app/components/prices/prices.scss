@@ -166,7 +166,8 @@
   }
 
   .prices-wrapper {
-    padding: 76px 0 119px;
+    padding: 42px 0 119px;
+    margin-left: 18px;
   }
 
   .li-wrapper {
@@ -181,7 +182,7 @@
     .li-wrapper {
       .prices-list__item-time {
         @include heading-1;
-        margin-top: 14px;
+        margin-top: 11px;
         margin-bottom: 0;
       }
     }
@@ -193,6 +194,7 @@
 
       &_big {
         @include heading-1;
+        line-height: calc(83 / 64);
         top: 7px;
       }
 
@@ -205,14 +207,28 @@
       }
     }
 
-    &_60,
-    &_90,
-    &_120 {
-      .prices-list__item-text {
-        line-height: calc(48 / 28);
+    &__item {
+      &_60,
+      &_90,
+      &_120 {
+        .prices-list__item-text {
+          line-height: calc(48 / 28);
+        }
       }
+
+      &_90 {
+        .prices-list__item-time {
+          margin-right: 3px;
+        }
+      }
+
+      &_120 {
+        .prices-list__item-time {
+          margin-left: 5px;
+          margin-top: 9px;
+        }
+      }
+
     }
-
   }
-
 }

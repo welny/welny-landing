@@ -173,6 +173,7 @@
     &__title {
       @include heading-2;
       margin-bottom: 59px;
+      margin-left: 18px;
     }
 
     .accordion {
@@ -183,10 +184,11 @@
         @include heading-4;
 
         &::after {
-          left: -60px;
-          width: 15px;
-          height: 15px;
-          top: 22px;
+          background-size: contain;
+          left: -41px;
+          width: 16px;
+          height: 25px;
+          top: 20px;
         }
       }
 
@@ -202,6 +204,6 @@
   }
 
   .faq-wrapper {
-    padding: 27px 0 46px;
+    padding: 27px 0 64px;
   }
 }

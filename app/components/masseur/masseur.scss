@@ -274,10 +274,13 @@
         @include text-5;
         width: 100%;
         margin-bottom: 12px;
+        margin-left: 58px;
       }
 
       &__qualify {
         @include text-9;
+        line-height: calc(19 / 14);
+        margin-bottom: 7px;
       }
 
       &__photo {
@@ -287,8 +290,8 @@
 
       &__button {
         background-color: transparent;
-        top: -4px;
-        height: 27px;
+        top: 9px;
+        height: 34px;
         width: 27px;
 
         &_prev {
@@ -301,7 +304,7 @@
           background: url("../images/vector.svg") center center no-repeat;
           background-size: contain;
           transform: rotate(180deg);
-          right: 58px;
+          right: 42px;
         }
 
         &::before {
@@ -312,13 +315,15 @@
 
     &__title {
       @include heading-2;
-      margin-bottom: 30px;
-      margin-left: 59px;
+      margin-bottom: 31px;
+      margin-left: 77px;
     }
 
     &__text {
       @include text-4;
       margin-bottom: 49px;
+      margin-left: 29px;
+      letter-spacing: normal;
     }
   }
 
@@ -331,18 +336,14 @@
     padding: 0 38px;
 
     .swiper-slide {
-      transform: scale(1) translateY(0) translateX(0);
-
-      // &-active {
-      //   transform: translateX(-8px);
-      // }
+      transform: scale(1) translateY(0) translateX(-3px);
 
       &-next {
-        transform: translateX(-45px);
+        transform: translateX(-32px);
       }
 
       &-prev {
-        transform: translateX(47px);
+        transform: translateX(58px);
       }
     }
   }
@@ -351,7 +352,7 @@
   .masseur-slide-wrapper {
     min-height: 351px;
     width: 351px;
-    padding: 26px 25px 12px;
+    padding: 18px 25px 12px;
   }
 
   .masseur-slide-heading {

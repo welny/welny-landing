@@ -8,6 +8,8 @@ export default function slider() {
   const mySlider = new Swiper('.js-slider', {
     loop: true,
     speed: 300,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
     // autoplay: {
     //   delay: 2000,
     // },
