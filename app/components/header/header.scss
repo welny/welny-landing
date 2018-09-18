@@ -77,13 +77,14 @@
 
 @include screen("desktop-wide") {
   .header {
-    background: url("../images/top-banner.png") left center no-repeat;
-    background-size: cover;
+    background: none;
 
     &-content {
+      background: url("../images/top-banner.png") left center no-repeat;
+      background-size: cover;
       min-height: 550px;
       padding: 10px 38px 14px 27px;
-      background: transparent;
+      // background: transparent;
       // background-size: auto 316px;
 
       &__text_top {
