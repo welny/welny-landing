@@ -14,6 +14,11 @@
     width: 23px;
     height: 28px;
     background: url("../images/log-in_mob.svg") center center no-repeat;
+
+    &:hover {
+      transition: $ease-main;
+      opacity: 0.5;
+    }
   }
 
   &__logo {
@@ -138,7 +143,7 @@
 
 @include screen ("desktop-wide") {
   .header-nav {
-    margin: 0 24px 0 41px;
+    margin: 0 42px 0 41px;
     min-height: 130px;
 
     &__logo {

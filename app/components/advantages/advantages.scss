@@ -79,15 +79,12 @@
       width: 77px;
       height: 23px;
       margin: 0 20px;
-      // margin: 0 20px 0 31px;
 
-      // &_appstore {
-      //   margin-left: 35px;
-      // }
+      &:hover {
+        transition: $ease-main;
+        opacity: 0.5;
+      }
 
-      // &_googleplay {
-      //   margin-left: 40px;
-      // }
     }
   }
 }
@@ -178,7 +175,7 @@
 
 @include screen ("desktop-wide") {
   .advantages-content {
-    padding: 71px 125px 33px 141px;
+    padding: 71px 142px 33px 141px;
 
     &__title {
       @include heading-2;

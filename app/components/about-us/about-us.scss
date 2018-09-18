@@ -69,6 +69,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &__item {
+    &:hover {
+      transition: $ease-main;
+      opacity: 0.5;
+    }
+  }
 }
 
 @include screen ("tablet") {
@@ -164,7 +171,7 @@
     &__title {
       @include heading-2;
       margin-bottom: 72px;
-      margin-right: 0;
+      margin-right: 19px;
       margin-left: 0;
 
       &_install {
@@ -179,15 +186,15 @@
   }
 
   .about-list {
-    margin: 0 128px 0 137px;
-    padding: 0 22px 80px;
+    margin: 0 144px 0 137px;
+    padding: 0 8px 80px 22px;
 
 
     &__item {
-      padding-right: 33px;
+      padding-right: 41px;
 
       &_vc {
-        padding-left: 49px;
+        padding-left: 40px;
         padding-bottom: 3px;
 
         .about-list__text {
@@ -214,7 +221,7 @@
   }
 
   .download-wrapper {
-    padding: 120px 114px 140px 682px;
+    padding: 120px 131px 140px 682px;
     background: url("../images/iphone_desk.png") left 234px bottom 20px no-repeat, url("../images/samsung_desk.png") left 108px bottom 102px no-repeat;
   }
 }

@@ -97,6 +97,7 @@
     box-shadow: 0 0 4px 0 white;
     text-align: center;
     border: 2px solid white;
+    transition: $ease-main;
 
     &:hover {
       background-color: transparent;
@@ -223,7 +224,7 @@
   }
 
   .answers {
-    margin: 86px 216px 60px 232px;
+    margin: 86px 233px 60px 232px;
 
     &__item {
       @include text-2;
@@ -274,12 +275,14 @@
 
   .text-wrapper {
     width: 42%;
+    margin-right: 13px;
   }
 
   .order {
     padding: 0;
-    min-height: 213px;
+    min-height: 560px;
     background: transparent;
+    justify-content: flex-end;
 
     &__title {
       @include heading-2;
@@ -302,6 +305,13 @@
   }
 
   .img-wrapper {
-    width: 58%;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+
+    img {
+      height: 565px;
+      width: 838px;
+    }
   }
 }

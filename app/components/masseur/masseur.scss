@@ -73,6 +73,7 @@
 }
 
 .masseur-slide-wrapper {
+  transition: $ease-main;
   box-sizing: border-box;
   min-height: 225px;
   width: 85%;
@@ -218,12 +219,14 @@
     }
 
     .masseur-slide-wrapper {
+      transition: $ease-main;
       transform: translateX(12px);
     }
   }
 
   .swiper-slide-next {
     .masseur-slide-wrapper {
+      transition: $ease-main;
       transform: translateX(-12px);
     }
   }
@@ -298,14 +301,14 @@
         &_prev {
           background: url("../images/arrow.svg") center center no-repeat;
           background-size: contain;
-          left: 55px;
+          left: 48px;
         }
 
         &_next {
           background: url("../images/arrow.svg") center center no-repeat;
           background-size: contain;
           transform: rotate(180deg);
-          right: 42px;
+          right: 50px;
         }
 
         &::before {
@@ -317,13 +320,13 @@
     &__title {
       @include heading-2;
       margin-bottom: 31px;
-      margin-left: 77px;
+      margin-left: 61px;
     }
 
     &__text {
       @include text-4;
       margin-bottom: 49px;
-      margin-left: 29px;
+      margin-left: 15px;
       letter-spacing: normal;
     }
   }
@@ -337,15 +340,29 @@
     padding: 0 38px;
 
     .swiper-slide {
+      transition: $ease-main;
       transform: scale(1) translateY(0) translateX(-3px);
 
       &-next {
-        transform: translateX(-32px);
+        .masseur-slide-wrapper {
+          transition: $ease-main;
+          transform: translateX(-49px);
+        }
       }
 
       &-prev {
-        transform: translateX(58px);
+        .masseur-slide-wrapper {
+          transition: $ease-main;
+          transform: translateX(51px);
+        }
       }
+    }
+  }
+
+  .swiper-slide-active {
+    .masseur-slide-wrapper {
+      transition: $ease-main;
+      transform: translateX(4px);
     }
   }
 

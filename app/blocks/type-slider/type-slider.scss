@@ -77,6 +77,7 @@
     margin: 0 auto;
 
     &:hover {
+      transition: $ease-main;
       background-color: transparent;
       color: $color-arrows;
       opacity: 1;
@@ -122,7 +123,8 @@
   &__text {
     @include text-9;
     max-width: 150px;
-    margin: 0 auto 10px;
+    margin: 0 auto;
+    padding-bottom: 10px;
   }
 }
 
@@ -339,7 +341,8 @@
 
     &__text {
       @include text-7;
-      margin: 0 auto 19px;
+      margin: 0 auto;
+      padding-bottom: 19px;
       max-width: none;
     }
   }
@@ -349,13 +352,13 @@
   .type-slider {
     &__title {
       @include heading-2;
-      margin-left: 15px;
+      margin-left: 0;
     }
 
     &__question {
       @include heading-5;
       line-height: calc(48 / 34);
-      margin-left: 24px;
+      margin-left: 10px;
     }
   }
 
@@ -364,12 +367,12 @@
   }
 
   .wrapper-question {
-    background: url("../images/heavy_dance_desk.png") right 231px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat, $color-fill-semi;
+    background: url("../images/heavy_dance_desk.png") right 248px bottom 3px no-repeat, url("../images/football.png") left 247px bottom 3px no-repeat, $color-fill-semi;
   }
 
   .wrapper-question-title {
     min-height: 314px;
-    padding: 87px 502px 0;
+    padding: 87px 509px 0;
   }
 
   .price-wrapper {
@@ -377,7 +380,7 @@
   }
 
   .order-now {
-    margin: 34px 39px 105px 55px;
+    margin: 34px 55px 105px 55px;
 
     &__text {
       @include text-4;
@@ -419,7 +422,8 @@
     &__text {
       @include text-4;
       text-align: center;
-      margin: 0 0 14px 0;
+      margin: 0;
+      padding-bottom: 14px;
       // margin-left: 65px;
       // margin-bottom: 14px;
     }
@@ -440,7 +444,7 @@
         background: url("../images/arrow_dark.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        right: 147px;
+        right: 162px;
       }
 
       &::before {
@@ -451,7 +455,7 @@
     .swiper-slide-active {
       .type-slide-wrapper {
         opacity: 1 !important;
-        transform: scale(1) translateX(8px) !important;
+        transform: scale(1) translateX(0) !important;
         background-color: white !important;
       }
 
@@ -476,10 +480,10 @@
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(-13px) translateY(-5px) !important;
+        transform: scale(0.7) translateX(-29px) translateY(-6px) !important;
 
         .slider__text {
-          transform: scale(1.05) translateX(-4px) translateY(-5px) !important;
+          transform: scale(1.05) translateX(-5px) translateY(-5px) !important;
         }
       }
     }
@@ -488,7 +492,7 @@
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(36px) translateY(-5px) !important;
+        transform: scale(0.7) translateX(30px) translateY(-5px) !important;
 
         .slider__text {
           transform: scale(1.1) translateX(1px) translateY(-5px) !important;
@@ -499,7 +503,7 @@
     .swiper-slide-next ~ .swiper-slide {
       .type-slide-wrapper {
         background-color: transparent;
-        transform: scale(0.43) translateY(-44px) translateX(-255px);
+        transform: scale(0.43) translateY(-41px) translateX(-296px);
 
         .slider__text {
           transform: scale(1.15);
