@@ -65,13 +65,13 @@
     height: 18px;
 
     &_prev {
-      background: url("../images/vector_light.svg") center center no-repeat;
+      background: url("../images/arrow_light.svg") center center no-repeat;
       background-size: contain;
       left: -4px;
     }
 
     &_next {
-      background: url("../images/vector_light.svg") center center no-repeat;
+      background: url("../images/arrow_light.svg") center center no-repeat;
       background-size: contain;
       transform: rotate(180deg);
       right: -5px;
@@ -181,14 +181,14 @@
       width: 31px;
 
       &_prev {
-        background: url("../images/vector.svg") center center no-repeat;
+        background: url("../images/arrow.svg") center center no-repeat;
         background-size: contain;
         left: 15px;
         top: 1px;
       }
 
       &_next {
-        background: url("../images/vector.svg") center center no-repeat;
+        background: url("../images/arrow.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
         top: 14px;
@@ -271,13 +271,13 @@
       width: 62px;
 
       &_prev {
-        background: url("../images/vector.svg") center center no-repeat;
+        background: url("../images/arrow.svg") center center no-repeat;
         background-size: contain;
         left: 6px;
       }
 
       &_next {
-        background: url("../images/vector.svg") center center no-repeat;
+        background: url("../images/arrow.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
         right: -10px;
