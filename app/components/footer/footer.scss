@@ -516,17 +516,14 @@
 @include screen ("desktop-wide") {
   .footer {
     &__logo {
-      align-self: stretch;
-      width: 117px;
-      height: 170px;
-      margin-top: 29px;
+      top: 49px;
     }
   }
 
   .footer-wrapper {
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 51px 56px 0px 104px;
+    padding: 44px 56px 0px 104px;
     align-items: flex-start;
   }
 
@@ -536,12 +533,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     height: 150px;
-    margin-top: -205px;
+    margin-top: 0;
     margin-bottom: 50px;
-    margin-left: 202px;
+    margin-left: 101px;
   }
 
   .footer-menu {
+    width: auto;
     flex-grow: 0;
     margin-left: 70px;
     margin-right: 162px;

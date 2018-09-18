@@ -34,7 +34,17 @@
     @include text-12;
     line-height: calc(16 / 12);
     text-align: center;
-    width: 100%;
+    width: 99%;
+    height: 108px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "...";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__photo {
@@ -75,7 +85,7 @@
 .masseur-slide-wrapper {
   transition: $ease-main;
   box-sizing: border-box;
-  min-height: 225px;
+  height: 225px;
   width: 85%;
   min-width: 250px;
   align-items: center;
@@ -152,6 +162,7 @@
 
   .slider2 {
     &__slide {
+      height: 280px;
       padding: 0 30px;
       margin-left: 0;
     }
@@ -178,6 +189,8 @@
 
     &__qualify {
       line-height: calc(16.5 / 12);
+      height: 110px;
+      // margin-bottom: 4px;
     }
 
     &__button {
@@ -206,7 +219,7 @@
   }
 
   .masseur-slide-wrapper {
-    min-height: 284px;
+    min-height: 280px;
     width: 100%;
     align-items: center;
     border-radius: 10px;
@@ -266,6 +279,7 @@
     .slider2 {
       &__slide {
         padding: 0 30px;
+        height: auto;
       }
 
       &__rating {
@@ -283,6 +297,12 @@
         @include text-9;
         line-height: calc(19 / 14);
         margin-bottom: 7px;
+        height: 133px;
+        overflow: visible;
+
+        &::before {
+          display: none;
+        }
       }
 
       &__photo {
