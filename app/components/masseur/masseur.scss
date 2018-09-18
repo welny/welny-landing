@@ -262,6 +262,7 @@
     background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));
 
     .slider2 {
+      max-width: 1347px;
       &__slide {
         padding: 0 30px;
       }

@@ -405,6 +405,17 @@
   }
 
   .slider{
+    &::before {
+      position: absolute;
+      content: "";
+      width: 150px;
+      height: 250px;
+      background: #fdf3eb;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+
     &__text {
       @include text-4;
       text-align: center;
@@ -494,6 +505,10 @@
           transform: scale(1.15);
         }
       }
+    }
+
+    .swiper-slide-next ~ .swiper-slide ~ .swiper-slide {
+      display: none;
     }
   }
 

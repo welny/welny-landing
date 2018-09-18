@@ -8,14 +8,13 @@ export default function slider() {
   const mySlider = new Swiper('.js-slider', {
     loop: true,
     speed: 300,
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
+    // watchSlidesVisibility: true,
     // autoplay: {
     //   delay: 2000,
     // },
     slidesPerView: 5,
     centeredSlides: true,
-    parallax: true,
     navigation: {
       nextEl: '.slider__button_next',
       prevEl: '.slider__button_prev',
@@ -62,6 +61,7 @@ export default function slider() {
     //   delay: 2000,
     // },
     slidesPerView: 3,
+    centeredSlides: true,
     navigation: {
       nextEl: '.slider2__button_next',
       prevEl: '.slider2__button_prev',
@@ -82,16 +82,21 @@ export default function slider() {
         slidesPerView: 1,
       },
       560: {
+        centeredSlides: false,
         slidesPerView: 2,
       },
       768: {
+        centeredSlides: false,
         slidesPerView: 2,
       },
       1439: {
+        centeredSlides: false,
         slidesPerView: 2,
       },
       1440: {
-        centeredSlides: true,
+        slidesPerView: 3,
+      },
+      1441: {
         slidesPerView: 3,
       },
     },
