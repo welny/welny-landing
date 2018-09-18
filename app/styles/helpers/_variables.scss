@@ -11,8 +11,10 @@ $grid-gap: 20px; // Расстояние между колонками
 $grid-gap-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
 $breakpoints: (
-  'xl': 1439px,
-  'md': 767px,
+  'desktop-wide': 1439px,
+  'desktop': 1200px,
+  'tablet': 767px,
+  'phablet': 560px,
 );
 
 // ##########

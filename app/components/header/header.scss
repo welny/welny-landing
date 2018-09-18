@@ -75,6 +75,45 @@
   }
 }
 
+@include screen ("desktop") {
+  .header {
+    background: url("../images/top-banner.png") left center no-repeat;
+    background-size: cover;
+
+    &-content {
+      min-height: 550px;
+      padding: 10px 54px 14px 27px;
+      // background: transparent;
+      // background-size: auto 316px;
+
+      &__text_top {
+        @include heading-2;
+        letter-spacing: 0.2px;
+        line-height: calc(62 / 48);
+      }
+
+      &__text_bottom {
+        @include text-4;
+        font-weight: 400;
+        margin-top: 395px;
+      }
+    }
+
+    .rating {
+      margin-left: -10px;
+
+      .rating__box {
+        margin-left: 4px;
+      }
+    }
+
+    .rating__icon {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
 @include screen("desktop-wide") {
   .header {
     background: url("../images/top-banner.png") left center no-repeat;

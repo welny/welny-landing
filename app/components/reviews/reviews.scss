@@ -53,9 +53,9 @@
     @include text-13;
     color: #30abd2;
     float: right;
+    transition: $ease-main;
 
     &:hover {
-      transition: $ease-main;
       opacity: 0.5;
     }
   }
@@ -207,6 +207,98 @@
     justify-content: flex-start;
     margin-bottom: 14px;
     padding-left: 0;
+  }
+}
+
+@include screen ("desktop") {
+  .reviews {
+    display: block;
+    background: transparent;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+  }
+
+  .reviews-title-wrapper {
+    padding: 0 0 52px;
+  }
+
+  .link-wrapper {
+    position: relative;
+    height: 20px;
+  }
+
+  .slider3 {
+    &__item {
+      padding: 44px 93px 0 460px;
+      min-height: 287px;
+      width: auto;
+      margin-left: 0;
+    }
+
+    &__name {
+      @include text-4;
+      margin-right: 75px;
+    }
+
+    &__photo {
+      position: absolute;
+      left: 84px;
+      top: -1px;
+      height: 287px;
+      width: 287px;
+    }
+
+    &__date {
+      @include text-4;
+    }
+
+    &__text {
+      @include text-7;
+      line-height: calc(24 / 18);
+      text-align: start;
+    }
+
+    &__link {
+      @include text-7;
+    }
+
+    &__button {
+      background-color: transparent;
+      top: -25px;
+      height: 62px;
+      width: 62px;
+
+      &_prev {
+        background: url("../images/arrow.svg") center center no-repeat;
+        background-size: contain;
+        left: 6px;
+      }
+
+      &_next {
+        background: url("../images/arrow.svg") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        right: 6px;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .slider3-wrapper {
+    padding: 0 20px 0;
+  }
+
+  .author-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 27px;
+    margin-top: 0;
   }
 }
 

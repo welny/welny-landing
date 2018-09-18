@@ -45,8 +45,11 @@ export default function slider() {
       768: {
         slidesPerView: 3,
       },
-      1439: {
+      1199: {
         slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 5,
       },
       1440: {
         slidesPerView: 5,
@@ -89,9 +92,12 @@ export default function slider() {
         centeredSlides: false,
         slidesPerView: 2,
       },
-      1439: {
+      1199: {
         centeredSlides: false,
         slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
       },
       1440: {
         slidesPerView: 3,

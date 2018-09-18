@@ -166,6 +166,48 @@
   }
 }
 
+@include screen ("desktop") {
+  .faq {
+    background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 59px;
+      margin-right: 0;
+    }
+
+    .accordion {
+      margin-bottom: 19px;
+      padding-left: 114px;
+
+      &__header {
+        @include heading-4;
+
+        &::after {
+          background-size: contain;
+          left: -41px;
+          width: 16px;
+          height: 25px;
+          top: 20px;
+        }
+      }
+
+      &__button {
+        padding: 0;
+      }
+
+      &__body {
+        @include text-4;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  .faq-wrapper {
+    padding: 27px 0 64px;
+  }
+}
+
 @include screen ("desktop-wide") {
   .faq {
     background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));

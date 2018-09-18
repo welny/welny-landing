@@ -6,16 +6,16 @@ const menuBtn = document.querySelector('.js-toggle');
 const headerList = document.querySelector('.header-menu-list');
 
 window.onresize = function () {
-  if (window.innerWidth >= 1440) {
+  if (window.innerWidth >= 1200) {
     headerList.classList.remove('visually-hidden');
-  } else if (window.innerWidth < 1440 & !headerList.classList.contains('visually-hidden')) {
+  } else if (window.innerWidth < 1200 & !headerList.classList.contains('visually-hidden')) {
     headerList.classList.add('visually-hidden');
   }
 }
 
-if (window.innerWidth >= 1440) {
+if (window.innerWidth >= 1200) {
   headerList.classList.remove('visually-hidden');
-} else if (window.innerWidth < 1440 & !headerList.classList.contains('visually-hidden')) {
+} else if (window.innerWidth < 1200 & !headerList.classList.contains('visually-hidden')) {
   headerList.classList.add('visually-hidden');
 }
 

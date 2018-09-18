@@ -79,9 +79,9 @@
       width: 77px;
       height: 23px;
       margin: 0 20px;
+      transition: $ease-main;
 
       &:hover {
-        transition: $ease-main;
         opacity: 0.5;
       }
 
@@ -171,6 +171,95 @@
       }
     }
   }
+}
+
+@include screen ("desktop") {
+  .advantages-content {
+    padding: 71px 22px 33px 21px;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 85px;
+      margin-left: 0;
+    }
+
+    &-list {
+      padding: 0 43px 0 62px;
+
+      &__item {
+        padding-left: 0;
+        padding-top: 120px;
+        margin-bottom: 68px;
+        max-width: 340px;
+        flex-grow: 1;
+
+
+        &_comfort {
+          margin-left: 0;
+
+          &::before {
+            width: 110px;
+            height: 90px;
+            background-size: contain;
+          }
+        }
+
+        &_pro {
+          margin-left: 0;
+          // margin-right: 16px;
+
+          &::before {
+            width: 120px;
+            height: 100px;
+            background-size: contain;
+          }
+        }
+
+        &_cosy {
+          &::before {
+            width: 103px;
+            height: 103px;
+            background-size: contain;
+          }
+        }
+      }
+
+      &__item-title {
+        @include heading-4;
+        margin-bottom: 10px;
+      }
+
+      &__item-text {
+        @include text-7;
+        line-height: calc(24 / 18);
+        max-width: 289px;
+        margin: 0 auto;
+      }
+    }
+
+    &-links {
+      padding-bottom: 55px;
+
+      &__item {
+        margin: 0;
+        width: 204px;
+        height: 60px;
+
+        &_googleplay {
+          margin-left: 104px;
+        }
+
+        &_appstore {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .not-desktop {
+    display: none;
+  }
+
 }
 
 @include screen ("desktop-wide") {

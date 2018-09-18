@@ -14,9 +14,9 @@
     width: 23px;
     height: 28px;
     background: url("../images/log-in_mob.svg") center center no-repeat;
+    transition: $ease-main;
 
     &:hover {
-      transition: $ease-main;
       opacity: 0.5;
     }
   }
@@ -139,6 +139,89 @@
       margin-bottom: 33px;
     }
   }
+}
+
+@include screen ("desktop") {
+  .header-nav {
+    margin: 0 42px 0 41px;
+    min-height: 130px;
+
+    &__logo {
+      order: 1;
+      margin: 3px 0 0 8px;
+
+      svg {
+        width: 145px;
+        height: 69px;
+      }
+    }
+
+    &__login {
+      order: 3;
+      width: 131px;
+      height: 47px;
+      vertical-align: middle;
+      background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
+    }
+
+    &__personal {
+      display: none;
+    }
+
+    &__enter {
+      @include text-7;
+      color: $color-main;
+      display: block;
+      margin-left: 40px;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+
+  .header-menu-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 732px;
+    order: 2;
+    height: auto;
+    padding: 0;
+
+    &__item {
+      margin-bottom: 0;
+
+      &_types {
+        padding-right: 5px;
+      }
+
+      &_prices {
+        padding-right: 4px;
+      }
+
+      &_specs {
+        padding-right: 5px;
+      }
+
+      &_reviews {
+        padding-right: 6px;
+      }
+    }
+
+    &__link {
+      color: $color-basic;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+
 }
 
 @include screen ("desktop-wide") {
