@@ -9,7 +9,7 @@
       padding-top: 11px;
       padding-right: 5px;
       margin: 0 31px 9px;
-      border-top: 3px solid $color-border;
+      border-top: 1px solid $color-border;
     }
 
     &_install {
@@ -34,7 +34,7 @@
 
 .about-list {
   margin: 18px 31px 0;
-  border-bottom: 2px solid $color-basic;
+  border-bottom: 1px solid $color-basic;
   padding-bottom: 7px;
 
   &__item {

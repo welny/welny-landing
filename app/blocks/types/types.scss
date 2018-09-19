@@ -32,13 +32,15 @@
 
     &_energy {
       &::before {
-        background: url("../images/answer_img1_mob.png") left center no-repeat;
+        background: url("../images/answer_1_mob_2@.png") left center no-repeat;
+        background-size: contain;
       }
     }
 
     &_relax {
       &::before {
-        background: url("../images/answer_img2_mob.png") left center no-repeat;
+        background: url("../images/answer_2_mob_2@.png") left center no-repeat;
+        background-size: contain;
       }
     }
 
@@ -47,7 +49,8 @@
       margin-bottom: 7px;
 
       &::before {
-        background: url("../images/answer_img3_mob.png") left center no-repeat;
+        background: url("../images/answer_3_mob_2@.png") left center no-repeat;
+        background-size: contain;
       }
 
       .answers__text {
@@ -149,13 +152,15 @@
 
       &_energy {
         &::before {
-          background: url("../images/answer_img1_tab.png") top center no-repeat;
+          background: url("../images/answer_1_tab_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
       &_relax {
         &::before {
-          background: url("../images/answer_img2_tab.png") top center no-repeat;
+          background: url("../images/answer_2_tab_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -165,7 +170,8 @@
         }
 
         &::before {
-          background: url("../images/answer_img3_tab.png") top center no-repeat;
+          background: url("../images/answer_3_tab_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
     }
@@ -238,7 +244,7 @@
     &::before {
       @include pseudo;
       width: 260px;
-      height: 270px;
+      height: 271px;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
@@ -246,7 +252,8 @@
 
       &_energy {
         &::before {
-          background: url("../images/answer_img1_desk.png") top center no-repeat;
+          background: url("../images/answer_1_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -254,7 +261,8 @@
         order:2;
 
         &::before {
-          background: url("../images/answer_img2_desk.png") top center no-repeat;
+          background: url("../images/answer_2_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -262,7 +270,8 @@
         order:1;
 
         &::before {
-          background: url("../images/answer_img3_desk.png") top center no-repeat;
+          background: url("../images/answer_3_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
     }
@@ -276,6 +285,9 @@
   .text-wrapper {
     width: 42%;
     margin-right: 13px;
+    // height: 100%;
+    align-self: stretch;
+    min-height: 479px;
   }
 
   .order {
@@ -344,7 +356,8 @@
 
       &_energy {
         &::before {
-          background: url("../images/answer_img1_desk.png") top center no-repeat;
+          background: url("../images/answer_1_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -352,7 +365,8 @@
         order:2;
 
         &::before {
-          background: url("../images/answer_img2_desk.png") top center no-repeat;
+          background: url("../images/answer_2_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -360,7 +374,8 @@
         order:1;
 
         &::before {
-          background: url("../images/answer_img3_desk.png") top center no-repeat;
+          background: url("../images/answer_3_desk_2@.png") top center no-repeat;
+          background-size: contain;
         }
       }
     }
