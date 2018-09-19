@@ -104,7 +104,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: 12px;
+      padding-bottom: 10px;
 
       &__item {
         padding-left: 0;
@@ -264,7 +264,7 @@
 
 @include screen ("desktop-wide") {
   .advantages-content {
-    padding: 71px 142px 33px 141px;
+    padding: 71px 140px 33px 141px;
 
     &__title {
       @include heading-2;

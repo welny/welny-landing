@@ -88,7 +88,7 @@
 .slider {
   // background-color: $color-fill-semi;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   &__slide {
     background-color: transparent;
@@ -203,7 +203,7 @@
 
   .wrapper-question-title {
     min-height: 170px;
-    padding: 60px 104px 0 68px;
+    padding: 61px 104px 0 68px;
     margin: 0;
     display: flex;
     justify-content: flex-start;
@@ -524,6 +524,7 @@
 
 @include screen ("desktop-wide") {
   .type-slider {
+    margin-top: 1px;
     &__title {
       @include heading-2;
       margin-left: 0;
@@ -554,7 +555,7 @@
   }
 
   .order-now {
-    margin: 34px 55px 105px 55px;
+    margin: 32px 55px 105px 55px;
 
     &__text {
       @include text-4;
