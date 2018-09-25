@@ -392,10 +392,12 @@
     position: relative;
 
     &__logo {
+      margin: 0;
       position: absolute;
       width: 117px;
       height: 170px;
-      top: 78px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 104px;
     }
   }
@@ -514,12 +516,6 @@
 }
 
 @include screen ("desktop-wide") {
-  .footer {
-    &__logo {
-      top: 49px;
-    }
-  }
-
   .footer-wrapper {
     flex-direction: column;
     flex-wrap: wrap;

@@ -6,16 +6,18 @@ mixin about-us()
           +e.H2.__title.__title_top О нас говорят
         +b.UL.about-list
           +e.LI.__item.__item_ntv
-            picture
-              source(media="(min-width: 1200px)", srcset="./assets/images/ntv_desk.png")
-              source(media="(min-width: 768px)", srcset="./assets/images/ntv_tab.png")
-              img(src="./assets/images/ntv_mob.png", alt="НТВ")
+            a(href="https://www.youtube.com/watch?v=QlIYn_Vqhro")
+              picture
+                source(media="(min-width: 1200px)", srcset="./assets/images/ntv_desk.png, ./assets/images/ntv_desk@2.png 2x")
+                source(media="(min-width: 768px)", srcset="./assets/images/ntv_tab.png, ./assets/images/ntv_tab@2.png 2x")
+                img(src="./assets/images/ntv_mob.png", srcset="./assets/images/ntv_mob@2.png 2x" alt="НТВ")
             +e.P.__text “Заказать массаж также просто, как пиццу!”
           +e.LI.__item.__item_vc
-            picture
-              source(media="(min-width: 1200px)", srcset="./assets/images/vc_desk.png")
-              source(media="(min-width: 768px)", srcset="./assets/images/vc_tab.png")
-              img(src="./assets/images/vc_mob.png", alt="vc.ru")
+            a(href="https://vc.ru/tribuna/27667-welny")
+              picture
+                source(media="(min-width: 1200px)", srcset="./assets/images/vc_desk.png 1x, ./assets/images/vc_desk@2.png 2x")
+                source(media="(min-width: 768px)", srcset="./assets/images/vc_tab.png 1x, ./assets/images/vc_tab@2.png 2x")
+                img(src="./assets/images/vc_mob.png", srcset="./assets/images/vc_mob@2.png 2x" alt="vc.ru")
             +e.P.__text “Массаж с доставкой на дом уже не выглядит сумасшедшей идеей”
         .download-wrapper
           +e.H2.__title.__title_install Загрузите приложение Welny
@@ -24,12 +26,12 @@ mixin about-us()
             +e.LI.__item.__item_appstore
               +e.A(href="#")
                 picture
-                  source(media="(min-width: 1200px)", srcset="./assets/images/app_img_appstore.png")
-                  source(media="(min-width: 768px)", srcset="./assets/images/appstore_tab.png")
-                  img(src="./assets/images/appstore_mob.png", alt="Загрузите в Appstore")
+                  source(media="(min-width: 1200px)", srcset="./assets/images/appstore_desk.png 1x, ./assets/images/appstore_desk@2.png 2x")
+                  source(media="(min-width: 768px)", srcset="./assets/images/appstore_tab.png 1x, ./assets/images/appstore_tab@2.png 2x")
+                  img(src="./assets/images/appstore_mob.png", srcset="./assets/images/appstore_mob@2.png 2x" alt="Загрузите в Appstore")
             +e.LI.__item.__item_googleplay
               +e.A(href="#")
                 picture
-                  source(media="(min-width: 1200px)", srcset="./assets/images/app_img_google.png")
-                  source(media="(min-width: 768px)", srcset="./assets/images/google_tab.png")
-                  img(src="./assets/images/google_mob.png", alt="Загрузите в Google Play")
+                  source(media="(min-width: 1200px)", srcset="./assets/images/google_desk.png 1x, ./assets/images/google_desk@2.png 2x")
+                  source(media="(min-width: 768px)", srcset="./assets/images/google_tab.png 1x, ./assets/images/google_tab@2.png 2x")
+                  img(src="./assets/images/google_mob.png", srcset="./assets/images/google_mob@2.png 2x" alt="Загрузите в Google Play")

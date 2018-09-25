@@ -7,7 +7,7 @@
     text-align: center;
     padding: 13px 0 18px;
     margin: 0 31px;
-    border-top: 3px solid $color-border;
+    border-top: 1px solid $color-border;
   }
 }
 
@@ -24,6 +24,8 @@
   &__item {
     transition: $ease-main;
     padding: 0 16px;
+    width: 85%;
+    margin: 0 auto;
   }
 
   &__name {
@@ -52,8 +54,9 @@
   &__link {
     @include text-13;
     color: #30abd2;
-    float: right;
+    display: block;
     transition: $ease-main;
+    margin-bottom: 1px;
 
     &:hover {
       opacity: 0.5;
@@ -76,7 +79,7 @@
       background: url("../images/arrow_light.svg") center center no-repeat;
       background-size: contain;
       transform: rotate(180deg);
-      right: -5px;
+      right: -3px;
     }
 
     &::before {
@@ -137,6 +140,7 @@
     }
 
     &__item {
+      margin: 0;
       padding: 0 70px 0 0;
       min-height: 151px;
       box-sizing: border-box;

@@ -1,5 +1,5 @@
 mixin reviews()
-  +b.SECTION.reviews&attributes(attributes)
+  +b.SECTION.reviews(id="reviews")&attributes(attributes)
     +ui-section-head
       .reviews-wrapper
         .reviews-title-wrapper
@@ -13,7 +13,7 @@ mixin reviews()
                   +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
                   +e.P.__date июнь 2018
                 +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде, продолжаешь кушать вкусняшки и заваливаешься спать.
-                  +e.A.__link(href="#") Отзыв в Instagram
+                +e.A.__link(href="#") Отзыв в Instagram
             +slide
               +e.__item
                 .author-wrapper
@@ -21,7 +21,7 @@ mixin reviews()
                   +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
                   +e.P.__date июнь 2018
                 +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде, продолжаешь кушать вкусняшки и заваливаешься спать.
-                  +e.A.__link(href="#") Отзыв в Instagram
+                +e.A.__link(href="#") Отзыв в Instagram
             +slide
               +e.__item
                 .author-wrapper
@@ -29,4 +29,4 @@ mixin reviews()
                   +e.IMG.__photo(src="./assets/images/eva_desk.jpg" alt="Ева фото")
                   +e.P.__date июнь 2018
                 +e.P.__text Совершенно другое дело вызвать к себе специалиста.... и после часового релакса ты остаешься в своем уютной обстановке в мягенькой удобной одежде, продолжаешь кушать вкусняшки и заваливаешься спать.
-                  +e.A.__link(href="#") Отзыв в Instagram
+                +e.A.__link(href="#") Отзыв в Instagram

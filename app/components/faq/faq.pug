@@ -1,10 +1,10 @@
 mixin faq()
-  +b.SECTION.faq&attributes(attributes)
+  +b.SECTION.faq(id="faq")&attributes(attributes)
     +ui-section-head
       .faq-wrapper
         +e.H2.__title FAQ
         +accordions(true)
-          +accordion.is-active
+          +accordion
             +accordion-header
               +accordion-button Как это работает?
             +accordion-body
