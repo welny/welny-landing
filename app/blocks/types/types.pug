@@ -3,19 +3,77 @@ mixin types()
     +ui-section-head
       //- .wrapper-title
         +e.H2.__question Имеете дело с высокими нагрузками?
-      +b.UL.answers
+      +b.UL.answers.answers_sport
+        +e.LI.__item.__item_energy
+          +e.P.__text Восстановит силы и избавит от усталости
+        +e.LI.__item.__item_relax
+          +e.P.__text Разгрузит мысли и снимет стресс
+        +e.LI.__item.__item_plan
+          +e.P.__text Когда и где вам удобно, не нужно ждать записи
+      +b.UL.answers.answers_anti
+        +e.LI.__item.__item_energy
+          +e.P.__text Прекрасный уход для тела и души
+        +e.LI.__item.__item_relax
+          +e.P.__text Улучшает состояние кожи
+        +e.LI.__item.__item_plan
+          +e.P.__text Специальное предложение на подписку
+      +b.UL.answers.answers_limfo
+        +e.LI.__item.__item_energy
+          +e.P.__text Улучшает состояние кожи
+        +e.LI.__item.__item_relax
+          +e.P.__text Воздействует на проблемные участки фигуры
+        +e.LI.__item.__item_plan
+          +e.P.__text Специальное предложение на подписку
+      +b.UL.answers.answers_limfo
+        +e.LI.__item.__item_energy
+          +e.P.__text Улучшает состояние кожи 2
+        +e.LI.__item.__item_relax
+          +e.P.__text Воздействует на проблемные участки фигуры 2
+        +e.LI.__item.__item_plan
+          +e.P.__text Специальное предложение на подписку 2
+      +b.UL.answers.answers_classic
         +e.LI.__item.__item_energy
           +e.P.__text Восстановит энергию и даст силы для новых рекордов
         +e.LI.__item.__item_relax
           +e.P.__text Снимет напряжение и расслабит тело
         +e.LI.__item.__item_plan
           +e.P.__text Удобно планировать и совмещать с тренировками
+        +e.LI.__item.__item_plan
+          +e.P.__text Не нужно стоять в пробках или ехать на метро
     .order-wrapper
       .container
-        +b.order
+        +b.order.order_sport
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
             +e.H2.__title Спортивный SPA Welny
+            +e.A.__button
+              p Заказать
+        +b.order.order_anti
+          .img-wrapper
+            img(src="./assets/images/order-now_desk.png")
+          .text-wrapper
+            +e.H2.__title Антицеллюлитный SPA Welny
+            +e.A.__button
+              p Заказать
+        +b.order.order_limfo
+          .img-wrapper
+            img(src="./assets/images/order-now_desk.png")
+          .text-wrapper
+            +e.H2.__title Лимфодренажный SPA Welny
+            +e.A.__button
+              p Заказать
+        +b.order.order_limfo
+          .img-wrapper
+            img(src="./assets/images/order-now_desk.png")
+          .text-wrapper
+            +e.H2.__title Лимфодренажный2 SPA Welny
+            +e.A.__button
+              p Заказать
+        +b.order.order_classic
+          .img-wrapper
+            img(src="./assets/images/order-now_desk.png")
+          .text-wrapper
+            +e.H2.__title Классический SPA Welny
             +e.A.__button
               p Заказать

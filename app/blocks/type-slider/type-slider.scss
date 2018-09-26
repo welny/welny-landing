@@ -153,8 +153,8 @@
     background-size: 155px;
   }
 
-  &_limfo1 {
-    background: url("../images/limfo.png") top 5px center no-repeat, white;
+  &_anti {
+    background: url("../images/anti.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 
@@ -412,7 +412,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 150px;
+      width: 50px;
       height: 250px;
       background: #fdf3eb;
       top: 0;
@@ -438,14 +438,14 @@
       &_prev {
         background: url("../images/arrow_dark.svg") center center no-repeat;
         background-size: contain;
-        left: 170px;
+        left: 55px;
       }
 
       &_next {
         background: url("../images/arrow_dark.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        right: 162px;
+        right: 69px;
       }
 
       &::before {
@@ -456,7 +456,7 @@
     .swiper-slide-active {
       .type-slide-wrapper {
         opacity: 1 !important;
-        transform: scale(1) translateX(0) !important;
+        transform: scale(1) translateX(-25px) !important;
         background-color: white !important;
       }
 
@@ -469,7 +469,7 @@
     .swiper-slide {
       .type-slide-wrapper {
         background-color: transparent;
-        transform: scale(0.43) translateY(-21px) translateX(330px);
+        transform: scale(0.43) translateY(-21px) translateX(140px);
       }
 
       .slider__text {
@@ -481,7 +481,7 @@
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(-29px) translateY(-6px) !important;
+        transform: scale(0.7) translateX(-15px) translateY(-6px) !important;
 
         .slider__text {
           transform: scale(1.05) translateX(-5px) translateY(-5px) !important;
@@ -493,7 +493,7 @@
       z-index: 2;
 
       .type-slide-wrapper {
-        transform: scale(0.7) translateX(30px) translateY(-5px) !important;
+        transform: scale(0.7) translateX(-35px) translateY(-5px) !important;
 
         .slider__text {
           transform: scale(1.1) translateX(1px) translateY(-5px) !important;
@@ -504,7 +504,7 @@
     .swiper-slide-next ~ .swiper-slide {
       .type-slide-wrapper {
         background-color: transparent;
-        transform: scale(0.43) translateY(-41px) translateX(-296px);
+        transform: scale(0.43) translateY(-41px) translateX(-220px);
 
         .slider__text {
           transform: scale(1.15);
@@ -589,7 +589,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 150px;
+      width: 70px;
       height: 250px;
       background: #fdf3eb;
       top: 0;
@@ -615,14 +615,14 @@
       &_prev {
         background: url("../images/arrow_dark.svg") center center no-repeat;
         background-size: contain;
-        left: 170px;
+        left: 96px;
       }
 
       &_next {
         background: url("../images/arrow_dark.svg") center center no-repeat;
         background-size: contain;
         transform: rotate(180deg);
-        right: 162px;
+        right: 102px;
       }
 
       &::before {

@@ -1,7 +1,7 @@
 .header {
   display: block;
-  background: url("../images/top-banner.png") top center no-repeat;
-  background-size: cover;
+  background: url("../images/top-banner.png") left -40px top no-repeat;
+  background-size: auto 120%;
 
   &-content {
     min-height: 290px;
@@ -38,6 +38,20 @@
   stroke: $color-main;
 }
 
+@include screen ("phablet") {
+  .header {
+    background: url("../images/top-banner.png") top center no-repeat;
+    background-size: cover;
+  }
+}
+
+@include screen ("tablet-small") {
+  .header {
+    background: url("../images/top-banner.png") top -40px center no-repeat;
+    background-size: cover;
+  }
+}
+
 @include screen("tablet") {
   .header {
     background: url("../images/top-banner.png") left top -40px no-repeat;
@@ -72,6 +86,13 @@
   .rating__icon {
     height: 14px;
     width: 14px;
+  }
+}
+
+@include screen ("background-fix") {
+  .header {
+    background: url("../images/top-banner.png") left bottom -140px no-repeat;
+    background-size: cover;
   }
 }
 

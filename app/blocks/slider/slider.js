@@ -13,6 +13,7 @@ export default function slider() {
     // autoplay: {
     //   delay: 2000,
     // },
+    slideToClickedSlide: true,
     slidesPerView: 5,
     centeredSlides: true,
     navigation: {

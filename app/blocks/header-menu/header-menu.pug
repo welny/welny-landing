@@ -8,16 +8,16 @@ mixin header-menu()
           +e.LI.__item.__item_about
             +e.A.__link(href="https://welny.ru/aboutw/") О Welny
           +e.LI.__item.__item_types
-            +e.A.__link(href="#types") Типы
+            +e.A.__link(href="#types").js-anchor Типы
               +e.span.__text массажа
           +e.LI.__item.__item_prices
-            +e.A.__link(href="#prices") Цены
+            +e.A.__link(href="#prices").js-anchor Цены
           +e.LI.__item.__item_specs
-            +e.A.__link(href="#masseur") Специалисты
+            +e.A.__link(href="#masseur").js-anchor Специалисты
           +e.LI.__item.__item_reviews
-            +e.A.__link(href="#reviews") Отзывы
+            +e.A.__link(href="#reviews").js-anchor Отзывы
           +e.LI.__item.__item_faq
-            +e.A.__link(href="#faq") FAQ
+            +e.A.__link(href="#faq").js-anchor FAQ
         +link-icon("logo_head").header-nav__logo
         +e.BUTTON.__login(href="#")
           +e.P.__personal Личный кабинет
