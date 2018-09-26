@@ -26,21 +26,21 @@
                             <a class="header-menu-list__link" href="https://welny.ru/aboutw/">О Welny</a>
                         </li>
                         <li class="header-menu-list__item header-menu-list__item header-menu-list__item_types">
-                            <a class="header-menu-list__link" href="#types">Типы
+                            <a class="header-menu-list__link js-anchor" href="#types">Типы
                                 <span class="header-menu-list__span header-menu-list__text">массажа</span>
                             </a>
                         </li>
                         <li class="header-menu-list__item header-menu-list__item header-menu-list__item_prices">
-                            <a class="header-menu-list__link" href="#prices">Цены</a>
+                            <a class="header-menu-list__link js-anchor" href="#prices">Цены</a>
                         </li>
                         <li class="header-menu-list__item header-menu-list__item header-menu-list__item_specs">
-                            <a class="header-menu-list__link" href="#masseur">Специалисты</a>
+                            <a class="header-menu-list__link js-anchor" href="#masseur">Специалисты</a>
                         </li>
                         <li class="header-menu-list__item header-menu-list__item header-menu-list__item_reviews">
-                            <a class="header-menu-list__link" href="#reviews">Отзывы</a>
+                            <a class="header-menu-list__link js-anchor" href="#reviews">Отзывы</a>
                         </li>
                         <li class="header-menu-list__item header-menu-list__item header-menu-list__item_faq">
-                            <a class="header-menu-list__link" href="#faq">FAQ</a>
+                            <a class="header-menu-list__link js-anchor" href="#faq">FAQ</a>
                         </li>
                     </ul>
                     <a class="link link_icon header-nav__logo">
@@ -78,7 +78,7 @@
                             <span class="rating__box">
                                 <svg class="rating__icon"><use xlink:href="assets/images/icon.svg#icon_star"></use></svg>
                             </span>
-                        </span>рейтинг в AppStore</p>
+                        </span>&nbsp;рейтинг в AppStore</p>
                 </div>
             </div>
         </div>
@@ -87,9 +87,7 @@
         <div class="advantages__section-head">
             <div class="container">
                 <div class="advantages-content">
-                    <h1 class="advantages-content__title">Как это работает
-                        <span class="not-desktop">?</span>
-                    </h1>
+                    <h1 class="advantages-content__title">Как это работает</h1>
                     <ul class="advantages-content-list">
                         <li class="advantages-content-list__item advantages-content-list__item advantages-content-list__item_comfort">
                             <h2 class="advantages-content-list__item-title">Удобно</h2>
@@ -158,8 +156,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="slider__slide">
-                                <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
+                                <div class="type-slide-wrapper type-slide-wrapper_anti">
+                                    <p class="slider__text">Антицеллюлитный</p>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +171,7 @@
                         <div class="swiper-slide">
                             <div class="slider__slide">
                                 <div class="type-slide-wrapper type-slide-wrapper_limfo">
-                                    <p class="slider__text">Лимфодренажный</p>
+                                    <p class="slider__text">Еще какой-то, нет картинки и названия.</p>
                                 </div>
                             </div>
                         </div>
@@ -192,8 +190,21 @@
         </div>
         <div class="wrapper-question">
             <div class="container">
-                <div class="wrapper-question-title">
+                <div class="wrapper-question-title wrapper-question-title_sport">
                     <h2 class="type-slider__question">Имеете дело с высокими нагрузками?</h2>
+                </div>
+                <div class="wrapper-question-title wrapper-question-title_anti">
+                    <h2 class="type-slider__question">Любите впечатлять?</h2>
+                </div>
+                <div class="wrapper-question-title wrapper-question-title_limfo">
+                    <h2 class="type-slider__question">Заботитесь о здоровье и красоте?</h2>
+                </div>
+                <div class="wrapper-question-title wrapper-question-title_limfo">
+                    <h2 class="type-slider__question">Заботитесь о здоровье и красоте? 2</h2>
+                </div>
+                <div class="wrapper-question-title wrapper-question-title_classic">
+                    <h2 class="type-slider__question">Высоко цените время?</h2>
+                    <h2 class="type-slider__question">Некогда отдохнуть?</h2>
                 </div>
             </div>
         </div>
@@ -201,7 +212,51 @@
     <section class="types" id="types">
         <div class="types__section-head">
             <div class="container">
-                <ul class="answers">
+                <ul class="answers answers answers_sport">
+                    <li class="answers__item answers__item answers__item_energy">
+                        <p class="answers__text">Восстановит силы и избавит от усталости</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_relax">
+                        <p class="answers__text">Разгрузит мысли и снимет стресс</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_plan">
+                        <p class="answers__text">Когда и где вам удобно, не нужно ждать записи</p>
+                    </li>
+                </ul>
+                <ul class="answers answers answers_anti">
+                    <li class="answers__item answers__item answers__item_energy">
+                        <p class="answers__text">Прекрасный уход для тела и души</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_relax">
+                        <p class="answers__text">Улучшает состояние кожи</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_plan">
+                        <p class="answers__text">Специальное предложение на подписку</p>
+                    </li>
+                </ul>
+                <ul class="answers answers answers_limfo">
+                    <li class="answers__item answers__item answers__item_energy">
+                        <p class="answers__text">Улучшает состояние кожи</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_relax">
+                        <p class="answers__text">Воздействует на проблемные участки фигуры</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_plan">
+                        <p class="answers__text">Специальное предложение на подписку</p>
+                    </li>
+                </ul>
+                <ul class="answers answers answers_limfo">
+                    <li class="answers__item answers__item answers__item_energy">
+                        <p class="answers__text">Улучшает состояние кожи 2</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_relax">
+                        <p class="answers__text">Воздействует на проблемные участки фигуры 2</p>
+                    </li>
+                    <li class="answers__item answers__item answers__item_plan">
+                        <p class="answers__text">Специальное предложение на подписку 2</p>
+                    </li>
+                </ul>
+                <ul class="answers answers answers_classic">
                     <li class="answers__item answers__item answers__item_energy">
                         <p class="answers__text">Восстановит энергию и даст силы для новых рекордов</p>
                     </li>
@@ -211,17 +266,64 @@
                     <li class="answers__item answers__item answers__item_plan">
                         <p class="answers__text">Удобно планировать и совмещать с тренировками</p>
                     </li>
+                    <li class="answers__item answers__item answers__item_plan">
+                        <p class="answers__text">Не нужно стоять в пробках или ехать на метро</p>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="order-wrapper">
             <div class="container">
-                <div class="order">
+                <div class="order order order_sport">
                     <div class="img-wrapper">
                         <img src="./assets/images/order-now_desk.png" />
                     </div>
                     <div class="text-wrapper">
                         <h2 class="order__title">Спортивный SPA Welny</h2>
+                        <a class="order__button">
+                            <p>Заказать</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="order order order_anti">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/order-now_desk.png" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h2 class="order__title">Антицеллюлитный SPA Welny</h2>
+                        <a class="order__button">
+                            <p>Заказать</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="order order order_limfo">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/order-now_desk.png" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h2 class="order__title">Лимфодренажный SPA Welny</h2>
+                        <a class="order__button">
+                            <p>Заказать</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="order order order_limfo">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/order-now_desk.png" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h2 class="order__title">Лимфодренажный2 SPA Welny</h2>
+                        <a class="order__button">
+                            <p>Заказать</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="order order order_classic">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/order-now_desk.png" />
+                    </div>
+                    <div class="text-wrapper">
+                        <h2 class="order__title">Классический SPA Welny</h2>
                         <a class="order__button">
                             <p>Заказать</p>
                         </a>
@@ -563,7 +665,7 @@
                                         <a class="footer-submenu__link" href="#">Работа с Welny</a>
                                     </li>
                                     <li class="footer-submenu__item">
-                                        <a class="footer-submenu__link" href="#faq">FAQ</a>
+                                        <a class="footer-submenu__link js-anchor" href="#faq">FAQ</a>
                                     </li>
                                     <li class="footer-submenu__item footer-submenu__item footer-submenu__item_btn">
                                         <a class="button btn__office">Welny для офиса</a>
