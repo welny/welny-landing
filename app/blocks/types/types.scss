@@ -7,10 +7,24 @@
     margin-bottom: 21px;
     text-align: center;
   }
+
+  &__section-head {
+    min-height: 466px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    min-height: 466px;
+  }
 }
 
 .answers {
   margin: 22px 25px 0;
+  min-height: 466px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   &__item {
     display: flex;
@@ -58,6 +72,63 @@
         margin-bottom: auto;
       }
     }
+
+    &_care {
+      &::before {
+        background: url("../images/3-pros-anti-harmony-03.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_skin {
+      &::before {
+        background: url("../images/3-pros-anti-skin-03.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_special {
+      &::before {
+        background: url("../images/3-pros-anti-several-03.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_problem {
+      &::before {
+        background: url("../images/4-pros-limfo-figure.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_refresh {
+      &::before {
+        background: url("../images/1-pros-classic-energy.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_stress {
+      &::before {
+        background: url("../images/1-pros-classic-thoughts.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_place {
+      &::before {
+        background: url("../images/1-pros-classic-time.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_easy {
+      &::before {
+        background: url("../images/1-pros-classic-road.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
   }
 }
 
@@ -122,13 +193,27 @@
 }
 
 @include screen ("tablet") {
+  .types {
+    &__section-head {
+      min-height: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      min-height: auto;
+    }
+  }
+
   .types__question {
     @include text-4;
   }
 
   .answers {
+    min-height: auto;
     margin: 68px 82px 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     &__item {

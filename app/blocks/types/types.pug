@@ -3,74 +3,74 @@ mixin types()
     +ui-section-head
       //- .wrapper-title
         +e.H2.__question Имеете дело с высокими нагрузками?
-      +b.UL.answers.answers_sport
+      +b.UL.answers.answers_sport.js-sport
         +e.LI.__item.__item_energy
           +e.P.__text Восстановит силы и избавит от усталости
         +e.LI.__item.__item_relax
           +e.P.__text Разгрузит мысли и снимет стресс
         +e.LI.__item.__item_plan
           +e.P.__text Когда и где вам удобно, не нужно ждать записи
-      +b.UL.answers.answers_anti
-        +e.LI.__item.__item_energy
+      +b.UL.answers.answers_anti.visually-hidden.js-anti
+        +e.LI.__item.__item_care
           +e.P.__text Прекрасный уход для тела и души
-        +e.LI.__item.__item_relax
+        +e.LI.__item.__item_skin
           +e.P.__text Улучшает состояние кожи
-        +e.LI.__item.__item_plan
+        +e.LI.__item.__item_special
           +e.P.__text Специальное предложение на подписку
-      +b.UL.answers.answers_limfo
-        +e.LI.__item.__item_energy
+      +b.UL.answers.answers_limfo.visually-hidden.js-limfo
+        +e.LI.__item.__item_skin
           +e.P.__text Улучшает состояние кожи
-        +e.LI.__item.__item_relax
+        +e.LI.__item.__item_problem
           +e.P.__text Воздействует на проблемные участки фигуры
-        +e.LI.__item.__item_plan
+        +e.LI.__item.__item_special
           +e.P.__text Специальное предложение на подписку
-      +b.UL.answers.answers_limfo
-        +e.LI.__item.__item_energy
+      +b.UL.answers.answers_limfo.visually-hidden.js-limfo2
+        +e.LI.__item.__item_skin
           +e.P.__text Улучшает состояние кожи 2
-        +e.LI.__item.__item_relax
+        +e.LI.__item.__item_problem
           +e.P.__text Воздействует на проблемные участки фигуры 2
-        +e.LI.__item.__item_plan
+        +e.LI.__item.__item_special
           +e.P.__text Специальное предложение на подписку 2
-      +b.UL.answers.answers_classic
-        +e.LI.__item.__item_energy
-          +e.P.__text Восстановит энергию и даст силы для новых рекордов
-        +e.LI.__item.__item_relax
-          +e.P.__text Снимет напряжение и расслабит тело
-        +e.LI.__item.__item_plan
-          +e.P.__text Удобно планировать и совмещать с тренировками
-        +e.LI.__item.__item_plan
+      +b.UL.answers.answers_classic.visually-hidden.js-classic
+        +e.LI.__item.__item_refresh
+          +e.P.__text Восстановит силы и избавит от усталости
+        +e.LI.__item.__item_stress
+          +e.P.__text Разгрузит мысли и снимет стресс
+        +e.LI.__item.__item_place
+          +e.P.__text Когда и где вам удобно, не нужно ждать записи
+        +e.LI.__item.__item_easy
           +e.P.__text Не нужно стоять в пробках или ехать на метро
     .order-wrapper
       .container
-        +b.order.order_sport
+        +b.order.order_sport.js-sport
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
             +e.H2.__title Спортивный SPA Welny
             +e.A.__button
               p Заказать
-        +b.order.order_anti
+        +b.order.order_anti.visually-hidden.js-anti
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
             +e.H2.__title Антицеллюлитный SPA Welny
             +e.A.__button
               p Заказать
-        +b.order.order_limfo
+        +b.order.order_limfo.visually-hidden.js-limfo
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
             +e.H2.__title Лимфодренажный SPA Welny
             +e.A.__button
               p Заказать
-        +b.order.order_limfo
+        +b.order.order_limfo.visually-hidden.js-limfo2
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
             +e.H2.__title Лимфодренажный2 SPA Welny
             +e.A.__button
               p Заказать
-        +b.order.order_classic
+        +b.order.order_classic.visually-hidden.js-classic
           .img-wrapper
             img(src="./assets/images/order-now_desk.png")
           .text-wrapper
