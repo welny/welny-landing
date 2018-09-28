@@ -11,10 +11,12 @@ const slides = slider1.querySelectorAll('.swiper-slide')
 const titles = document.querySelectorAll('.wrapper-question-title');
 const answers = document.querySelectorAll('.answers');
 const orders = document.querySelectorAll('.order');
+const images = document.querySelectorAll('.img-wrapper')
 const titlesArr = Array.from(titles);
 const answersArr = Array.from(answers);
 const slidesArr = Array.from(slides);
 const ordersArr = Array.from(orders);
+const imagesArr = Array.from(images);
 
 console.log(answersArr);
 
@@ -47,6 +49,13 @@ sliderTop.addEventListener('click', function () {
         order.classList.add('visually-hidden');
       }
     });
+    imagesArr.forEach(image => {
+      if (image.classList.contains('js-sport') && image.classList.contains('visually-hidden')) {
+        image.classList.remove('visually-hidden');
+      } else if (!image.classList.contains('js-sport') && !image.classList.contains('visually-hidden')) {
+        image.classList.add('visually-hidden');
+      }
+    });
   } else if (subElement.classList.contains('js-anti')) {
     titlesArr.forEach(title => {
       if (title.classList.contains('js-anti') && title.classList.contains('visually-hidden')) {
@@ -68,6 +77,13 @@ sliderTop.addEventListener('click', function () {
         order.classList.remove('visually-hidden');
       } else if (!order.classList.contains('js-anti') && !order.classList.contains('visually-hidden')) {
         order.classList.add('visually-hidden');
+      }
+    });
+    imagesArr.forEach(image => {
+      if (image.classList.contains('js-anti') && image.classList.contains('visually-hidden')) {
+        image.classList.remove('visually-hidden');
+      } else if (!image.classList.contains('js-anti') && !image.classList.contains('visually-hidden')) {
+        image.classList.add('visually-hidden');
       }
     });
   } else if (subElement.classList.contains('js-limfo')) {
@@ -92,6 +108,13 @@ sliderTop.addEventListener('click', function () {
         order.classList.add('visually-hidden');
       }
     });
+    imagesArr.forEach(image => {
+      if (image.classList.contains('js-limfo') && image.classList.contains('visually-hidden')) {
+        image.classList.remove('visually-hidden');
+      } else if (!image.classList.contains('js-limfo') && !image.classList.contains('visually-hidden')) {
+        image.classList.add('visually-hidden');
+      }
+    });
   } else if (subElement.classList.contains('js-limfo2')) {
     titlesArr.forEach(title => {
       if (title.classList.contains('js-limfo2') && title.classList.contains('visually-hidden')) {
@@ -112,6 +135,13 @@ sliderTop.addEventListener('click', function () {
         order.classList.remove('visually-hidden');
       } else if (!order.classList.contains('js-limfo2') && !order.classList.contains('visually-hidden')) {
         order.classList.add('visually-hidden');
+      }
+    });
+    imagesArr.forEach(image => {
+      if (image.classList.contains('js-limfo2') && image.classList.contains('visually-hidden')) {
+        image.classList.remove('visually-hidden');
+      } else if (!image.classList.contains('js-limfo2') && !image.classList.contains('visually-hidden')) {
+        image.classList.add('visually-hidden');
       }
     });
   } else if (subElement.classList.contains('js-classic')) {
@@ -136,7 +166,13 @@ sliderTop.addEventListener('click', function () {
         order.classList.add('visually-hidden');
       }
     });
-
+    imagesArr.forEach(image => {
+      if (image.classList.contains('js-classic') && image.classList.contains('visually-hidden')) {
+        image.classList.remove('visually-hidden');
+      } else if (!image.classList.contains('js-classic') && !image.classList.contains('visually-hidden')) {
+        image.classList.add('visually-hidden');
+      }
+    });
   }
 });
 

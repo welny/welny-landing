@@ -12,11 +12,12 @@
     min-height: 466px;
     display: flex;
     align-items: center;
+
+    .container {
+      min-height: 466px;
+    }
   }
 
-  .container {
-    min-height: 466px;
-  }
 }
 
 .answers {
@@ -179,6 +180,15 @@
       color: white;
     }
   }
+
+  &_anti,
+  &_limfo,
+  &_classic,
+  &_limfo2 {
+    .order__title {
+      max-width: 150px;
+    }
+  }
 }
 
 .img-wrapper {
@@ -294,6 +304,15 @@
       width: 119px;
       height: 48px;
     }
+
+    &_anti,
+    &_limfo,
+    &_classic,
+    &_limfo2 {
+      .order__title {
+        max-width: 240px;
+      }
+    }
   }
 
   .img-wrapper {
@@ -399,6 +418,17 @@
       margin-right: 54px;
       border-radius: 10px;
     }
+
+    &_anti,
+    &_limfo,
+    &_classic,
+    &_limfo2 {
+      .order__title {
+        max-width: 450px;
+        z-index: 1;
+      }
+    }
+
   }
 
   .img-wrapper {

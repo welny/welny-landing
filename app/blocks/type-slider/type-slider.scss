@@ -198,18 +198,44 @@
     }
   }
 
-  .wrapper-question {
-    background: url("../images/dance_tab_2@.png") right 104px bottom no-repeat, $color-fill-semi;
-    background-size: 115px 180px, cover;
-  }
+  // .wrapper-question {
+  // }
 
   .wrapper-question-title {
-    min-height: 170px;
-    padding: 61px 104px 0 68px;
+    min-height: 180px;
+    padding: 51px 104px 0 68px;
     margin: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    &_sport {
+      background: url("../images/dance_tab_2@.png") right 104px bottom no-repeat, $color-fill-semi;
+      background-size: 115px 180px, cover;
+    }
+
+    &_anti {
+      background: url("../images/3-anti-girl.png") right 104px bottom no-repeat, $color-fill-semi;
+      background-size: 240px 180px, cover;
+    }
+
+    &_limfo {
+      background: url("../images/4-limfo-tree.png") right 104px bottom no-repeat, $color-fill-semi;
+      background-size: 180px 180px, cover;
+    }
+
+    &_limfo2 {
+      background: url("../images/4-limfo-tree.png") right 104px bottom no-repeat, $color-fill-semi;
+      background-size: 115px 180px, cover;
+    }
+
+    &_classic {
+      // display: flex;
+      // flex-direction: column;
+      // align-content: flex-end;
+      background: url("../images/1-classic-girl.png") right 104px bottom no-repeat, $color-fill-semi;
+      background-size: 180px 180px, cover;
+    }
   }
 
   .wrapper-title {
@@ -359,7 +385,8 @@
     &__question {
       @include heading-5;
       line-height: calc(48 / 34);
-      margin-left: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -367,14 +394,39 @@
     padding-bottom: 29px;
   }
 
-  .wrapper-question {
-    background: url("../images/dance_desk_2@.png") right 128px bottom 3px no-repeat, url("../images/football_2@.png") left 127px bottom 3px no-repeat, $color-fill-semi;
-    background-size: 206px 324px, 271px 286px, cover;
-  }
+  // .wrapper-question {
+  // }
 
   .wrapper-question-title {
-    min-height: 314px;
-    padding: 87px 389px 0;
+    min-height: 324px;
+    padding: 77px 389px 0;
+    text-align: center;
+
+    &_sport {
+      background: url("../images/dance_desk_2@.png") right 128px bottom 3px no-repeat, url("../images/football_2@.png") left 127px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 206px 324px, 271px 286px, cover;
+    }
+
+    &_anti {
+      background: url("../images/3-anti-girl.png") right 68px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 440px 324px, cover;
+    }
+
+    &_limfo {
+      background: url("../images/4-limfo-tree.png") right 88px bottom 0px no-repeat, url("../images/4-limfo-girl-01.png") left 147px bottom 0px no-repeat, $color-fill-semi;
+      background-size: 324px 324px, 271px 286px, cover;
+    }
+
+    &_limfo2 {
+      background: url("../images/4-limfo-tree.png") right 248px bottom 3px no-repeat, url("../images/4-limfo-girl-01.png") left 247px bottom 3px no-repeat,$color-fill-semi;
+      background-size: 206px 324px, 271px 286px, cover;
+    }
+
+    &_classic {
+      background: url("../images/1-classic-girl.png") right 88px bottom 3px no-repeat, url("../images/1-classic-boy.png") left 107px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 324px 324px, 300px 324px, cover;
+    }
+
   }
 
   .price-wrapper {
@@ -544,14 +596,36 @@
     padding-bottom: 29px;
   }
 
-  .wrapper-question {
-    background: url("../images/dance_desk_2@.png") right 248px bottom 3px no-repeat, url("../images/football_2@.png") left 247px bottom 3px no-repeat, $color-fill-semi;
-    background-size: 206px 324px, 271px 286px, cover;
-  }
 
   .wrapper-question-title {
-    min-height: 314px;
-    padding: 87px 509px 0;
+    min-height: 324px;
+    padding: 77px 509px 0;
+
+    &_sport {
+      background: url("../images/dance_desk_2@.png") right 248px bottom 3px no-repeat, url("../images/football_2@.png") left 247px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 206px 324px, 271px 286px, cover;
+    }
+
+    &_anti {
+      background: url("../images/3-anti-girl.png") right 148px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 440px 324px, cover;
+    }
+
+    &_limfo {
+      background: url("../images/4-limfo-tree.png") right 188px bottom 0px no-repeat, url("../images/4-limfo-girl-01.png") left 247px bottom 0px no-repeat, $color-fill-semi;
+      background-size: 324px 324px, 271px 286px, cover;
+    }
+
+    &_limfo2 {
+      background: url("../images/4-limfo-tree.png") right 248px bottom 3px no-repeat, url("../images/4-limfo-girl-01.png") left 247px bottom 3px no-repeat,$color-fill-semi;
+      background-size: 206px 324px, 271px 286px, cover;
+    }
+
+    &_classic {
+      background: url("../images/1-classic-girl.png") right 168px bottom 3px no-repeat, url("../images/1-classic-boy.png") left 167px bottom 3px no-repeat, $color-fill-semi;
+      background-size: 324px 324px, 300px 324px, cover;
+    }
+
   }
 
   .price-wrapper {
