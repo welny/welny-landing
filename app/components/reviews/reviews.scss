@@ -176,9 +176,9 @@
       position: relative;
       @include text-9;
       line-height: calc(22 / 14);
-      color: $color-basic;
       float: none;
       clear: both;
+      margin-top: 5px;
     }
 
     &__button {

@@ -9,20 +9,20 @@
   }
 
   &__section-head {
-    min-height: 466px;
+    // min-height: 466px;
     display: flex;
     align-items: center;
 
-    .container {
-      min-height: 466px;
-    }
+    // .container {
+    //   min-height: 466px;
+    // }
   }
 
 }
 
 .answers {
   margin: 22px 25px 0;
-  min-height: 466px;
+  // min-height: 466px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -210,9 +210,9 @@
       align-items: center;
     }
 
-    .container {
-      min-height: auto;
-    }
+    // .container {
+    //   min-height: auto;
+    // }
   }
 
   .types__question {
@@ -411,6 +411,7 @@
     }
 
     &__button {
+      color: $color-border;
       @include text-3;
       width: 164px;
       height: 65px;

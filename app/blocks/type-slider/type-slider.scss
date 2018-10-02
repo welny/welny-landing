@@ -254,6 +254,7 @@
     }
 
     &__discount {
+      color: black;
       @include text-12;
       margin-top: 6px;
     }
@@ -446,6 +447,7 @@
     }
 
     &__discount {
+      color: $color-basic;
       @include text-9;
       line-height: calc(12 / 14);
       margin-top: 12px;

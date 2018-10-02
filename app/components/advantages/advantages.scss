@@ -1,5 +1,6 @@
 .advantages {
   display: block;
+  color: $color-basic;
 }
 
 .advantages-content {
@@ -52,7 +53,7 @@
           background: url("../images/order_img.svg") top 3px center no-repeat;
         }
       }
-    }
+   }
 
     &__item-title {
       @include text-9;
@@ -85,6 +86,10 @@
         opacity: 0.5;
       }
 
+      img {
+        width: 79px;
+        height: 24px;
+      }
     }
   }
 }
@@ -168,6 +173,11 @@
         margin: 0 31px;
         width: 126px;
         height: 37px;
+
+        img {
+          width: 128px;
+          height: 38px;
+        }
       }
     }
   }
@@ -251,6 +261,11 @@
 
         &_appstore {
           margin-left: 10px;
+        }
+
+        img {
+          width: 204px;
+          height: 60px;
         }
       }
     }
@@ -340,6 +355,11 @@
 
         &_appstore {
           margin-left: 10px;
+        }
+
+        img {
+          width: 204px;
+          height: 60px;
         }
       }
     }

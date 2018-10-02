@@ -65,7 +65,8 @@
 }
 
 .about-content-links {
-  width: 164px;
+  width: 162px;
+  margin-right: 1px;
   margin-left: auto;
   display: flex;
   flex-direction: row;
@@ -73,6 +74,11 @@
 
   &__item {
     transition: $ease-main;
+
+    img {
+      width: 79px;
+      height: 24px;
+    }
 
     &:hover {
       opacity: 0.5;
@@ -155,6 +161,13 @@
   .about-content-links {
     width: 266px;
     margin-left: auto;
+
+    &__item {
+      img {
+        width: 128px;
+        height: 38px;
+      }
+    }
   }
 
   .about-title-wrapper {
@@ -184,7 +197,7 @@
 
     &__text {
       @include text-4;
-      margin: 0 0 27px 53px;
+      margin: 0 0 147px 53px;
     }
   }
 
@@ -225,6 +238,13 @@
 
     &__item_appstore {
       margin-right: 40px;
+    }
+
+    &__item {
+      img {
+        width: 292px;
+        height: 86px;
+      }
     }
   }
 
@@ -289,6 +309,13 @@
   .about-content-links {
     width: 627px;
     margin-left: auto;
+
+    &__item {
+      img {
+        width: 292px;
+        height: 86px;
+      }
+    }
   }
 
   .download-wrapper {

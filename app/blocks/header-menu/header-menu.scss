@@ -11,7 +11,7 @@
   min-height: 45px;
 
   &__login {
-    width: 23px;
+    width: 25px;
     height: 28px;
     background: url("../images/log-in_mob.svg") center center no-repeat;
     transition: $ease-main;
@@ -49,9 +49,9 @@
     }
   }
 
-  &__personal {
-    display: none;
-  }
+  // &__personal {
+  //   display: none;
+  // }
 
   &__enter {
     display: none;
@@ -85,17 +85,18 @@
 
 @include screen ("tablet") {
   .header-nav {
-    margin: 0 31px 0 179px;
+    margin: 0 31px 0 31px;
     min-height: 64px;
 
     &__login {
-      width: 149px;
-      height: 31px;
+      // width: 149px;
+      // height: 31px;
+      margin-right: 1px;
       margin-top: 5px;
       vertical-align: middle;
-      border: 1px solid $color-main;
-      border-radius: 8px;
-      background: url("../images/user.svg") left 3px center no-repeat;
+      // border: 1px solid $color-main;
+      // border-radius: 8px;
+      // background: url("../images/user.svg") left 3px center no-repeat;
     }
 
     &__logo {
@@ -106,13 +107,13 @@
       }
     }
 
-    &__personal {
-      @include text-9;
-      color: $color-main;
-      display: block;
-      margin-right: 3px;
-      margin-left: 32px;
-    }
+    // &__personal {
+    //   @include text-9;
+    //   color: $color-main;
+    //   display: block;
+    //   margin-right: 3px;
+    //   margin-left: 32px;
+    // }
 
     &__burger {
       left: 25px;
@@ -164,9 +165,9 @@
       background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
     }
 
-    &__personal {
-      display: none;
-    }
+    // &__personal {
+    //   display: none;
+    // }
 
     &__enter {
       @include text-7;
@@ -247,9 +248,9 @@
       background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
     }
 
-    &__personal {
-      display: none;
-    }
+    // &__personal {
+    //   display: none;
+    // }
 
     &__enter {
       @include text-7;

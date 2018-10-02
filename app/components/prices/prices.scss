@@ -2,12 +2,14 @@
   display: block;
 
   &__title {
+    color: $color-basic;
     @include text-7;
     margin-bottom: 15px;
     text-align: center;
   }
 
   &__text {
+    color: $color-basic;
     @include text-13;
     text-align: center;
     margin: 0 14px;
@@ -99,15 +101,15 @@
 
 @include screen ("tablet") {
   .prices {
-    color: black;
-
     &__title {
+      color: black;
       @include text-4;
       margin-bottom: 26px;
       text-align: center;
     }
 
     &__text {
+      color: black;
       @include text-9;
       text-align: center;
       margin: 0 98px;
@@ -157,12 +159,14 @@
 @include screen ("desktop") {
   .prices {
     &__title {
+      color: $color-basic;
       @include heading-2;
       margin-bottom: 42px;
       margin-left: 8px;
     }
 
     &__text {
+      color: $color-basic;
       @include text-4;
       line-height: calc(31 / 24);
       margin: 0 136px;
