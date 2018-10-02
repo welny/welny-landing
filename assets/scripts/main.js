@@ -78,4 +78,35 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
+let windowWidth = $(window).width();
+let maket = '';
+if (windowWidth < 1440) {
+  maket = 'desk';
+} else if (windowWidth < 1200) {
+  maket = 'pad';
+} else if (windowWidth < 768) {
+  maket = 'mobil';
+}
+
+$(window).on('resize', function () {
+  switch (maket) {
+    case 'desk':
+      if ($(window).width() < 1200) {
+        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
+      }
+
+    case 'mobil':
+      if ($(window).width() > 768) {
+        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
+      }
+      break;
+
+    case 'pad':
+      if ($(window).width() < 769) {
+        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
+      }
+      break;
+  }
+});
+
 /* eslint-enable */
