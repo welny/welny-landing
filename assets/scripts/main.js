@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 'use strict';
 
 var menuBtn = document.querySelector('.js-toggle');
@@ -24,21 +23,27 @@ function toggleSlides(className) {
   });
 };
 
-sliderTop.addEventListener('DOMAttrModified', function () {
-  var element = slider1.querySelector('.swiper-slide-active');
-  var subElement = element.querySelector('.slider__slide');
-  if (subElement.classList.contains('js-sport')) {
-    toggleSlides('js-sport');
-  } else if (subElement.classList.contains('js-anti')) {
-    toggleSlides('js-anti');
-  } else if (subElement.classList.contains('js-limfo')) {
-    toggleSlides('js-limfo');
-  } else if (subElement.classList.contains('js-limfo2')) {
-    toggleSlides('js-limfo2');
-  } else if (subElement.classList.contains('js-classic')) {
-    toggleSlides('js-classic');
-  }
+var observer = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    var element = slider1.querySelector('.swiper-slide-active');
+    var subElement = element.querySelector('.slider__slide');
+    if (subElement.classList.contains('js-sport')) {
+      toggleSlides('js-sport');
+    } else if (subElement.classList.contains('js-anti')) {
+      toggleSlides('js-anti');
+    } else if (subElement.classList.contains('js-limfo')) {
+      toggleSlides('js-limfo');
+    } else if (subElement.classList.contains('js-limfo2')) {
+      toggleSlides('js-limfo2');
+    } else if (subElement.classList.contains('js-classic')) {
+      toggleSlides('js-classic');
+    };
+  });
 });
+
+var config = { attributes: true }
+
+observer.observe(slider1, config);
 
 window.onresize = function () {
   if (window.innerWidth >= 1200) {
@@ -78,35 +83,12 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
-let windowWidth = $(window).width();
-let maket = '';
-if (windowWidth < 1440) {
-  maket = 'desk';
-} else if (windowWidth < 1200) {
-  maket = 'pad';
-} else if (windowWidth < 768) {
-  maket = 'mobil';
-}
-
-$(window).on('resize', function () {
-  switch (maket) {
-    case 'desk':
-      if ($(window).width() < 1200) {
-        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
-      }
-
-    case 'mobil':
-      if ($(window).width() > 768) {
-        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
-      }
-      break;
-
-    case 'pad':
-      if ($(window).width() < 769) {
-        window.location.replace(window.location.pathname + window.location.search + window.location.hash);
-      }
-      break;
-  }
+$(window).bind('resize', function (e) {
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function () {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
 });
+
 
 /* eslint-enable */
