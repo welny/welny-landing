@@ -44,6 +44,7 @@ export default function slider() {
         slidesPerView: 2,
       },
       768: {
+        centeredSlides: true,
         slidesPerView: 3,
       },
       1199: {

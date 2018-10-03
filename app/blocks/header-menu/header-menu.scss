@@ -89,15 +89,27 @@
     min-height: 64px;
 
     &__login {
+      width: 104px;
+      height: 38px;
+      vertical-align: middle;
+      background: url("../images/log-in_mob.svg") left 8px center no-repeat;
       // width: 149px;
       // height: 31px;
-      margin-right: 1px;
-      margin-top: 5px;
-      vertical-align: middle;
-      // border: 1px solid $color-main;
-      // border-radius: 8px;
+      // margin-right: 1px;
+      // margin-top: 5px;
+      // vertical-align: middle;
+      border: 1px solid $color-main;
+      border-radius: 8px;
       // background: url("../images/user.svg") left 3px center no-repeat;
     }
+
+    &__enter {
+      @include text-7;
+      color: $color-main;
+      display: block;
+      margin-left: 40px;
+    }
+
 
     &__logo {
       margin-top: 10px;

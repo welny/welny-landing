@@ -273,7 +273,7 @@
   }
 
   .order-wrapper {
-    background: linear-gradient(transparent 20px, $color-brown 20px, $color-brown (calc(100% - 29px)), transparent (calc(100% - 29px)));
+    background: linear-gradient(to bottom, transparent 20px, $color-brown 20px, $color-brown (calc(100% - 29px)), transparent (calc(100% - 29px)));
   }
 
   .text-wrapper {
