@@ -141,7 +141,7 @@
       }
 
       &-text {
-        display: inline;
+        display: block;
       }
 
       &_pers {
@@ -225,6 +225,7 @@
         padding: 0 21px 0 59px;
         background-size: 30px;
         background-position-x: 17px;
+        width: 250px;
       }
 
       &_enter {
@@ -232,12 +233,7 @@
         background-size: 25px;
         background-position-x: 17px;
       }
-
-      &-text {
-        display: block;
-      }
     }
-
 
     &__burger {
       display: none;
@@ -304,23 +300,29 @@
     }
 
     &__login {
-      order: 3;
-      width: 131px;
-      height: 47px;
-      vertical-align: middle;
-      background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
+      &_pers {
+        display: none;
+      }
     }
 
-    // &__personal {
-    //   display: none;
+    // &__login {
+    //   order: 3;
+    //   width: 131px;
+    //   height: 47px;
+    //   vertical-align: middle;
+    //   background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
     // }
 
-    &__enter {
-      @include text-7;
-      color: $color-main;
-      display: block;
-      margin-left: 40px;
-    }
+    // // &__personal {
+    // //   display: none;
+    // // }
+
+    // &__enter {
+    //   @include text-7;
+    //   color: $color-main;
+    //   display: block;
+    //   margin-left: 40px;
+    // }
 
     &__burger {
       display: none;
