@@ -11,18 +11,47 @@
   min-height: 45px;
 
   &__login {
-    width: 25px;
+    min-width: 25px;
     height: 28px;
-    background: url("../images/log-in_mob.svg") center center no-repeat;
     transition: $ease-main;
+    text-align: right;
 
     &:hover {
       opacity: 0.5;
     }
+
+    &-text {
+      display: none;
+    }
+
+    // &__enter {
+    //   display: none;
+    //   background: url("../images/log-in_mob.svg") left 8px center no-repeat;
+    //   @include text-7;
+    //   color: $color-main;
+    //   margin-left: 40px;
+    // }
+
+    &_enter {
+      padding: 0 8px 0 34px;
+      color: $color-main;
+      background: url("../images/log-in_mob.svg") left 5px center no-repeat;
+      // background-size: 20px;
+    }
+
+    &_pers {
+      padding: 0 8px 0 34px;
+      color: $color-main;
+      background: url("../images/user.svg") left 5px center no-repeat;
+      background-size: 28px;
+      margin-left: auto;
+    }
   }
 
   &__logo {
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
     svg {
       width: 68px;
@@ -89,27 +118,36 @@
     min-height: 64px;
 
     &__login {
-      width: 104px;
-      height: 38px;
-      vertical-align: middle;
-      background: url("../images/log-in_mob.svg") left 8px center no-repeat;
+      // min-width: 104px;
+      height: 31px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
       // width: 149px;
       // height: 31px;
       // margin-right: 1px;
-      // margin-top: 5px;
+      margin-top: 7px;
       // vertical-align: middle;
       border: 1px solid $color-main;
       border-radius: 8px;
       // background: url("../images/user.svg") left 3px center no-repeat;
-    }
 
-    &__enter {
-      @include text-7;
-      color: $color-main;
-      display: block;
-      margin-left: 40px;
-    }
+      &_enter {
+        // padding: 0 8px 0 34px;
+        // color: $color-main;
+        // background: url("../images/log-in_mob.svg") left 5px center no-repeat;
+        background-size: 20px;
+      }
 
+      &-text {
+        display: inline;
+      }
+
+      &_pers {
+        background-size: 25px;
+      }
+    }
 
     &__logo {
       margin-top: 10px;
@@ -119,13 +157,16 @@
       }
     }
 
-    // &__personal {
-    //   @include text-9;
-    //   color: $color-main;
-    //   display: block;
-    //   margin-right: 3px;
-    //   margin-left: 32px;
-    // }
+    &__personal {
+      @include text-9;
+      color: $color-main;
+      margin-right: 3px;
+      margin-left: 3px;
+      min-width: 147px;
+      height: 31px;
+      // // margin-right: 1px;
+      // // margin-top: 5px;
+    }
 
     &__burger {
       left: 25px;
@@ -160,6 +201,8 @@
     min-height: 130px;
 
     &__logo {
+      position: static;
+      transform: none;
       order: 1;
       margin: 3px 0 0 8px;
 
@@ -171,22 +214,30 @@
 
     &__login {
       order: 3;
-      width: 131px;
       height: 47px;
       vertical-align: middle;
-      background: url("../images/log-in_mob.svg") left 18px top 7px no-repeat;
-    }
-
-    // &__personal {
-    //   display: none;
-    // }
-
-    &__enter {
       @include text-7;
       color: $color-main;
       display: block;
       margin-left: 40px;
+
+      &_pers {
+        padding: 0 21px 0 59px;
+        background-size: 30px;
+        background-position-x: 17px;
+      }
+
+      &_enter {
+        padding: 0 21px 0 59px;
+        background-size: 25px;
+        background-position-x: 17px;
+      }
+
+      &-text {
+        display: block;
+      }
     }
+
 
     &__burger {
       display: none;
