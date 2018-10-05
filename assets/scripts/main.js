@@ -83,12 +83,26 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
-$(window).bind('resize', function (e) {
-  if (window.RT) clearTimeout(window.RT);
-  window.RT = setTimeout(function () {
-    document.location.reload(false); /* false to get page from cache */
-  }, 100);
-});
+var breakpoints = [560, 768, 1200, 1440];
+var breakpointsName = ['phablet', 'tablet', 'desktop', 'desktop-wide'];
 
+function checkbp() {
+  var ww = $(window).width();
+  var returnVal = breakpointsName[0];
+
+  for (var i = 0; i < breakpoints.length; i++) {
+    if (ww > breakpoints[i]) returnVal = breakpointsName[i + 1];
+  }
+
+  return returnVal;
+}
+
+var breakpointLoaded = checkbp();
+var breakpointCurrent = void 0;
+
+$(window).resize(function () {
+  breakpointCurrent = checkbp();
+  if (breakpointLoaded != breakpointCurrent) location.reload(false);
+});
 
 /* eslint-enable */
