@@ -131,6 +131,10 @@
   }
 
   .slider2 {
+    &__photo {
+      margin-right: 5px;
+    }
+
     &__rating {
       font-size: 16px;
       line-height: calc(18 / 16);
@@ -160,6 +164,10 @@
   }
 
   .slider2 {
+    &__photo {
+      margin-right: 16px;
+    }
+
     &__rating {
       @include text-9;
     }
@@ -172,6 +180,17 @@
       @include text-12;
       line-height: calc(16 / 12);
     }
+  }
+
+  .slider2-wrapper {
+    width: 644px;
+  }
+}
+
+@include screen ("slider-fix") {
+  .slider2-wrapper {
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 

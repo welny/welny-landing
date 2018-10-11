@@ -13,9 +13,9 @@ export default function slider() {
     // autoplay: {
     //   delay: 2000,
     // },
-    slideToClickedSlide: true,
-    slidesPerView: 5,
     centeredSlides: true,
+    slidesPerView: 5,
+    slideToClickedSlide: true,
     navigation: {
       nextEl: '.slider__button_next',
       prevEl: '.slider__button_prev',
@@ -30,9 +30,11 @@ export default function slider() {
     roundLengths: true,
     breakpoints: {
       320: {
+        centeredSlides: true,
         slidesPerView: 1,
       },
       559: {
+        centeredSlides: true,
         slidesPerView: 1,
       },
       560: {
@@ -48,12 +50,15 @@ export default function slider() {
         slidesPerView: 3,
       },
       1199: {
+        centeredSlides: true,
         slidesPerView: 3,
       },
       1200: {
+        centeredSlides: true,
         slidesPerView: 5,
       },
       1440: {
+        centeredSlides: true,
         slidesPerView: 5,
       },
     },
@@ -118,7 +123,7 @@ export default function slider() {
     // },
     slidesPerView: 1,
     // centeredSlides: true,
-    parallax: true,
+    // parallax: true,
     navigation: {
       nextEl: '.slider3__button_next',
       prevEl: '.slider3__button_prev',

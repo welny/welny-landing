@@ -45,6 +45,33 @@ var config = { attributes: true }
 
 observer.observe(slider1, config);
 
+// var sliderTypes = document.querySelector('.slider');
+// var sliderMasseur = document.querySelector('.slider2');
+
+// function isEven(value) {
+//   if (value % 2 == 0)
+//     return true;
+//   else
+//     return false;
+// }
+
+// window.onresize = function () {
+//   console.log(sliderTypes.offsetWidth);
+//   if (isEven(sliderTypes.offsetWidth)) {
+//     sliderTypes.offsetWidth = sliderTypes.offsetWidth - 1;
+//   } else if (!isEven(sliderTypes.offsetWidth)) {
+//     sliderTypes.offsetWidth = sliderTypes.offsetWidth;
+//   } else if (isEven(sliderMasseur.offsetWidth)) {
+//     sliderMasseur.offsetWidth = sliderMasseur.offsetWidth - 1;
+//   } else if (!isEven(sliderMasseur.offsetWidth)) {
+//     sliderMasseur.offsetWidth = sliderMasseur.offsetWidth;
+//   } else if (window.innerWidth >= 1200) {
+//     headerList.classList.remove('visually-hidden');
+//   } else if (window.innerWidth < 1200 & !headerList.classList.contains('visually-hidden')) {
+//     headerList.classList.add('visually-hidden');
+//   }
+// };
+
 window.onresize = function () {
   if (window.innerWidth >= 1200) {
     headerList.classList.remove('visually-hidden');
