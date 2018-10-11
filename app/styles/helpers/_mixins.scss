@@ -98,10 +98,12 @@ div {
 }
 */
 $breakpoints: (
+  'fonts-fix-start': 374px,
   'phone': 400px,
   'phone-wide': 480px,
   'phablet': 560px,
   'tablet-small': 640px,
+  'fonts-fix-end': 666px,
   'tablet': 768px,
   'background-fix': 940px,
   'tablet-wide': 1024px,

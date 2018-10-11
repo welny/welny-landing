@@ -172,6 +172,69 @@
   align-items: center;
 }
 
+@include screen ("fonts-fix-start") {
+  .type-slider {
+    &__title,
+    &__question {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+    }
+  }
+
+  .order-now {
+    &__text {
+      font-size: 14.8px;
+      line-height: calc(17 / 14.8);
+    }
+
+    &__discount {
+      @include text-12;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: calc(18 / 16);
+    }
+  }
+
+  .slider {
+    &__text {
+      font-size: 16px;
+      line-height: calc(18 / 16);
+    }
+  }
+}
+
+@include screen ("fonts-fix-end") {
+  .type-slider {
+    &__title,
+    &__question {
+      @include text-7;
+    }
+  }
+
+  .order-now {
+    &__text {
+      font-size: 12.8px;
+      line-height: calc(15 / 12.8);
+    }
+
+    &__discount {
+      @include text-small;
+    }
+
+    &__btn {
+      @include text-9;
+    }
+  }
+
+  .slider {
+    &__text {
+      @include text-9;
+    }
+  }
+}
+
 @include screen ("phablet") {
   .swiper-slide-next {
     .type-slide-wrapper {

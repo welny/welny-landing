@@ -17,7 +17,6 @@
     //   min-height: 466px;
     // }
   }
-
 }
 
 .answers {
@@ -187,6 +186,7 @@
   &_limfo2 {
     .order__title {
       max-width: 150px;
+      text-align: center;
     }
   }
 }
@@ -201,6 +201,66 @@
     height: 100%;
   }
 }
+
+@include screen ("fonts-fix-start") {
+  .types {
+    &__question {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+    }
+  }
+
+  .answers {
+    &__item {
+      @include text-9;
+    }
+  }
+
+  .order {
+    &__title {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+    }
+
+    &__button {
+      @include text-9;
+    }
+
+    &_anti,
+    &_limfo,
+    &_classic,
+    &_limfo2 {
+      .order__title {
+        max-width: 170px;
+      }
+    }
+  }
+}
+
+@include screen ("fonts-fix-end") {
+  .types {
+    &__question {
+      @include text-7;
+    }
+  }
+
+  .answers {
+    &__item {
+      @include text-12;
+    }
+  }
+
+  .order {
+    &__title {
+      @include text-7;
+    }
+
+    &__button {
+      @include text-12;
+    }
+  }
+}
+
 
 @include screen ("tablet") {
   .types {
