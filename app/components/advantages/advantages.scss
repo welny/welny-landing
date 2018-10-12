@@ -110,8 +110,8 @@
       }
 
       &__item-text {
-        @include text-12;
-        line-height: calc(15 / 12);
+        font-size: 13px;
+        line-height: calc(16 / 13);
       }
     }
   }

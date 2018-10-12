@@ -113,7 +113,8 @@
 
   .slider3 {
     &__name {
-      @include text-12;
+      font-size: 13px;
+      line-height: calc(15 / 13);
     }
 
     &__date {
@@ -121,12 +122,13 @@
     }
 
     &__text {
-      @include text-12;
-      line-height: calc(16 / 12);
+      font-size: 13px;
+      line-height: calc(17 / 13);
     }
 
     &__link {
-      @include text-12;
+      font-size: 13px;
+      line-height: calc(15 / 13);
     }
   }
 }
