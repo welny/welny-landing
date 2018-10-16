@@ -188,8 +188,8 @@
     }
 
     &__discount {
-      font-size: 13px;
-      line-height: calc(15 / 13);
+      font-size: 14px;
+      line-height: calc(18 / 14);
       }
 
     &__btn {
@@ -217,6 +217,12 @@
         transform: scale(1.1) translateX(0px);
       }
     }
+  }
+}
+
+@include screen ("slider-fix") {
+  .slider-wrapper {
+    width: 668px;
   }
 }
 
@@ -248,12 +254,7 @@
       @include text-9;
     }
   }
-  .slider-wrapper {
-    width: 668px;
-  }
-}
 
-@include screen ("slider-fix") {
   .slider-wrapper {
     width: 100%;
   }

@@ -126,8 +126,8 @@
         }
 
     &__text {
-      font-size: 13px;
-      line-height: calc(15 / 13);
+      font-size: 14px;
+      line-height: calc(18 / 14);
     }
   }
 
@@ -150,6 +150,12 @@
       @include text-9;
       line-height: calc(18 / 14);
     }
+  }
+}
+
+@include screen ("slider-fix") {
+  .slider2-wrapper {
+    width: 644px;
   }
 }
 
@@ -183,12 +189,6 @@
     }
   }
 
-  .slider2-wrapper {
-    width: 644px;
-  }
-}
-
-@include screen ("slider-fix") {
   .slider2-wrapper {
     box-sizing: border-box;
     width: 100%;

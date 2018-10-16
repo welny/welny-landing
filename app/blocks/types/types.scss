@@ -247,7 +247,8 @@
 
   .answers {
     &__item {
-      @include text-12;
+      @include text-11;
+      line-height: calc(18 / 14);
     }
   }
 
