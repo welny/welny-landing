@@ -112,28 +112,28 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .about-us {
-    &__title {
-      @include text-7;
+// @include screen ("fonts-fix-end") {
+//   .about-us {
+//     &__title {
+//       @include text-7;
 
-      &_install {
-        @include text-9;
-      }
-    }
+//       &_install {
+//         @include text-9;
+//       }
+//     }
 
-    &__text {
-      @include text-13;
-    }
-  }
+//     &__text {
+//       @include text-13;
+//     }
+//   }
 
-  .about-list {
-    &__item {
-      @include text-12;
-      line-height: calc(16 / 12);
-    }
-  }
-}
+//   .about-list {
+//     &__item {
+//       @include text-12;
+//       line-height: calc(16 / 12);
+//     }
+//   }
+// }
 
 
 @include screen ("tablet") {

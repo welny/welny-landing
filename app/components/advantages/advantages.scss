@@ -117,24 +117,24 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .advantages-content {
-    &__title {
-      @include text-7;
-    }
+// @include screen ("fonts-fix-end") {
+//   .advantages-content {
+//     &__title {
+//       @include text-7;
+//     }
 
-    &-list {
-      &__item-title {
-        @include text-9;
-      }
+//     &-list {
+//       &__item-title {
+//         @include text-9;
+//       }
 
-      &__item-text {
-        @include text-13;
-        line-height: calc(13 / 10);
-      }
-    }
-  }
-}
+//       &__item-text {
+//         @include text-13;
+//         line-height: calc(13 / 10);
+//       }
+//     }
+//   }
+// }
 
 @include screen ("tablet") {
   .advantages-content {

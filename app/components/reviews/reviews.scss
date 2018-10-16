@@ -133,32 +133,32 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .reviews {
-    &__title {
-      @include text-7;
-    }
-  }
+// @include screen ("fonts-fix-end") {
+//   .reviews {
+//     &__title {
+//       @include text-7;
+//     }
+//   }
 
-  .slider3 {
-    &__name {
-      @include text-12;
-    }
+//   .slider3 {
+//     &__name {
+//       @include text-12;
+//     }
 
-    &__date {
-      @include text-13;
-    }
+//     &__date {
+//       @include text-13;
+//     }
 
-    &__text {
-      @include text-13;
-      line-height: calc(14 / 10);
-    }
+//     &__text {
+//       @include text-13;
+//       line-height: calc(14 / 10);
+//     }
 
-    &__link {
-      @include text-13;
-    }
-  }
-}
+//     &__link {
+//       @include text-13;
+//     }
+//   }
+// }
 
 
 @include screen ("tablet") {

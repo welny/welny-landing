@@ -173,29 +173,29 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .footer-submenu {
-    &__link {
-      @include text-12;
-    }
-  }
+// @include screen ("fonts-fix-end") {
+//   .footer-submenu {
+//     &__link {
+//       @include text-12;
+//     }
+//   }
 
-  .btn__office {
-    @include text-12;
-  }
+//   .btn__office {
+//     @include text-12;
+//   }
 
 
-  .phone {
-    @include text-9;
-  }
+//   .phone {
+//     @include text-9;
+//   }
 
-  .legal {
-    &__link,
-    &__copyright {
-      @include text-13;
-    }
-  }
-}
+//   .legal {
+//     &__link,
+//     &__copyright {
+//       @include text-13;
+//     }
+//   }
+// }
 
 @include screen ("tablet") {
   .footer {

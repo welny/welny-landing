@@ -118,19 +118,19 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-.faq {
-    .accordion {
-      &__header{
-        @include text-12;
-      }
+// @include screen ("fonts-fix-end") {
+// .faq {
+//     .accordion {
+//       &__header{
+//         @include text-12;
+//       }
 
-      &__body {
-        @include text-13;
-      }
-    }
-  }
-}
+//       &__body {
+//         @include text-13;
+//       }
+//     }
+//   }
+// }
 
 
 @include screen ("tablet") {

@@ -238,30 +238,30 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .types {
-    &__question {
-      @include text-7;
-    }
-  }
+// @include screen ("fonts-fix-end") {
+//   .types {
+//     &__question {
+//       @include text-7;
+//     }
+//   }
 
-  .answers {
-    &__item {
-      @include text-11;
-      line-height: calc(18 / 14);
-    }
-  }
+//   .answers {
+//     &__item {
+//       @include text-11;
+//       line-height: calc(18 / 14);
+//     }
+//   }
 
-  .order {
-    &__title {
-      @include text-7;
-    }
+//   .order {
+//     &__title {
+//       @include text-7;
+//     }
 
-    &__button {
-      @include text-12;
-    }
-  }
-}
+//     &__button {
+//       @include text-12;
+//     }
+//   }
+// }
 
 
 @include screen ("tablet") {

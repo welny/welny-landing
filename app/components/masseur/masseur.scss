@@ -160,34 +160,34 @@
 }
 
 @include screen ("fonts-fix-end") {
-  .masseur {
-    &__title {
-      @include text-7;
-    }
+  // .masseur {
+  //   &__title {
+  //     @include text-7;
+  //   }
 
-    &__text {
-      @include text-13;
-    }
-  }
+  //   &__text {
+  //     @include text-13;
+  //   }
+  // }
 
-  .slider2 {
-    &__photo {
-      margin-right: 16px;
-    }
+  // .slider2 {
+  //   &__photo {
+  //     margin-right: 16px;
+  //   }
 
-    &__rating {
-      @include text-9;
-    }
+  //   &__rating {
+  //     @include text-9;
+  //   }
 
-    &__name {
-      @include text-7;
-    }
+  //   &__name {
+  //     @include text-7;
+  //   }
 
-    &__qualify {
-      @include text-12;
-      line-height: calc(16 / 12);
-    }
-  }
+  //   &__qualify {
+  //     @include text-12;
+  //     line-height: calc(16 / 12);
+  //   }
+  // }
 
   .slider2-wrapper {
     box-sizing: border-box;

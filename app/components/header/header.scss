@@ -53,19 +53,19 @@
   }
 }
 
-@include screen ("fonts-fix-end") {
-  .header {
-    &-content {
-      &__text_top {
-        @include text-7;
-      }
+// @include screen ("fonts-fix-end") {
+//   .header {
+//     &-content {
+//       &__text_top {
+//         @include text-7;
+//       }
 
-      &__text_bottom {
-        @include text-12;
-      }
-    }
-  }
-}
+//       &__text_bottom {
+//         @include text-12;
+//       }
+//     }
+//   }
+// }
 
 @include screen ("phablet") {
   .header {
