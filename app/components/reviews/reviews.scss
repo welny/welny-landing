@@ -103,6 +103,64 @@
   margin-bottom: 27px;
 }
 
+@include screen ("fonts-fix-start") {
+  .reviews {
+    &__title {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+    }
+  }
+
+  .slider3 {
+    &__name {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+
+    &__date {
+      @include text-9;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+  }
+}
+
+// @include screen ("fonts-fix-end") {
+//   .reviews {
+//     &__title {
+//       @include text-7;
+//     }
+//   }
+
+//   .slider3 {
+//     &__name {
+//       @include text-12;
+//     }
+
+//     &__date {
+//       @include text-13;
+//     }
+
+//     &__text {
+//       @include text-13;
+//       line-height: calc(14 / 10);
+//     }
+
+//     &__link {
+//       @include text-13;
+//     }
+//   }
+// }
+
+
 @include screen ("tablet") {
   .reviews {
     display: block;

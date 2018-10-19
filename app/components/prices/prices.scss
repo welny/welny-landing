@@ -99,6 +99,80 @@
   }
 }
 
+@include screen ("fonts-fix-start") {
+  .prices {
+    &__title {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+  }
+
+  .prices-list {
+    &__item-time {
+      @include text-2;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      line-height: calc(29 / 20);
+
+      &_discount {
+        font-size: 16px;
+        line-height: calc(18 / 16);
+      }
+
+      &_big {
+        @include text-2;
+      }
+
+      &_logo {
+        font-size: 20px;
+        line-height: calc(23 / 20);
+      }
+    }
+  }
+}
+
+// @include screen ("fonts-fix-end") {
+//   .prices {
+//     &__title {
+//       @include text-7;
+//     }
+
+//     &__text {
+//       @include text-13;
+//     }
+//   }
+
+//   .prices-list {
+//     &__item-time {
+//       @include text-3;
+//     }
+
+//     &__item-text {
+//       @include text-7;
+
+//       &_discount {
+//         @include text-10;
+//       }
+
+//       &_big {
+//         @include text-3;
+//       }
+
+//       &_logo {
+//         @include text-7;
+//       }
+//     }
+//   }
+// }
+
+
 @include screen ("tablet") {
   .prices {
     &__title {

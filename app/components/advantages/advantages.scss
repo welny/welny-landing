@@ -94,6 +94,48 @@
   }
 }
 
+@include screen ("fonts-fix-start") {
+  .advantages-content {
+    &__title {
+      font-size: 20px;
+      line-height: calc(23 / 20);
+        }
+
+    &-list {
+      padding-bottom: 10px;
+
+      &__item-title {
+        font-size: 16px;
+        line-height: calc(18 / 16);
+      }
+
+      &__item-text {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+      }
+    }
+  }
+}
+
+// @include screen ("fonts-fix-end") {
+//   .advantages-content {
+//     &__title {
+//       @include text-7;
+//     }
+
+//     &-list {
+//       &__item-title {
+//         @include text-9;
+//       }
+
+//       &__item-text {
+//         @include text-13;
+//         line-height: calc(13 / 10);
+//       }
+//     }
+//   }
+// }
+
 @include screen ("tablet") {
   .advantages-content {
     padding: 40px 64px 22px;

@@ -103,6 +103,36 @@
   }
 }
 
+@include screen ("fonts-fix-start") {
+.faq {
+    .accordion {
+      &__header{
+        @include text-11;
+      }
+
+      &__body {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+      }
+    }
+  }
+}
+
+// @include screen ("fonts-fix-end") {
+// .faq {
+//     .accordion {
+//       &__header{
+//         @include text-12;
+//       }
+
+//       &__body {
+//         @include text-13;
+//       }
+//     }
+//   }
+// }
+
+
 @include screen ("tablet") {
   .faq {
     background: linear-gradient(to bottom, $color-fill-semi 50%, $color-fill-semi 50%, rgba(253, 240, 230, 0));
