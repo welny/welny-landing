@@ -1,0 +1,7 @@
+.git
+.idea
+.publish
+node_modules
+dist
+readme
+package-lock.json
