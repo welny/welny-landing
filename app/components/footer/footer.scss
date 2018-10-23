@@ -532,9 +532,14 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 47px;
+    margin-right: auto;
 
     &__item {
       margin: 3px 13px;
+
+      &_ig {
+        margin-left: 0;
+      }
     }
 
     &__link {
@@ -647,6 +652,10 @@
 
     &__item {
       margin: 3px 13px;
+
+      &_ig {
+        margin-left: 0;
+      }
     }
 
     &__link {

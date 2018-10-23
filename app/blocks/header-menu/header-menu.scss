@@ -243,13 +243,18 @@
       margin-left: 40px;
 
       &_pers {
-        padding: 0 21px 0 59px;
+        padding: 0;
         background-size: 30px;
         background-position-x: 17px;
-        width: 250px;
+        width: auto;
+        min-width: 225px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        .header-nav__login-text {
+          padding: 0 21px 0 60px;
+        }
       }
 
       &_enter {
@@ -360,7 +365,7 @@
     justify-content: space-between;
     background-color: transparent;
     margin-left: 72px;
-    margin-right: 269px;
+    margin-right: auto;
     width: 732px;
     order: 2;
     height: auto;

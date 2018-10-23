@@ -372,7 +372,8 @@
         @include text-5;
         width: 100%;
         margin-bottom: 12px;
-        margin-left: 58px;
+        // margin-left: 58px;
+        margin-left: 0;
       }
 
       &__qualify {
@@ -478,14 +479,21 @@
     flex-wrap: wrap;
 
     .rating-wrapper {
-      margin-left: 12px;
-      margin-right: 34px;
+      // margin-left: 12px;
+      // margin-right: 34px;
+      margin-left: 0;
+      margin-right: 0;
 
       img {
         width: 45px;
         height: 45px;
       }
     }
+  }
+
+  .slider2__photo {
+    margin-right: 0;
+    margin-left: 18px;
   }
 }
 
