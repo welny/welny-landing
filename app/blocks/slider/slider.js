@@ -7,7 +7,8 @@ const $ = window.$;
 export default function slider() {
   const mySlider = new Swiper('.js-slider', {
     loop: true,
-    speed: 300,
+    // speed: 300,
+    nested: true,
     // watchSlidesProgress: true,
     // watchSlidesVisibility: true,
     // autoplay: {
@@ -20,13 +21,13 @@ export default function slider() {
       nextEl: '.slider__button_next',
       prevEl: '.slider__button_prev',
     },
-    pagination: {
-      el: '.slider__dots',
-      clickable: true,
-      paginationClickableClass: 'slider__dots_clickable',
-      bulletClass: 'slider__dot',
-      bulletActiveClass: 'active',
-    },
+    // pagination: {
+    //   el: '.slider__dots',
+    //   clickable: true,
+    //   paginationClickableClass: 'slider__dots_clickable',
+    //   bulletClass: 'slider__dot',
+    //   bulletActiveClass: 'active',
+    // },
     roundLengths: true,
     breakpoints: {
       320: {
@@ -76,13 +77,14 @@ export default function slider() {
       nextEl: '.slider2__button_next',
       prevEl: '.slider2__button_prev',
     },
-    pagination: {
-      el: '.slider__dots',
-      clickable: true,
-      paginationClickableClass: 'slider__dots_clickable',
-      bulletClass: 'slider__dot',
-      bulletActiveClass: 'active',
-    },
+    // pagination: {
+    //   el: '.slider__dots',
+    //   clickable: true,
+    //   paginationClickableClass: 'slider__dots_clickable',
+    //   bulletClass: 'slider__dot',
+    //   bulletActiveClass: 'active',
+    // },
+    slideToClickedSlide: true,
     roundLengths: true,
     breakpoints: {
       320: {
@@ -128,13 +130,13 @@ export default function slider() {
       nextEl: '.slider3__button_next',
       prevEl: '.slider3__button_prev',
     },
-    pagination: {
-      el: '.slider__dots',
-      clickable: true,
-      paginationClickableClass: 'slider__dots_clickable',
-      bulletClass: 'slider__dot',
-      bulletActiveClass: 'active',
-    },
+    // pagination: {
+    //   el: '.slider__dots',
+    //   clickable: true,
+    //   paginationClickableClass: 'slider__dots_clickable',
+    //   bulletClass: 'slider__dot',
+    //   bulletActiveClass: 'active',
+    // },
     roundLengths: true,
     breakpoints: {
       320: {
