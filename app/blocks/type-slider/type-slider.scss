@@ -129,9 +129,6 @@
   }
 }
 
-.swiper-slide {
-}
-
 .type-slide-wrapper {
   // transition-timing-function: ease;
   transition: $ease-main;
@@ -561,6 +558,17 @@
       z-index: 5;
     }
 
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 250px;
+      background: #fdf3eb;
+      top: 0;
+      right: 0;
+      z-index: 5;
+    }
+
     &__text {
       @include text-4;
       text-align: center;
@@ -596,6 +604,7 @@
 
     .swiper-slide-active {
       display: block;
+      transition: $ease-main;
 
       .type-slide-wrapper {
         opacity: 1 !important;
@@ -611,6 +620,7 @@
 
     .swiper-slide {
       display: block;
+      transition: $ease-main;
 
       .type-slide-wrapper {
         background-color: transparent;
@@ -625,6 +635,7 @@
     .swiper-slide-next {
       z-index: 2;
       display: block;
+      transition: $ease-main;
 
       .type-slide-wrapper {
         transform: scale(0.7) translateX(-15px) translateY(-6px) !important;
@@ -638,6 +649,7 @@
     .swiper-slide-prev {
       z-index: 2;
       display: block;
+      transition: $ease-main;
 
       .type-slide-wrapper {
         transform: scale(0.7) translateX(-35px) translateY(-5px) !important;
@@ -650,6 +662,7 @@
 
     .swiper-slide-next ~ .swiper-slide {
       display: block;
+      transition: $ease-main;
 
       .type-slide-wrapper {
         background-color: transparent;
@@ -661,16 +674,15 @@
       }
     }
 
-    .swiper-slide-next ~ .swiper-slide ~ .swiper-slide {
-      display: none;
-    }
+    // .swiper-slide-next ~ .swiper-slide ~ .swiper-slide {
+    //   display: none;
+    // }
   }
 
 
   .slider-slide {
     z-index: 1;
   }
-
 }
 
 @include screen ("desktop-wide") {
@@ -691,7 +703,6 @@
   .wrapper-title {
     padding-bottom: 29px;
   }
-
 
   .wrapper-question-title {
     min-height: 324px;
@@ -757,7 +768,8 @@
   }
 
   .slider{
-    &::before {
+    &::before,
+    &::after {
       width: 70px;
     }
 
@@ -869,9 +881,9 @@
       }
     }
 
-    .swiper-slide-next ~ .swiper-slide ~ .swiper-slide {
-      display: none;
-    }
+    // .swiper-slide-next ~ .swiper-slide ~ .swiper-slide {
+    //   display: none;
+    // }
   }
 
 
