@@ -134,7 +134,7 @@
 
 .type-slide-wrapper {
   // transition-timing-function: ease;
-  // transition: $ease-main;
+  transition: $ease-main;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -794,7 +794,36 @@
       }
     }
 
+    .swiper-slide {
+      transition: $ease-main;
+      transform: scale(0.43) translateY(-21px) translateX(298px);
+
+      .type-slide-wrapper {
+        background-color: transparent;
+        transform: scale(1) translateY(0) translateX(0);
+      }
+
+      .slider__text {
+        transform: scale(1.2);
+      }
+    }
+
+    .swiper-slide-prev {
+      transition: $ease-main;
+      z-index: 2;
+      transform: scale(0.7) translateX(39px) translateY(-6px) !important;
+
+      .type-slide-wrapper {
+        transform: scale(1) translateX(-10px) translateY(0) !important;
+
+        .slider__text {
+          transform: scale(1.1) translateX(1px) translateY(-5px) !important;
+        }
+      }
+    }
+
     .swiper-slide-active {
+      transition: $ease-main;
       opacity: 1 !important;
       transform: scale(1) translateX(0) !important;
 
@@ -810,20 +839,9 @@
       }
     }
 
-    .swiper-slide {
-      transform: scale(0.43) translateY(-21px) translateX(298px);
-
-      .type-slide-wrapper {
-        background-color: transparent;
-        transform: scale(1) translateY(0) translateX(0);
-      }
-
-      .slider__text {
-        transform: scale(1.2);
-      }
-    }
 
     .swiper-slide-next {
+      transition: $ease-main;
       z-index: 2;
       transform: scale(0.7) translateX(-39px) translateY(-6px) !important;
 
@@ -836,20 +854,9 @@
       }
     }
 
-    .swiper-slide-prev {
-      z-index: 2;
-      transform: scale(0.7) translateX(39px) translateY(-6px) !important;
-
-      .type-slide-wrapper {
-        transform: scale(1) translateX(-10px) translateY(0) !important;
-
-        .slider__text {
-          transform: scale(1.1) translateX(1px) translateY(-5px) !important;
-        }
-      }
-    }
 
     .swiper-slide-next ~ .swiper-slide {
+      transition: $ease-main;
       transform: scale(0.43) translateY(-41px) translateX(-296px);
 
       .type-slide-wrapper {
