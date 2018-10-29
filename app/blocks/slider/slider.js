@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable  */
 // http://idangero.us/swiper/#.WcIu5oy0OHs
 import * as Swiper from 'swiper/dist/js/swiper';
 
@@ -26,6 +26,33 @@ export default function slider() {
     //   bulletClass: 'slider__dot',
     //   bulletActiveClass: 'active',
     // },
+
+    on: {
+      progress: function() {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          var slideProgress = swiper.slides[i].progress;
+          var innerOffset = swiper.width * -0.5;
+          var innerTranslate = slideProgress * innerOffset;
+          swiper.slides[i].querySelector(".type-slide-wrapper").style.transform =
+            "translate3d(" + innerTranslate + "px, 0, 0)";
+        }
+      },
+      touchStart: function() {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = "0.3s ease";
+        }
+      },
+      setTransition: function(speed) {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = speed + "ms";
+          swiper.slides[i].querySelector(".type-slide-wrapper").style.transition =
+            speed + "ms";
+        }
+      }
+    },
     roundLengths: true,
     breakpoints: {
       320: {
