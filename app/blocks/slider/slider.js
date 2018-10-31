@@ -1,11 +1,11 @@
 /* eslint-disable  */
 // http://idangero.us/swiper/#.WcIu5oy0OHs
-import * as Swiper from 'swiper/dist/js/swiper';
+import * as Swiper from "swiper/dist/js/swiper";
 
 const $ = window.$;
 
 export default function slider() {
-  const mySlider = new Swiper('.js-slider', {
+  const mySlider = new Swiper(".js-slider", {
     loop: true,
     speed: 600,
     nested: true,
@@ -16,8 +16,8 @@ export default function slider() {
     slidesPerView: 5,
     slideToClickedSlide: true,
     navigation: {
-      nextEl: '.slider__button_next',
-      prevEl: '.slider__button_prev',
+      nextEl: ".slider__button_next",
+      prevEl: ".slider__button_prev"
     },
     // pagination: {
     //   el: '.slider__dots',
@@ -26,7 +26,14 @@ export default function slider() {
     //   bulletClass: 'slider__dot',
     //   bulletActiveClass: 'active',
     // },
-
+    onSlidePrevStart: function(evt) {
+      swiper2.slidePrev();
+    },
+    onSlideNextStart: function(evt) {
+      swiper2.slideNext();
+    },
+    touchEventsTarget: "wrapper",
+    direction: "horizontal",
     on: {
       progress: function() {
         var swiper = this;
@@ -34,8 +41,9 @@ export default function slider() {
           var slideProgress = swiper.slides[i].progress;
           var innerOffset = swiper.width * -0.5;
           var innerTranslate = slideProgress * innerOffset;
-          swiper.slides[i].querySelector(".type-slide-wrapper").style.transform =
-            "translate3d(" + innerTranslate + "px, 0, 0)";
+          swiper.slides[i].querySelector(
+            ".type-slide-wrapper"
+          ).style.transform = "translate3d(" + innerTranslate + "px, 0, 0)";
         }
       },
       touchStart: function() {
@@ -48,8 +56,9 @@ export default function slider() {
         var swiper = this;
         for (var i = 0; i < swiper.slides.length; i++) {
           swiper.slides[i].style.transition = speed + "ms";
-          swiper.slides[i].querySelector(".type-slide-wrapper").style.transition =
-            speed + "ms";
+          swiper.slides[i].querySelector(
+            ".type-slide-wrapper"
+          ).style.transition = speed + "ms";
         }
       }
     },
@@ -57,40 +66,40 @@ export default function slider() {
     breakpoints: {
       320: {
         centeredSlides: true,
-        slidesPerView: 1,
+        slidesPerView: 1
       },
       559: {
         centeredSlides: true,
-        slidesPerView: 1,
+        slidesPerView: 1
       },
       560: {
         centeredSlides: false,
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       767: {
         centeredSlides: false,
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       768: {
         centeredSlides: true,
-        slidesPerView: 3,
+        slidesPerView: 3
       },
       1199: {
         centeredSlides: true,
-        slidesPerView: 3,
+        slidesPerView: 3
       },
       1200: {
         centeredSlides: true,
-        slidesPerView: 5,
+        slidesPerView: 5
       },
       1440: {
         centeredSlides: true,
-        slidesPerView: 5,
-      },
-    },
+        slidesPerView: 5
+      }
+    }
   });
 
-  const mySlider2 = new Swiper('.js-slider2', {
+  const mySlider2 = new Swiper(".js-slider2", {
     loop: true,
     speed: 600,
     // autoplay: {
@@ -99,8 +108,8 @@ export default function slider() {
     slidesPerView: 3,
     centeredSlides: true,
     navigation: {
-      nextEl: '.slider2__button_next',
-      prevEl: '.slider2__button_prev',
+      nextEl: ".slider2__button_next",
+      prevEl: ".slider2__button_prev"
     },
     // pagination: {
     //   el: '.slider__dots',
@@ -113,36 +122,36 @@ export default function slider() {
     roundLengths: true,
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 1
       },
       559: {
-        slidesPerView: 1,
+        slidesPerView: 1
       },
       560: {
         centeredSlides: false,
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       768: {
         centeredSlides: false,
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       1199: {
         centeredSlides: false,
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 3
       },
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 3
       },
       1441: {
-        slidesPerView: 3,
-      },
-    },
+        slidesPerView: 3
+      }
+    }
   });
 
-  const mySlider3 = new Swiper('.js-slider3', {
+  const mySlider3 = new Swiper(".js-slider3", {
     loop: true,
     speed: 600,
     // autoplay: {
@@ -152,8 +161,8 @@ export default function slider() {
     // centeredSlides: true,
     // parallax: true,
     navigation: {
-      nextEl: '.slider3__button_next',
-      prevEl: '.slider3__button_prev',
+      nextEl: ".slider3__button_next",
+      prevEl: ".slider3__button_prev"
     },
     // pagination: {
     //   el: '.slider__dots',
@@ -165,9 +174,9 @@ export default function slider() {
     roundLengths: true,
     breakpoints: {
       320: {
-        slidesPerView: 1,
-      },
-    },
+        slidesPerView: 1
+      }
+    }
   });
 }
 
