@@ -6,15 +6,26 @@ const $ = window.$;
 
 export default function slider() {
   const mySlider = new Swiper(".js-slider", {
+    touchEventsTarget: "wrapper",
+    simulateTouch: true,
+    longSwipesMs: 1,
+    // onSlidePrevStart: function(evt) {
+    //   swiper2.slidePrev();
+    // },
+    // onSlideNextStart: function(evt) {
+    //   swiper2.slideNext();
+    // },
+    direction: "horizontal",
+    slideToClickedSlide: true,
     loop: true,
-    speed: 600,
-    nested: true,
+    speed: 300,
+    grabCursor: true,
+    // nested: true,
     // autoplay: {
     //   delay: 2000,
     // },
     centeredSlides: true,
     slidesPerView: 5,
-    slideToClickedSlide: true,
     navigation: {
       nextEl: ".slider__button_next",
       prevEl: ".slider__button_prev"
@@ -26,14 +37,6 @@ export default function slider() {
     //   bulletClass: 'slider__dot',
     //   bulletActiveClass: 'active',
     // },
-    onSlidePrevStart: function(evt) {
-      swiper2.slidePrev();
-    },
-    onSlideNextStart: function(evt) {
-      swiper2.slideNext();
-    },
-    touchEventsTarget: "wrapper",
-    direction: "horizontal",
     on: {
       progress: function() {
         var swiper = this;
