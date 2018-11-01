@@ -504,6 +504,10 @@
       width: 838px;
     }
   }
+
+  .img-wrapper.js-anti {
+    left: -120px;
+  }
 }
 
 @include screen ("desktop-wide") {

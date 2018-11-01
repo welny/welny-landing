@@ -110,26 +110,34 @@ menuBtn.addEventListener('click', function () {
   }
 });
 
-var breakpoints = [560, 768, 1200, 1440];
-var breakpointsName = ['phablet', 'tablet', 'desktop', 'desktop-wide'];
+var breakpoints = [560, 768, 1200, 1440, 1441];
+var breakpointsName = ['phablet', 'tablet', 'desktop', 'desktop-wide', 'very-wide'];
 
 function checkbp() {
   var ww = $(window).width();
   var returnVal = breakpointsName[0];
 
   for (var i = 0; i < breakpoints.length; i++) {
-    if (ww > breakpoints[i]) returnVal = breakpointsName[i + 1];
+    if (ww > breakpoints[i]) {
+      returnVal = breakpointsName[i + 1];
+      if (i + 1 >= breakpoints.length) {
+        returnVal = breakpointsName[i];
+      }
+    }
   }
-
   return returnVal;
 }
 
 var breakpointLoaded = checkbp();
-var breakpointCurrent = void 0;
+var breakpointCurrent;
 
 $(window).resize(function () {
   breakpointCurrent = checkbp();
-  if (breakpointLoaded != breakpointCurrent) location.reload(false);
+  if (breakpointLoaded != breakpointCurrent) {
+    window.location.href = window.location.href;
+    console.log('reloaded ' + breakpointCurrent);
+  };
+  console.log('loaded ' + breakpointLoaded + ' curent-' + breakpointCurrent);
 });
 
 /* eslint-enable */

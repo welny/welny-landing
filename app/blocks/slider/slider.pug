@@ -35,3 +35,8 @@ mixin slide()
   .swiper-slide
     +e.slide&attributes(attributes)
       block
+
+mixin slide-fix()
+  .swiper-slide.bug-fix
+    +e.slide&attributes(attributes)
+      block
