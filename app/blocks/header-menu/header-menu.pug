@@ -19,7 +19,7 @@ mixin header-menu()
           +e.LI.__item.__item_faq
             +e.A.__link(href="#faq").js-anchor FAQ
         +link-icon("logo_head").header-nav__logo
-        +e.BUTTON.__login.__login_pers(href="#")
-          span.header-nav__login-text Личный&nbsp;кабинет
-        //- +e.BUTTON.__login.__login_enter(href="#")
-        //-   span.header-nav__login-text Войти
+        //+e.BUTTON.__login.__login_pers(href="#")
+        //  span.header-nav__login-text Личный&nbsp;кабинет
+        +e.A.__login.__login_enter(href="https://welny.ru/app/#/?event=Landing_SignIn_Transition")
+         span.header-nav__login-text Войти

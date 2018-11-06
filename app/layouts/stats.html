@@ -1,0 +1,38 @@
+<!--GA with autotrack plugin: https://github.com/googleanalytics/autotrack-->
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-98017126-2', 'auto');
+  ga('require', 'outboundLinkTracker', {
+    linkSelector: '.app-clicks',
+    fieldsObj: {
+      hitType: 'event',
+      eventCategory: 'ItunesLink',
+      eventAction: 'click'
+    }
+  });
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="./js/autotrack.js"></script>
+<!-- End GA with autotrack plugin: https://github.com/googleanalytics/autotrack-->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1384009565050200');
+  fbq('track', 'PageView');
+</script>
+<noscript><img alt="fb stat" height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1384009565050200&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<script>(function(g,a,i){(a[i]=a[i]||[]).push(function(){try{a.yaCounter44912104=new Ya.Metrika({id:44912104,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,ut:"noindex"})}catch(c){}});var h=g.getElementsByTagName("script")[0],b=g.createElement("script"),e=function(){h.parentNode.insertBefore(b,h)};b.type="text/javascript";b.async=true;b.src="https://mc.yandex.ru/metrika/watch.js";if(a.opera=="[object Opera]"){g.addEventListener("DOMContentLoaded",e,false)}else{e()}})(document,window,"yandex_metrika_callbacks");</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44912104?ut=noindex" style=position:absolute;left:-9999px alt /></div></noscript>

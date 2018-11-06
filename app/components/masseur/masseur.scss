@@ -51,7 +51,7 @@
     width: 75px;
     height: 74px;
     margin: 3px 16px 0 0;
-    border: 1px solid #e08629;
+    //border: 1px solid #e08629;
     border-radius: 50%;
   }
 
@@ -480,6 +480,7 @@
     align-self: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 
     .rating-wrapper {
       // margin-left: 12px;
@@ -612,6 +613,8 @@
     align-self: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 10px;
+
 
     .rating-wrapper {
       margin-left: 12px;

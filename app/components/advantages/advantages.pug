@@ -2,7 +2,7 @@ mixin advantages()
   +b.SECTION.advantages&attributes(attributes)
     +ui-section-head
       .advantages-content
-        h1.advantages-content__title Как это работает
+        h2.advantages-content__title Как это работает
         +b.UL.advantages-content-list
           +e.LI.__item.__item_comfort
             +e.H2.__item-title Удобно
@@ -15,13 +15,13 @@ mixin advantages()
             +e.P.__item-text Получайте удовольствие от&nbsp;массажа, где вам удобно,&nbsp;7 дней в неделю с 08.00 до 22.00, 365 дней в году
         +b.UL.advantages-content-links
           +e.LI.__item.__item_appstore
-            +e.A(href="#")
+            +e.A(href="https://app.adjust.com/aeozym")
               picture
                 source(media="(min-width: 1200px)", srcset="./assets/images/appstore_desk.png 1x, ./assets/images/appstore_desk@2.png 2x")
                 source(media="(min-width: 768px)", srcset="./assets/images/appstore_tab.png 1x, ./assets/images/appstore_tab@2.png 2x")
                 img(src="./assets/images/appstore_mob.png", srcset="./assets/images/appstore_mob@2.png 2x" alt="Загрузите в Appstore")
           +e.LI.__item.__item_googleplay
-            +e.A(href="#")
+            +e.A(href="https://welny.ru/app/#/booking/")
               picture
                 source(media="(min-width: 1200px)", srcset="./assets/images/google_desk.png 1x, ./assets/images/google_desk@2.png 2x")
                 source(media="(min-width: 768px)", srcset="./assets/images/google_tab.png 1x, ./assets/images/google_tab@2.png 2x")

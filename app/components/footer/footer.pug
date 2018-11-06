@@ -3,45 +3,45 @@ mixin footer()
     +ui-section-head
       .footer-wrapper
         +e.__logo
-          a(href="")
-            img(src="./assets/images/logo_foot.svg")
+          a(href="https://welny.ru/")
+            img(src="./assets/images/logo_foot.svg", alt="логотип")
         +b.NAV.footer-nav
           +b.UL.footer-menu
             +e.LI.__item.__item_first
               +b.UL.footer-submenu
                 +e.LI.__item
-                  +e.A.__link(href="#") О Welny
+                  +e.A.__link(href="https://welny.ru/aboutw/") О Welny
                 +e.LI.__item
-                  +e.A.__link(href="#") Пресса о нас
+                  +e.A.__link(href="https://welny.ru/press/") Пресса о нас
                 +e.LI.__item
-                  +e.A.__link(href="#") Блог
+                  +e.A.__link(href="https://welny.ru/blog/") Блог
                 +e.LI.__item
-                  +e.A.__link(href="#") Контакты
+                  +e.A.__link(href="https://welny.ru/contact/") Контакты
             +e.LI.__item.__item_second
               +b.UL.footer-submenu
                 +e.LI.__item
-                  +e.A.__link(href="#") Работа с Welny
+                  +e.A.__link(href="https://welny.ru/partner/") Работа с Welny
                 +e.LI.__item
                   +e.A.__link(href="#faq").js-anchor FAQ
                 +e.LI.__item.__item_btn
-                  +button.btn__office Welny для офиса
+                  +button.btn__office(href="https://office.welny.ru/") Welny для офиса
           +b.P.phone +7 (495) 445-07-39
           +b.UL.footer-social
             +e.LI.__item.__item_ig
-              +e.A.__link(href="#")
-                img(src="./assets/images/footer_insta.svg")
+              +e.A.__link(href="https://www.instagram.com/welnyrussia/")
+                img(src="./assets/images/footer_insta.svg", alt="иконка инстаграмм")
                 p.visually-hidden Instagramm
             +e.LI.__item.__item_vk
-              +e.A.__link(href="#")
-                img(src="./assets/images/footer_vk.svg")
+              +e.A.__link(href="https://vk.com/welny")
+                img(src="./assets/images/footer_vk.svg", alt="иконка вконтакте")
                 p.visually-hidden VKontakte
             +e.LI.__item.__item_fb
-              +e.A.__link(href="#")
-                img(src="./assets/images/footer_facebook.svg")
+              +e.A.__link(href="https://www.facebook.com/WelnyRussia")
+                img(src="./assets/images/footer_facebook.svg", alt="иконка фейсбук")
                 p.visually-hidden Facebook
         +b.legal
           +e.__top
-            +e.A.__link(href="") Условия использования
-            +e.A.__link(href="") Карта сайта
+            +e.A.__link(href="https://welny.ru/terms/") Условия использования
+            +e.A.__link(href="https://welny.ru/sitemap/") Карта сайта
           +e.__bottom
             +e.P.__copyright Все права защищены © 2016-2018 ООО «Велни»

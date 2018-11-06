@@ -1,5 +1,9 @@
 .header-menu {
   display: block;
+
+  &__section-head {
+    position: relative;
+  }
 }
 
 .header-nav {
@@ -7,11 +11,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2px 18px 0 42px;
+  margin: 0 18px 0 0;
   min-height: 45px;
 
   &__login {
-    min-width: 25px;
+    //min-width: 25px;
     height: 28px;
     transition: $ease-main;
     text-align: right;
@@ -62,7 +66,7 @@
   &__burger {
     position: absolute;
     left: 13px;
-    top: 13px;
+    top: 10px;
     z-index: 10;
     width: 32px;
     height: 23px;
@@ -261,6 +265,9 @@
         padding: 0 21px 0 59px;
         background-size: 25px;
         background-position-x: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
 

@@ -4,14 +4,17 @@ mixin type-slider()
       +b.order-now
         .price-wrapper
           +e.P.__text Только в этом месяце скидка на первый заказ
-          +e.P.__discount 1000 руб.
-        +button.order-now__btn
+          +e.P.__discount 500 руб.
+        +button.order-now__btn(href="https://welny.ru/app/#/booking/?event=Landing_Form_Top_Transition")
           p Заказать
-    .slider-wrapper
+    .slider-wrapper(id="types")
       .container
         .wrapper-title
           +e.H2.__title Типы массажа
         +slider(false, true)
+          +slide(class="js-classic")
+            .type-slide-wrapper.type-slide-wrapper_classic.js-classic
+              +e.P.__text Классический
           +slide(class="js-sport")
             .type-slide-wrapper.type-slide-wrapper_sport.js-sport
               +e.P.__text Спортивный
@@ -24,9 +27,6 @@ mixin type-slider()
           +slide(class="js-stress")
             .type-slide-wrapper.type-slide-wrapper_stress.js-stress
               +e.P.__text Антистрессовый
-          +slide(class="js-classic")
-            .type-slide-wrapper.type-slide-wrapper_classic.js-classic
-              +e.P.__text Классический
     .wrapper-question
       .container
         .wrapper-question-title.wrapper-question-title_sport.js-sport
