@@ -130,6 +130,27 @@
       }
     }
 
+    &_idea {
+      &::before {
+        background: url("../images/5-stress-idea.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_head {
+      &::before {
+        background: url("../images/5-stress-head.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &_towel {
+      &::before {
+        background: url("../images/5-stress-towel.png") left center no-repeat;
+        background-size: contain;
+      }
+    }
+
   }
 }
 
@@ -184,7 +205,7 @@
   &_anti,
   &_limfo,
   &_classic,
-  &_limfo2 {
+  &_stress {
     .order__title {
       max-width: 150px;
       text-align: center;
@@ -230,7 +251,7 @@
     &_anti,
     &_limfo,
     &_classic,
-    &_limfo2 {
+    &_stress {
       .order__title {
         max-width: 170px;
       }
@@ -370,7 +391,7 @@
     &_anti,
     &_limfo,
     &_classic,
-    &_limfo2 {
+    &_stress {
       .order__title {
         max-width: 240px;
       }
@@ -485,7 +506,7 @@
     &_anti,
     &_limfo,
     &_classic,
-    &_limfo2 {
+    &_stress {
       .order__title {
         max-width: 450px;
         z-index: 1;

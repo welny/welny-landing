@@ -160,8 +160,8 @@
     background-size: 155px;
   }
 
-  &_limfo2 {
-    background: url("../images/limfo.png") top 5px center no-repeat, white;
+  &_stress {
+    background: url("../images/stress.png") top 5px center no-repeat, white;
     background-size: 155px;
   }
 }
@@ -303,7 +303,7 @@
         background-size: 180px 180px;
       }
 
-      &_limfo2 {
+      &_stress {
         background: url("../images/4-limfo-tree.png") right 104px bottom no-repeat;
         background-size: 115px 180px;
       }
@@ -376,7 +376,7 @@
       background-position: top 5px left 21px;
     }
 
-    &_limfo2 {
+    &_stress {
       background-size: 180px;
       background-position: top 5px left 21px;
     }
@@ -499,7 +499,7 @@
         background-size: 324px 324px, 271px 286px;
       }
 
-      &_limfo2 {
+      &_stress {
         background: url("../images/4-limfo-tree.png") right 248px bottom 3px no-repeat, url("../images/4-limfo-girl-01.png") left 247px bottom 3px no-repeat;
         background-size: 206px 324px, 271px 286px;
       }
@@ -717,9 +717,9 @@
       background-size: 324px 324px, 271px 286px;
     }
 
-    &_limfo2 {
-      background: url("../images/4-limfo-tree.png") right 248px bottom 3px no-repeat, url("../images/4-limfo-girl-01.png") left 247px bottom 3px no-repeat;
-      background-size: 206px 324px, 271px 286px;
+    &_stress {
+      background: url("../images/5-stress-work.png") right 19px bottom -77px no-repeat;
+      background-size: 629px auto;
     }
 
     &_classic {

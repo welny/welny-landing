@@ -33,8 +33,8 @@ var observer = new MutationObserver(function (mutations) {
       toggleSlides('js-anti');
     } else if (subElement.classList.contains('js-limfo')) {
       toggleSlides('js-limfo');
-    } else if (subElement.classList.contains('js-limfo2')) {
-      toggleSlides('js-limfo2');
+    } else if (subElement.classList.contains('js-stress')) {
+      toggleSlides('js-stress');
     } else if (subElement.classList.contains('js-classic')) {
       toggleSlides('js-classic');
     };
