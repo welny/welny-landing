@@ -382,6 +382,7 @@
 
       &__rating {
         @include text-5;
+        margin: 0;
       }
 
       &__name {
@@ -509,8 +510,7 @@
 
   .slider2__photo {
     margin-right: 0;
-    margin-left: 0;
-    align-self: center;
+    margin-left: 18px;
   }
 }
 
@@ -545,6 +545,7 @@
         width: 120px;
         height: 120px;
         margin-right: 0;
+        margin-left: 0;
       }
 
       &__button {
