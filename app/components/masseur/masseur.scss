@@ -22,19 +22,25 @@
 .slider2 {
   &__rating {
     @include text-9;
-    margin-left: 3px;
     margin-top: -1px;
+    text-align: center;
   }
 
   &__name {
     @include text-7;
+    text-align: center;
+    // margin: 5px auto;
+    width: 100%;
+    flex-grow: 1;
   }
 
   &__qualify {
     @include text-12;
     line-height: calc(16 / 12);
     text-align: center;
+    margin: auto 0;
     width: 99%;
+    overflow: hidden;
     // height: 108px;
     // overflow: hidden;
     // position: relative;
@@ -51,8 +57,6 @@
     width: 75px;
     height: 74px;
     margin: 3px 16px 0 0;
-    //border: 1px solid #e08629;
-    border-radius: 50%;
   }
 
   &__button {
@@ -106,6 +110,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 0 3px 5px;
 }
 
@@ -198,6 +203,14 @@
 }
 
 @include screen ("phablet") {
+  .masseur-slide-wrapper {
+    justify-content: flex-start;
+  }
+
+  .slider2__qualify {
+    margin: 0;
+  }
+
   .swiper-slide-next {
     .type-slide-wrapper {
       background-color: transparent;
@@ -249,14 +262,14 @@
 
     &__rating {
       @include text-8;
-      margin-left: 5px;
+      margin-left: 0;
     }
 
     &__name {
       @include text-8;
       width: 100%;
       margin-top: 9px;
-      margin-bottom: 0;
+      margin-bottom: 9px;
       text-align: center;
     }
 
@@ -344,7 +357,7 @@
     flex-wrap: wrap;
     width: 244px;
     margin: 2px 0 0;
-    min-height: 131px;
+    min-height: 135px;
 
     .rating-wrapper {
       margin: 9px 29px 0 9px;
@@ -369,13 +382,14 @@
 
       &__rating {
         @include text-5;
+        margin: 0;
       }
 
       &__name {
         @include text-5;
         width: 100%;
         margin-bottom: 12px;
-        // margin-left: 58px;
+        margin-top: 12px;
         margin-left: 0;
       }
 
@@ -480,7 +494,7 @@
     align-self: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    min-height: 170px;
 
     .rating-wrapper {
       // margin-left: 12px;
@@ -531,6 +545,8 @@
       &__photo {
         width: 120px;
         height: 120px;
+        margin-right: 0;
+        margin-left: 0;
       }
 
       &__button {
@@ -613,8 +629,6 @@
     align-self: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-
 
     .rating-wrapper {
       margin-left: 12px;
