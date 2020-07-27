@@ -43,6 +43,7 @@
 
   &__discount {
     @include text-small;
+    color: white;
     position: relative;
     display: inline-block;
     // border: 2px solid $color-main;
@@ -332,7 +333,7 @@
     }
 
     &__discount {
-      color: black;
+      color: white;
       @include text-12;
       margin-top: 6px;
     }
@@ -525,7 +526,7 @@
     }
 
     &__discount {
-      color: $color-basic;
+      color: white;
       @include text-9;
       line-height: calc(12 / 14);
       margin-top: 12px;
